@@ -1,19 +1,21 @@
-# [HTML5 Blank](http://html5blank.com)
 
-HTML5 Blank is a powerful shell for rapidly deploying your WordPress projects. Get developing in minutes, with the robust, preloaded shell. HTML5 Blank.
+# [PerfectCoding](http://www.dynamick.it)
 
-* Project: [github.com/toddmotto/HTML5-Blank-WordPress-Theme](https://github.com/toddmotto/HTML5-Blank-WordPress-Theme)
-* Web: [html5blank.com](http://html5blank.com)
-* Twitter: [@toddmotto](http://twitter.com/toddmotto), [@html5blank](http://twitter.com/html5blank)
+A Wordpress theme with HTML5 structure, with Twitter Bootstrap layout and with Html5 Boilerplate recipes.
+It is an implementation of HTML5 Blank Wordpress Theme, which is a powerful shell for rapidly deploying your WordPress projects. Get developing in minutes, with the robust, preloaded shell. HTML5 Blank.
+
+* Project: [github.com/dynamick/perfectcoding](https://github.com/dynamick/perfectcoding)
+* Web: [dynamick.it](http://www.dynamick.it)
+* Twitter: [@dynamick.it](http://twitter.com/dynamick)
 
 
 ## Getting Started with HTML5 Blank
 
-Download the latest version from [html5blank.com](http://html5blank.com)
+Download the latest version from [github.com/dynamick/perfectcoding](https://github.com/dynamick/perfectcoding)
 
 ## Get involved! Make HTML5 Blank better
 
-There are a few ways to get involved, submit a Pull Request, or submit a comment on the website - [html5blank.com](http://html5blank.com)
+There are a few ways to get involved, submit a Pull Request, or submit a comment on the website
 
 ## Features
 
@@ -67,3 +69,6 @@ There are a few ways to get involved, submit a Pull Request, or submit a comment
 * Category support for showing the Category of post
 * Author support showing the author
 * Demo Custom Page Template for expansion
+
+
+
