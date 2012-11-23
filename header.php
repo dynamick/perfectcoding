@@ -23,7 +23,7 @@
 <body <?php body_class(); ?>>
 
 	<!-- Header -->
-	<header>
+	<header class="head">
 	
 		<!-- Wrapper -->
 		<div class="wrapper container">
@@ -38,13 +38,11 @@
 						<div id="logo">
 							<?php if (get_custom_header()->url != '') { ?>
 							<h1><a href="<?php echo home_url(); ?>">
-								<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="Logo" />
+								<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="Dynamick, web design, web development and seo" />
 							</a></h1>
 							 <?php } ?>
 						</div>
 						 <!--/Logo -->	
-					 
-										 
 
 						<!-- Nav -->
 						<nav>
@@ -60,12 +58,14 @@
 				
 				<div class="span4">
 							
-					<ul class="channels">
-						<li class="rss"><a title="Iscriviti al nostro feed" href="http://www.dynamick.it/feed">RSS</a></li>
-						<li class="facebook"><a title="Seguici attraverso Facebook" href="http://www.facebook.com/dynamick.it">Facebook</a></li>
-						<li class="twitter"><a title="Seguici con Twitter" href="http://twitter.com/dynamick">Twitter</a></li>
-						<li class="newsletter"><a title="Sottoscrivi la nostra newsletter" href="#">Newsletter</a></li>
-					</ul>							
+								
+ 					<ul class="channels">
+ 						<li class="rss"><a title="Iscriviti al nostro feed" href="http://www.dynamick.it/feed">RSS</a></li>
+ 						<li class="facebook"><a title="Seguici attraverso Facebook" href="http://www.facebook.com/dynamick.it">Facebook</a></li>
+ 						<li class="twitter"><a title="Seguici con Twitter" href="http://twitter.com/dynamick">Twitter</a></li>
+ 						<li class="newsletter"><a title="Sottoscrivi la nostra newsletter" href="#">Newsletter</a></li>
+ 					</ul>							
+								
 					
 					
 				</div>

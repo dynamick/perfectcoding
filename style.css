@@ -112,7 +112,7 @@ License URI:	http://opensource.org/licenses/mit-license.php
 		color:#333; /* Lighter on the eyes than #000 Black */
 	}
 	
-	h1, h2, h3, h4, h5, h6 {font-family: 'Marcellus', serif;}
+	h1, h2, h3, h4, h5, h6 {font-family: 'Lora', serif;}
 	.label a {color:white;}
 	
 /* =============================================================================
@@ -121,25 +121,28 @@ License URI:	http://opensource.org/licenses/mit-license.php
    
    /* Add your site structure here */
    
-	a.post_thumbnail {border:0; box-shadow:none; border-radius:0; padding:0;}
-	a.post_thumbnail:hover {border:0; box-shadow:none;}
+	a.post_thumbnail {border:0; box-shadow:none; -webkit-box-shadow:none; border-radius:0; -webkit-border-radius:0; padding:0;}
+	a.post_thumbnail:hover {border:0; box-shadow:none;-webkit-box-shadow:none; }
    
-   /* header .wrapper  {background-color:#FFF;}*/
    .main {
 	   	background-color:#FFF; /*#F0EEE9; */
     	box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.5);
-	    border: 1px solid #CDC9C1;
+    	-webkit-box-shadow: 0 10px 10px 0px rgba(0, 0, 0, 0.5);
+	    /*border: 1px solid #CDC9C1;*/
 		border-top:0;
 		border-radius: 0 0 3px 3px; 
-		padding: 2em 0 1em 0;
+		-webkit-border-radius: 0 0 3px 3px; 
+		padding: 0em 0 1em 0;
 		position:relative;
 		z-index: 1;
 	}
+	
 	.main:before {
-	     border: 1px dashed #CCCCCC;
+	     /*border: 1px dashed #CCCCCC;*/
 		 border-width:0 1px;
 	     bottom: 3px;
 	     box-shadow: 0 0 0 1px #FFFFFF;
+	     -webkit-box-shadow: 0 0 0 1px #FFFFFF;
 	     content: "";
 	     left: 3px;
 	     position: absolute;
@@ -150,69 +153,91 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	
 /* Header
 ------------------------------------------------------------ */
-	
-	header .inner {margin-top: 10px; border: 1px solid rgba(0, 0, 0, 0.1);	border-width: 1px 1px 0 1px; background: white; border-radius: 4px 4px 0 0; position:relative; z-index:10;}
-	#logo { overflow:hidden; min-height: 8px;}
+	header.head {background:transparent url(img/header-bg.png) repeat-x; margin: 0 -20px; padding: 0 20px;}
+header .inner {margin-top: 10px; border: 1px solid rgba(0, 0, 0, 0.1);	border-width: 1px 1px 0 1px; background: white; border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; /*position:relative; z-index:10;*/}
+
+	#logo { /*overflow:hidden; min-height: 8px;*/ position: absolute; top: -12px; z-index:10; margin-left:44px;
+		-webkit-transition: all .1s ease-in-out;
+		-moz-transition: all .1s ease-in-out;
+		-o-transition: all .1s ease-in-out;
+		transition: all .1s ease-in-out;	
+	}
+	#logo:hover {top: 0px;}
 	#logo h1 {margin: 0; 	padding: 0;}
 	#logo h1 a {display: block;}
-	#logo h1 a img {border-radius: 3px 3px 0 0;}
+	#logo h1 a img {}
 	 
-	.channels { /*float: right;  margin-right:40px;*/ margin: 21px auto 0; width:130px;}	 
+		.channels { /*float: right;  margin-right:40px; margin: 7px 30px 0;*/ width:130px; margin: 23px auto;}	 
 	.channels li { float: left; margin-left: 0px;  position: relative; padding: 12px 4px 12px; }
 	.channels li a {  background-image: url("img/channels.png");  display: block; height: 23px; text-indent: -9999em; width: 23px;  }
-	.channels li a { transition: opacity 0.2s ease 0s;}
+	.channels li a { 
+	    -webkit-transition: opacity 0.2s ease 0s; /* Safari 3.2+, Chrome */
+	       -moz-transition: opacity 0.2s ease 0s; /* Firefox 4-15 */
+	         -o-transition: opacity 0.2s ease 0s; /* Opera 10.5–12.00 */
+	            transition: opacity 0.2s ease 0s; /* Firefox 16+, Opera 12.50+ */
+		}
 	.channels li.rss a {background-position: -23px 0;opacity: 0.45;}
 	.channels li.facebook a {background-position: -23px -23px; opacity: 0.45;}
 	.channels li.twitter a {background-position: -23px -46px;opacity: 0.45;}
 	.channels li.newsletter a {background-position: -23px -69px; opacity: 0.45;}
 	.channels li a:hover, nav .channels li a:focus, nav .channels li.rss.modaled a {opacity: 1;}
 
-	header nav {box-shadow: 0 10px 20px rgba(0,0,0,0.1);  transition:all 0.2s ease-in-out; border:1px solid rgba(0,0,0,0.1); border-width: 0 0 1px 0;}
+	header nav {padding-bottom: 18px;  /*border:1px solid rgba(0,0,0,0.1); border-width: 0 0 1px 0;*/}
 
-	.ribbon {margin: 0 -11px -1px; overflow:hidden; background: rgba(0,0,0,0.08);}
-	.ribbon:after {content:""; position: absolute;right:-12px; bottom: -11px; width: 0; height: 0;border-top:0; border-left: 12px solid #8f8f8f; border-bottom: 12px solid transparent;-webkit-transition: all 0.05s ease; }
-	.ribbon:before {content:""; position: absolute;left:-10px; bottom: -9px;width: 0; height: 0;border-top:0; border-right: 10px solid #8f8f8f; border-bottom: 10px solid transparent;-webkit-transition: all 0.05s ease; }
+	.ribbon {margin: 8px -11px -1px;  background: rgba(0,0,0,0.08); position:relative; height:59px; border-bottom:1px solid rgba(0, 0, 0, 0.1); border-top:1px solid rgba(0, 0, 0, 0.1); }
+	.ribbon:after {content:""; position: absolute;right:-1px; bottom: -10px; width: 0; height: 0;border-top:0; border-left: 11px solid #4F4F4F; border-bottom: 11px solid transparent; }
+	.ribbon:before {content:""; position: absolute;left:0px; bottom: -9px;width: 0; height: 0;border-top:0; border-right: 10px solid #4F4F4F; border-bottom: 10px solid transparent; }
 	.ribbon:hover {background: rgba(0,0,0,0.1);}
 
-	header nav ul#main {overflow:hidden; padding: 0 0 0 55px; float:left;}
-	header nav ul#main li {float:left; font-size: 12px;  padding: 21px 11px 19px 12px; transition: all .2s ease-in-out 0s;  border-left: 1px solid rgba(0,0,0,0.1);}
+	header nav ul#main {overflow:hidden; padding: 0 0 0 235px; float:left;}
+	header nav ul#main li {float:left; font-size: 12px;  padding: 21px 11px 19px 12px; border-left: 1px solid rgba(0,0,0,0.1);
+	    -webkit-transition: all .2s ease-in-out 0s;  /* Safari 3.2+, Chrome */
+	       -moz-transition: all .2s ease-in-out 0s;  /* Firefox 4-15 */
+	         -o-transition: all .2s ease-in-out 0s;  /* Opera 10.5–12.00 */
+	            transition: all .2s ease-in-out 0s;  /* Firefox 16+, Opera 12.50+ */
+		}
 	header nav ul#main li:first-child {border-left: 0px;}
-	header nav ul#main li#logo-small {padding: 3px 15px 4px; margin-bottom:1px}
+	/*header nav ul#main li#logo-small {padding: 3px 15px 4px; margin-bottom:1px}*/
 	header nav ul#main li:hover {background-color:#fff;}
 	header nav ul#main li a {color:#333; text-transform:uppercase; display:block;margin-top:-1px; }
 	header nav ul#main li:hover a {color:#E65F15}
 	header nav ul#main li.current-menu-item a {font-weight:bold}
+	header nav ul#main li#menu-item-9206 a {background:url(img/chi-sono-icon.png) no-repeat; padding-left: 30px;}
+	header nav ul#main li#menu-item-9209 a {background:url(img/contatti-icon.png) no-repeat; padding-left: 26px;}
 
 /* POST BODY
  ------------------------------------------------------------ */
    
-   #featured {background:#333; box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px ; position:relative; z-index:10; padding-top:18px;}
+   #featured {background:#333; box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; -webkit-box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; position:relative; z-index:10; padding-top:18px;}
    #featured a{border:0;}
    
-   .breadcrumb {background: rgba(0,0,0,0.04); font-size:0.8em;}
+   nav .breadcrumb {background: transparent; font-size:0.7em; padding: 0; margin: 2em 0 0 0;}
+   nav .breadcrumb a {/*color: #E7492F*/}
+   /*nav .breadcrumb {background: transparent; float: right; font-size: 0.8em; margin-left: 141px; margin-top: -16px; position: absolute; padding: 0 15px;}*/
    
    	article { border-bottom:3px solid #E7492F; position:relative;}
-	.single article {border:0;}
+	.single article, .page article {border:0;}
    	article .inner{padding:0 60px;overflow:hidden;}
-	article .prefix {font-family: 'Marcellus', serif;color: #999; margin-top:2em; margin-bottom:0.5em; font-weight:400; text-shadow: 0 1px #FFFFFF; font-size: 1em;}
+	article .prefix {font-family: 'Lora', serif;color: #999; margin-top:2em; margin-bottom:0.5em; font-weight:400; text-shadow: 0 1px #FFFFFF; font-size: 1em;}
 	article .prefix a{color: #999;}
    	article h2, article h1 {font-size:2em;line-height:1.1em;text-shadow: 0 1px #FFF}
    	article h2 a, article h1 a {color: #333;}
-   	article .post_details {font-family: 'Marcellus', serif; padding-top:0.5em;color: #999; padding-bottom:2em; overflow:hidden; list-style-type:none; margin:0;}
-   	article .posted_by {font-family: 'Marcellus', serif; display:block; padding-bottom: 0.5em; border-bottom: 1px dashed rgba(0,0,0,0.2);margin-bottom:0.5em; font-size: 1.25em;
+   	article .post_details {font-family: 'Lora', serif; padding-top:0.5em;color: #999; padding-bottom:2em; overflow:hidden; list-style-type:none; margin:0;}
+   	article .posted_by {font-family: 'Lora', serif; display:block; padding-bottom: 0.5em; border-bottom: 1px dashed rgba(0,0,0,0.2);margin-bottom:0.5em; font-size: 1.25em;
     line-height: 1.35em;}
 
 	article .date {background:url(/wp-content/themes/perfectcoding/img/icon-calendar.png) 0 1px no-repeat; padding-left: 28px; float:left}
 	article .comments {background:url(/wp-content/themes/perfectcoding/img/icon-comments.png) 27px 1px no-repeat; padding-left: 58px; float:left;}
 	article .post_thumbnail {margin-top:1em;}
 	article .catribbon {background-color: #E7492F; color: #fff;height: 32px;line-height: 32px; margin: 0 0 -32px -70px; padding-left: 10px;position: absolute;text-align: center; width: 150px;z-index: 10;}
-	article .catribbon:before {content:""; position: absolute;left:0; bottom: -10px;width: 0; height: 0;border-top:0; border-right: 10px solid #99756F; border-bottom: 10px solid transparent;-webkit-transition: all 0.05s ease; }
+	article .catribbon:before {content:""; position: absolute;left:0; bottom: -10px;width: 0; height: 0;border-top:0; border-right: 10px solid #99756F; border-bottom: 10px solid transparent; }
 	article .catribbon span:before {content:'';}
 	article .catribbon span:after {content:'';}
-	article .view-article {display:block; margin-top: 0.5em;}
+	article .excerpt {margin-top: 1em;}
+	article .view-article {display:block; margin: 0.5em 0 1em;}
 	article .view-article:after {content:' ➪';}
-	.main > div#pagination {text-align:center; margin: 1em 0; position:relative; z-index: 10}
-	.main > div#pagination > * {margin: 0 9px;}
+	nav#pagination {text-align:center; margin: 1em 0; position:relative; z-index: 10}
+	nav#pagination > * {margin: 0 9px;}
 	
 	/* post body */
 	section ul, article ul {list-style-type: disc;}
@@ -220,16 +245,18 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	section li, article li { padding: 0.25em 0;}
 	.post_content h2, .post_content h3, .post_content h4 {
 	    letter-spacing: 0.125em;
-	    padding: 1.5em 0 0.5em;
+	    padding: 1.5em 0 1em;
 	    text-transform: uppercase;
 	    font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
 	    font-style: normal;
 	    font-weight: 700;
 	}	
-	.post_content h2 { font-size: 1.3em; }
-	.post_content h3 { font-size: 1.2em; }
-	.post_content h4 { font-size: 1.1em; }
+	.post_content h2 { font-size: 1.5em; font-family: "Lora", serif;  text-transform: none;}
+	.post_content h3 { font-size: 1.0em; }
+	.post_content h4 { font-size: 1.0em; }
 	.post_content img {margin: 4px 4px 4px 0; padding: 4px; background-color: white; border:0px solid rgba(0,0,0,0.1)}
+	.post_content p a {border-bottom: 1px dotted #999;}
+	.post_content p a:hover {border-bottom: 1px solid #E7492F;}
 
 /* Newsletter
 ------------------------------------------------------------ */
@@ -258,7 +285,7 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	 	text-align: center;
 	 }
 
-	 .single article .newsletter-wrap h4 {font-size:24px; margin:0 0 13px; padding:0; font-family: "Marcellus", serif;}
+	 .newsletter-wrap h4 {font-size:24px; margin:0 0 13px; padding:0; font-family: "Lora", serif;}
 
 	 .newsletter-wrap input[type="email"] {	
 	 	background: #fff url(img/newsletter-box.png) no-repeat center left;
@@ -287,10 +314,9 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	 }
 
 	 #newsletter-header input[type="email"] {	
-	 	-moz-border-radius: 1000px;
+	 	border-radius: 1000px;
 	 	-webkit-border-radius: 1000px;
 	 	background: #fff;
-	 	border-radius: 1000px;
 	 	color: #999;
 	 	font-size: 0.8125em; /* 13px / 16px */
 	 	margin: 0 5px;
@@ -323,7 +349,7 @@ License URI:	http://opensource.org/licenses/mit-license.php
 		 display:inline;
 		 margin-left:50px;
 		 line-height:40px;
-		 font-family: 'Marcellus', serif;
+		 font-family: 'Lora', serif;
 	 }
 	 .comment-meta {display:inline}
 	 .comment-meta a {
@@ -343,6 +369,7 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	     width: 40px;
 		 height: 40px;
 		 border-radius: 50%;
+		 -webkit-border-radius: 50%;
 		 background-color:white;
 		 margin-top:0;
 		 padding:0;
@@ -392,17 +419,24 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	     padding: 1px !important;
 	 }
 	 
-	 #respond {margin-bottom: 2em;}
+	 #respond {margin-bottom: 4em;}
 	 #respond p {}
 	 #reply-title {}
 	 .form-allowed-tags {display: none;}
 	 #commentform {}
-	 #commentform label {font-family: 'Marcellus', serif; font-size: 1em; font-weight: bold;}
+	 #commentform label {font-family: 'Lora', serif; font-size: 1em; font-weight: bold;}
 	 #commentform #author, #commentform #email, #commentform #comment {width:100%}
 	 #commentform input[type="submit"] {
-	    background: -moz-linear-gradient(center top , #E95C33 0px, #E53B2C 100%) repeat scroll 0 0 #E95C33;
+	    background-color: #E95C33;
+	    background-image: -webkit-gradient(linear, left top, left bottom, from(#E95C33), to(#E53B2C)); /* Safari 4+, Chrome */
+	    background-image: -webkit-linear-gradient(top, #E95C33, #E53B2C); /* Chrome 10+, Safari 5.1+, iOS 5+ */
+	    background-image:    -moz-linear-gradient(top, #E95C33, #E53B2C); /* Firefox 3.6-15 */
+	    background-image:      -o-linear-gradient(top, #E95C33, #E53B2C); /* Opera 11.10-12.00 */
+	    background-image:         linear-gradient(to bottom, #E95C33, #E53B2C); /* Firefox 16+, IE10, Opera 12.50+ */
+		
 	    border: 1px solid rgba(0, 0, 0, 0.1);
 	    border-radius: 5px 5px 5px 5px;
+	    -webkit-border-radius: 5px 5px 5px 5px;
 	    color: #FFFFFF;
 	    cursor: pointer;
 	    display: block;
@@ -415,20 +449,25 @@ License URI:	http://opensource.org/licenses/mit-license.php
 /* Sidebar
 ------------------------------------------------------------ */
 
-	aside {text-align:center;}
+	aside {text-align:center; margin-top: 2em;}
 	.sidebar {margin-top: 2em;font-size: 14px; text-align:left; line-height: 1.5em;}
 	.sidebar p {line-height: 1.5em;}
 	.sidebar-widget h3 {font-size: 24px; font-weight:bold; margin: 1em 0 0.5em; border-bottom:1px dashed rgba(0,0,0,0.2); padding-bottom:0.5em;}
 	.sidebar-widget h3:before {content:'✪ '; color: #E7492F; font-size:1.2em;}
 	.sidebar-widget ul li { position:relative;margin-bottom:0.25em;padding-bottom:0.25em;}
-	.sidebar-widget .thumbnail { border:0; box-shadow:none;}
+	.sidebar-widget ul li:before {content: "\2013\00a0\00a0";color: #E7492F;}
+	.sidebar-widget ul li a{ color: #333; border-bottom:1px dotted #41B8D8;}
+	.sidebar-widget ul li a:hover{ color: #41B8D8;}
+	.sidebar-widget .thumbnail { border:0; box-shadow:none; -webkit-box-shadow: none;}
 
 	aside .sidebar-widget.second {margin-top: 2em;}
 	aside .sidebar-widget.second > div{
 	 background: white;
 	 border: 1px solid #C6C6C6;
 	 border-radius: 5px;
+	 -webkit-border-radius: 5px;
 	 box-shadow: 0 1px 0 #9A9A9A;
+	 -webkit-box-shadow: 0 1px 0 #9A9A9A;
 	 margin: 0 0 20px 0;
 	 padding: 0 30px 30px;
 	 position: relative;
@@ -439,6 +478,7 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	 border: 1px dashed #BCBCBC;
 	 bottom: 3px;
 	 box-shadow: 0 0 0 1px #e7e7e7;
+	 -webkit-box-shadow: 0 0 0 1px #e7e7e7;
 	 content: "";
 	 left: 3px;
 	 position: absolute;
@@ -447,7 +487,7 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	 z-index: -1;
 	}	 
 	aside .sidebar-widget.first h3{ opacity: 0.8;}
-	aside .sidebar-widget.first p{ padding-left: 30px; /*padding-right:30px;*/ }
+	aside .sidebar-widget.first p{ /*padding-left: 30px; /*padding-right:30px;*/ }
 	aside .sidebar-widget.first { text-shadow: 0 1px 0 #FFFFFF; }
 	/* ebook */
 	aside .sidebar-widget .ebook p { margin-top: -20px}
@@ -455,8 +495,8 @@ License URI:	http://opensource.org/licenses/mit-license.php
 /* Footer
 ------------------------------------------------------------ */
 	 
-	footer {margin-top: 4em;  text-shadow: 0 1px 0 #FFFFFF;}
-	footer li a {color: #666; line-height: 1.5em;}
+	footer {margin: -4em -20px 0; padding: 6em 20px 0;text-shadow: 0 1px 0 #000; background: url(img/footer-bg.png) repeat-x;}
+	footer li a {color: #999; line-height: 1.5em;font-size:0.8em; }
 	footer h4 {
 	    letter-spacing: 0.125em;
 	    padding: 1.5em 0 0.5em;
@@ -467,7 +507,7 @@ License URI:	http://opensource.org/licenses/mit-license.php
 		font-size:0.8em;
 		color: #E7492F;
 	}
-	footer  {background: url(img/mouse-footer.png) bottom right no-repeat; }
+	/*footer  {background: url(img/mouse-footer.png) bottom right no-repeat; }*/
 	footer .copyright {font-size: 0.7em; color: #666; margin-top: 2em;}	
 
 /* =============================================================================
@@ -492,7 +532,7 @@ License URI:	http://opensource.org/licenses/mit-license.php
    
    /* 768px and smaller */
    @media only screen and (max-width: 767px) {
-	/* Styles here */
+	/* Styles here 
 	.channels {
 		margin: 21px auto 0;
 		position: absolute;
@@ -500,9 +540,31 @@ License URI:	http://opensource.org/licenses/mit-license.php
 		top: 5px;
 		width: 130px;
 		z-index: 1000;
-	}	
+	}	*/
+	header.head .span4, aside#sidebar {display:none;}
+	footer .span3 {margin-left: 30px; width: 28%; float:left;}
+	footer .span12 {clear:both}
 	
    }
+
+   /* 980px and bigger */
+   @media only screen and (min-width: 980px) {
+	/* Styles here 
+	.channels {
+		margin: 21px auto 0;
+		position: absolute;
+		right: 30px;
+		top: 5px;
+		width: 130px;
+		z-index: 1000;
+	}	*/
+	
+   }
+   @media only screen and (max-width: 979px) and (min-width: 768px)  {
+	   /*.channels {display:none;}*/
+   }
+
+
    
    /* 1024px and greater */
    @media only screen and (min-width: 1024px) {
@@ -561,7 +623,7 @@ License URI:	http://opensource.org/licenses/mit-license.php
    ========================================================================== */
 
    @media print {
-	* {background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important;}
+	* {background:transparent !important;color:#000 !important;box-shadow:none !important; -webkit-box-shadow:none !important; text-shadow:none !important;}
 	a,a:visited {text-decoration:underline;}
 	a[href]:after {content:" (" attr(href) ")";}
 	abbr[title]:after {content:" (" attr(title) ")";}

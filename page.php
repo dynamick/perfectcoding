@@ -14,7 +14,21 @@
 				
 				<div class="inner">
 		
-					<h1><?php the_title(); ?></h1>
+					<?php echo bootstrapwp_breadcrumbs(); ?>
+
+					<!-- Post Title -->
+					<h1>
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+					</h1>
+					<!-- /Post Title -->
+			
+					<!-- Post Details -->
+					<ul class="post_details">
+						<li class="posted_by"><?php twentyten_posted_by(); ?></li>
+						<li class="date"><?php twentyten_posted_on(); ?></li>
+						<li class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></li>
+					</ul>
+					<!-- /Post Details -->
 
 					<?php the_content(); ?>
 					

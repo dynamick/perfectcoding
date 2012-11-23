@@ -47,8 +47,8 @@ if (function_exists('add_theme_support'))
 	'default-image'			=> get_template_directory_uri() . '/img/headers/default.png',
 	'header-text'			=> false,
 	'default-text-color'		=> '000',
-	'width'				=> 474,
-	'height'			=> 129,
+	'width'				=> 158,
+	'height'			=> 110,
 	'random-default'		=> false,
 	'wp-head-callback'		=> $wphead_cb,
 	'admin-head-callback'		=> $adminhead_cb,
@@ -94,20 +94,15 @@ function html5blank_nav()
 }
 
 
-add_filter('wp_nav_menu_items', 'add_logo_to_nav', 10, 2);
+#add_filter('wp_nav_menu_items', 'add_logo_to_nav', 10, 2);
 function add_logo_to_nav($items, $args)
 {
 	if ($args->theme_location == 'header-menu') {
 		$url =get_template_directory_uri();
 		$logo = <<<EOF
-			<!-- Logo -->
 			<li id="logo-small" >
-				<a href="/" >
-					<img src="{$url}/img/dynamick.png" alt="Logo">
-					<!--img src="http://placehold.it/460x120" alt="Logo"-->
-				</a>
+				<a href="/" ><img src="{$url}/img/logo-dynamick.png" alt="Dynamick, Web design, develop and SEO"></a>
 			</li>
-			<!-- /Logo -->
 EOF;
 		$items = "{$logo}".$items;
 	}
@@ -173,6 +168,23 @@ function add_jquery_fallback()
     echo $jqueryfallback;
 }
 
+// Facebook script
+function add_facebook_script()
+{
+	$appId = "235354229916474";
+	
+    $fbscript  = "<div id=\"fb-root\"></div>";
+    $fbscript .= "<script>(function(d, s, id) {";
+    $fbscript .= "  var js, fjs = d.getElementsByTagName(s)[0];";
+    $fbscript .= "  if (d.getElementById(id)) return;";
+    $fbscript .= "  js = d.createElement(s); js.id = id;";
+    $fbscript .= "  js.src = \"//connect.facebook.net/it_IT/all.js#xfbml=1&appId={$appId}\";";
+    $fbscript .= "  fjs.parentNode.insertBefore(js, fjs);";
+    $fbscript .= "}(document, 'script', 'facebook-jssdk'));</script>";
+	
+    echo $fbscript;
+}
+
 // Threaded Comments
 function enable_threaded_comments()
 {
@@ -235,8 +247,11 @@ function html5blank_styles()
 	    wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
 	    wp_enqueue_style('html5blank'); // Enqueue it!
 		
-	    wp_register_style('marcellus_font', 'http://fonts.googleapis.com/css?family=Marcellus', array(), '1.0', 'all');
-	    wp_enqueue_style('marcellus_font'); // Enqueue it!
+	    #wp_register_style('marcellus_font', 'http://fonts.googleapis.com/css?family=Marcellus', array(), '1.0', 'all');
+	    #wp_enqueue_style('marcellus_font'); // Enqueue it!
+		
+	    wp_register_style('lora_font', 'http://fonts.googleapis.com/css?family=Lora:400,700', array(), '1.0', 'all');
+	    wp_enqueue_style('lora_font'); // Enqueue it!
 		
 	    wp_register_style('open_sans', 'http://fonts.googleapis.com/css?family=Open+Sans:400,300', array(), '1.0', 'all');
 	    wp_enqueue_style('open_sans'); // Enqueue it!
@@ -398,7 +413,7 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
     $output = get_the_excerpt();
     $output = apply_filters('wptexturize', $output);
     $output = apply_filters('convert_chars', $output);
-    $output = '<p>' . $output . '</p>';
+    $output = '<p class="excerpt">' . $output . '</p>';
     echo $output;
 }
 
@@ -447,6 +462,7 @@ add_action('init', 'html5blank_scripts'); // Add Custom Scripts
 add_action('wp_print_scripts', 'conditional_scripts'); // Add Conditional Page Scripts
 add_action('wp_footer', 'add_google_analytics'); // Google Analytics optimised in footer
 add_action('wp_footer', 'add_jquery_fallback'); // jQuery fallbacks loaded through footer
+//add_action('wp_footer', 'add_facebook_script'); // Facebook SDK
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu

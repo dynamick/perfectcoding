@@ -13,9 +13,11 @@
 		<?php wp_list_comments('type=comment&callback=html5blankcomments'); // Custom callback in functions.php ?>
 	</ol>
 	
-    <nav>
+    <nav id="pagination">
      <?php paginate_comments_links(); ?> 
     </nav>	
+	
+	
 
 <?php elseif ( ! comments_open() && ! is_page() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 	

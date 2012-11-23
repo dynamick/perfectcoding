@@ -12,9 +12,9 @@
 			<?php get_template_part('loop'); ?>
 		
 			<!-- Pagination -->
-			<div id="pagination">
+			<nav id="pagination">
 				<?php html5wp_pagination(); ?>
-			</div>
+			</nav>
 			<!-- /Pagination -->
 		</div>
 		

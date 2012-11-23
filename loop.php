@@ -17,7 +17,7 @@
 			
 			<!-- Post Details -->
 			<ul class="post_details">
-				<li class="posted_by"><?php twentyten_posted_by(); ?></li>
+				<li class="posted_by"><span class="postit"><?php twentyten_posted_by(); ?></span></li>
 			</ul>
 			<!-- /Post Details -->
 
