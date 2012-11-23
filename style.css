@@ -134,26 +134,14 @@ License URI:	http://opensource.org/licenses/mit-license.php
 		-webkit-border-radius: 0 0 3px 3px; 
 		padding: 0em 0 1em 0;
 		position:relative;
-		z-index: 1;
 	}
 	
-	.main:before {
-	     /*border: 1px dashed #CCCCCC;*/
-		 border-width:0 1px;
-	     bottom: 3px;
-	     box-shadow: 0 0 0 1px #FFFFFF;
-	     -webkit-box-shadow: 0 0 0 1px #FFFFFF;
-	     content: "";
-	     left: 3px;
-	     position: absolute;
-	     right: 3px;
-	     top: 3px;
-	     z-index: 0;
-	 }
 	
+
+	 
 /* Header
 ------------------------------------------------------------ */
-	header.head {background:transparent url(img/header-bg.png) repeat-x; margin: 0 -20px; padding: 0 20px;}
+	header.head {background:transparent url(img/header-bg.png) repeat-x; }
 header .inner {margin-top: 10px; border: 1px solid rgba(0, 0, 0, 0.1);	border-width: 1px 1px 0 1px; background: white; border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; /*position:relative; z-index:10;*/}
 
 	#logo { /*overflow:hidden; min-height: 8px;*/ position: absolute; top: -12px; z-index:10; margin-left:44px;
@@ -215,7 +203,12 @@ header .inner {margin-top: 10px; border: 1px solid rgba(0, 0, 0, 0.1);	border-wi
    nav .breadcrumb a {/*color: #E7492F*/}
    /*nav .breadcrumb {background: transparent; float: right; font-size: 0.8em; margin-left: 141px; margin-top: -16px; position: absolute; padding: 0 15px;}*/
    
-   	article { border-bottom:3px solid #E7492F; position:relative;}
+  	h2.section {padding: 2em 60px 1em; background: rgba(0,0,0,0.05); position:relative; top: -17px; border-bottom:1px solid rgba(0,0,0,0.1); }
+   	h2.section ul {display:inline; margin:0; padding:0;}
+   	h2.section li {display:inline; list-style-type:none; padding:0;}
+	
+	
+   	article { border-bottom:3px solid #E7492F; position:relative; min-height:1000px}
 	.single article, .page article {border:0;}
    	article .inner{padding:0 60px;overflow:hidden;}
 	article .prefix {font-family: 'Lora', serif;color: #999; margin-top:2em; margin-bottom:0.5em; font-weight:400; text-shadow: 0 1px #FFFFFF; font-size: 1em;}
@@ -236,14 +229,14 @@ header .inner {margin-top: 10px; border: 1px solid rgba(0, 0, 0, 0.1);	border-wi
 	article .excerpt {margin-top: 1em;}
 	article .view-article {display:block; margin: 0.5em 0 1em;}
 	article .view-article:after {content:' ➪';}
-	nav#pagination {text-align:center; margin: 1em 0; position:relative; z-index: 10}
+	nav#pagination {text-align:center; margin: 1em 0; position:relative; /*z-index: 10*/}
 	nav#pagination > * {margin: 0 9px;}
 	
 	/* post body */
 	section ul, article ul {list-style-type: disc;}
 	section ul, section ol, article ul, article ol { margin: 0.5em 1.5em;}
 	section li, article li { padding: 0.25em 0;}
-	.post_content h2, .post_content h3, .post_content h4 {
+	.post_content h2, .post_content h3, .post_content h4, .post_content h5 {
 	    letter-spacing: 0.125em;
 	    padding: 1.5em 0 1em;
 	    text-transform: uppercase;
@@ -254,9 +247,11 @@ header .inner {margin-top: 10px; border: 1px solid rgba(0, 0, 0, 0.1);	border-wi
 	.post_content h2 { font-size: 1.5em; font-family: "Lora", serif;  text-transform: none;}
 	.post_content h3 { font-size: 1.0em; }
 	.post_content h4 { font-size: 1.0em; }
+	.post_content h4 { font-size: 0.8em; }
 	.post_content img {margin: 4px 4px 4px 0; padding: 4px; background-color: white; border:0px solid rgba(0,0,0,0.1)}
 	.post_content p a {border-bottom: 1px dotted #999;}
 	.post_content p a:hover {border-bottom: 1px solid #E7492F;}
+	.post_content .reset {margin: 0 -60px;}
 
 /* Newsletter
 ------------------------------------------------------------ */
@@ -495,7 +490,7 @@ header .inner {margin-top: 10px; border: 1px solid rgba(0, 0, 0, 0.1);	border-wi
 /* Footer
 ------------------------------------------------------------ */
 	 
-	footer {margin: -4em -20px 0; padding: 6em 20px 0;text-shadow: 0 1px 0 #000; background: url(img/footer-bg.png) repeat-x;}
+	footer {margin: -4em 0 0; padding: 6em 0 0;text-shadow: 0 1px 0 #000; background: url(img/footer-bg.png) repeat-x;}
 	footer li a {color: #999; line-height: 1.5em;font-size:0.8em; }
 	footer h4 {
 	    letter-spacing: 0.125em;
@@ -541,9 +536,12 @@ header .inner {margin-top: 10px; border: 1px solid rgba(0, 0, 0, 0.1);	border-wi
 		width: 130px;
 		z-index: 1000;
 	}	*/
+	header.head {margin: 0 -20px; padding: 0 20px;}
+	footer {margin: -4em -20px 0; padding: 6em 20px 0;}
 	header.head .span4, aside#sidebar {display:none;}
 	footer .span3 {margin-left: 30px; width: 28%; float:left;}
 	footer .span12 {clear:both}
+	.post_content .reset {margin:auto;}
 	
    }
 

@@ -7,14 +7,14 @@
 	
 		<div class="main">
 	
-			<h1><?php _e( 'Categories for', 'html5blank' ); the_category(); ?></h1>
+			<h2 class="section"><?php _e( 'Categories for', 'html5blank' ); the_category(); ?></h2>
 	
 			<?php get_template_part('loop'); ?>
 		
 			<!-- Pagination -->
-			<div id="pagination">
+			<nav id="pagination">
 				<?php html5wp_pagination(); ?>
-			</div>
+			</nav>
 			<!-- /Pagination -->
 			
 		</div>
