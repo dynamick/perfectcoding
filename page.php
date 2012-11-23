@@ -15,6 +15,8 @@
 				<div class="inner">
 		
 					<?php echo bootstrapwp_breadcrumbs(); ?>
+					
+					<div class="prefix"><?php the_tags('');?></div>
 
 					<!-- Post Title -->
 					<h1>

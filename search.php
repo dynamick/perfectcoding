@@ -1,21 +1,29 @@
 <?php get_header(); ?>
-	
+
+<div class="row">
+		
 	<!-- Section -->
-	<section>
+	<section class="span8">
+		
+		<div class="main">		
 	
-		<h1><?php echo sprintf( __( '%s Search Results for ', 'html5blank' ), $wp_query->found_posts ); echo get_search_query(); ?></h1>
+			<h2 class="section"><?php echo sprintf( __( '%s Search Results for ', 'html5blank' ), $wp_query->found_posts ); echo get_search_query(); ?></h2>
 		
-		<?php get_template_part('loop'); ?>
+			<?php get_template_part('loop'); ?>
 		
-		<!-- Pagination -->
-		<div id="pagination">
-			<?php html5wp_pagination(); ?>
+			<!-- Pagination -->
+			<nav id="pagination">
+				<?php html5wp_pagination(); ?>
+			</nav>
+			<!-- /Pagination -->
+			
 		</div>
-		<!-- /Pagination -->
 	
 	</section>
 	<!-- /Section -->
 	
-<?php get_sidebar(); ?>
+	<?php get_sidebar(); ?>
+
+</div>
 
 <?php get_footer(); ?>

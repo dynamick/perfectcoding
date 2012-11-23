@@ -141,8 +141,8 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	 
 /* Header
 ------------------------------------------------------------ */
-	header.head {background:transparent url(img/header-bg.png) repeat-x; }
-header .inner {margin-top: 10px; border: 1px solid rgba(0, 0, 0, 0.1);	border-width: 1px 1px 0 1px; background: white; border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; /*position:relative; z-index:10;*/}
+	header.head {background:transparent url(img/header-bg.png) bottom left repeat-x; }
+header .inner {margin-top: 10px; padding-top:8px; border: 1px solid rgba(0, 0, 0, 0.1);	border-width: 1px 1px 0 1px; background: white; border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; /*position:relative; z-index:10;*/}
 
 	#logo { /*overflow:hidden; min-height: 8px;*/ position: absolute; top: -12px; z-index:10; margin-left:44px;
 		-webkit-transition: all .1s ease-in-out;
@@ -172,10 +172,9 @@ header .inner {margin-top: 10px; border: 1px solid rgba(0, 0, 0, 0.1);	border-wi
 
 	header nav {padding-bottom: 18px;  /*border:1px solid rgba(0,0,0,0.1); border-width: 0 0 1px 0;*/}
 
-	.ribbon {margin: 8px -11px -1px;  background: rgba(0,0,0,0.08); position:relative; height:59px; border-bottom:1px solid rgba(0, 0, 0, 0.1); border-top:1px solid rgba(0, 0, 0, 0.1); }
-	.ribbon:after {content:""; position: absolute;right:-1px; bottom: -10px; width: 0; height: 0;border-top:0; border-left: 11px solid #4F4F4F; border-bottom: 11px solid transparent; }
-	.ribbon:before {content:""; position: absolute;left:0px; bottom: -9px;width: 0; height: 0;border-top:0; border-right: 10px solid #4F4F4F; border-bottom: 10px solid transparent; }
-	.ribbon:hover {background: rgba(0,0,0,0.1);}
+	.ribbon {margin: 0 -11px -1px;  background: #E5E5E5; position:relative; height:59px; border-bottom:1px solid #CDCDCD; border-top:1px solid #CDCDCD; overflow:hidden;}
+	.ribbon:after {content:""; position: absolute;right:-1px; bottom: -12px; width: 0; height: 0;border-top:0; border-left: 11px solid #4F4F4F; border-bottom: 11px solid transparent; }
+	.ribbon:before {content:""; position: absolute;left:0px; bottom: -11px;width: 0; height: 0;border-top:0; border-right: 10px solid #4F4F4F; border-bottom: 10px solid transparent; }
 
 	header nav ul#main {overflow:hidden; padding: 0 0 0 235px; float:left;}
 	header nav ul#main li {float:left; font-size: 12px;  padding: 21px 11px 19px 12px; border-left: 1px solid rgba(0,0,0,0.1);
@@ -199,8 +198,8 @@ header .inner {margin-top: 10px; border: 1px solid rgba(0, 0, 0, 0.1);	border-wi
    #featured {background:#333; box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; -webkit-box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; position:relative; z-index:10; padding-top:18px;}
    #featured a{border:0;}
    
-   nav .breadcrumb {background: transparent; font-size:0.7em; padding: 0; margin: 2em 0 0 0;}
-   nav .breadcrumb a {/*color: #E7492F*/}
+   nav .breadcrumb {background: transparent; font-size:0.7em; padding: 0; margin: 2em 0 0 0; position:relative; border-bottom:1px dotted #CCC;}
+nav .breadcrumb a {/*color: #E7492F*/}
    /*nav .breadcrumb {background: transparent; float: right; font-size: 0.8em; margin-left: 141px; margin-top: -16px; position: absolute; padding: 0 15px;}*/
    
   	h2.section {padding: 2em 60px 1em; background: rgba(0,0,0,0.05); position:relative; top: -17px; border-bottom:1px solid rgba(0,0,0,0.1); }
@@ -208,7 +207,7 @@ header .inner {margin-top: 10px; border: 1px solid rgba(0, 0, 0, 0.1);	border-wi
    	h2.section li {display:inline; list-style-type:none; padding:0;}
 	
 	
-   	article { border-bottom:3px solid #E7492F; position:relative; min-height:1000px}
+   	article { border-bottom:3px solid #E7492F; position:relative;}
 	.single article, .page article {border:0;}
    	article .inner{padding:0 60px;overflow:hidden;}
 	article .prefix {font-family: 'Lora', serif;color: #999; margin-top:2em; margin-bottom:0.5em; font-weight:400; text-shadow: 0 1px #FFFFFF; font-size: 1em;}
@@ -216,7 +215,7 @@ header .inner {margin-top: 10px; border: 1px solid rgba(0, 0, 0, 0.1);	border-wi
    	article h2, article h1 {font-size:2em;line-height:1.1em;text-shadow: 0 1px #FFF}
    	article h2 a, article h1 a {color: #333;}
    	article .post_details {font-family: 'Lora', serif; padding-top:0.5em;color: #999; padding-bottom:2em; overflow:hidden; list-style-type:none; margin:0;}
-   	article .posted_by {font-family: 'Lora', serif; display:block; padding-bottom: 0.5em; border-bottom: 1px dashed rgba(0,0,0,0.2);margin-bottom:0.5em; font-size: 1.25em;
+   	article .posted_by {font-family: 'Lora', serif; display:block; padding-bottom: 0.5em; border-bottom: 1px dotted #ccc;margin-bottom:0.5em; font-size: 1.25em;
     line-height: 1.35em;}
 
 	article .date {background:url(/wp-content/themes/perfectcoding/img/icon-calendar.png) 0 1px no-repeat; padding-left: 28px; float:left}
