@@ -759,7 +759,9 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 * ==========================================================================
 */
 
-add_action( 'widgets_init', 'perfectcoding_default_widget_demo' );
+add_action('switch_theme', 'perfectcoding_default_widget_demo');
+
+#add_action('wp_head', 'perfectcoding_default_widget_demo');
 
 function perfectcoding_default_widget_demo()
 {
