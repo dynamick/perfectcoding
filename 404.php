@@ -15,6 +15,6 @@
 </section>
 <!-- /Section -->
 
-<?php get_sidebar(); ?>
+<?perfectcodingdebar(); ?>
 
-<?php get_footer(); ?>
+<?php get_footer(); ?>; ?

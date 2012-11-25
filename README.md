@@ -2,18 +2,18 @@
 # [PerfectCoding](http://www.dynamick.it)
 
 A Wordpress theme with HTML5 structure, with Twitter Bootstrap layout and with Html5 Boilerplate recipes.
-It is an implementation of HTML5 Blank Wordpress Theme, which is a powerful shell for rapidly deploying your WordPress projects. Get developing in minutes, with the robust, preloaded shell. HTML5 Blank.
+It is an implementation of Perfect Coding Wordpress Theme, which is a powerful shell for rapidly deploying your WordPress projects. Get developing in minutes, with the robust, preloaded shell. Perfect Coding.
 
 * Project: [github.com/dynamick/perfectcoding](https://github.com/dynamick/perfectcoding)
 * Web: [dynamick.it](http://www.dynamick.it)
 * Twitter: [@dynamick.it](http://twitter.com/dynamick)
 
 
-## Getting Started with HTML5 Blank
+## Getting Started with Perfect Coding
 
 Download the latest version from [github.com/dynamick/perfectcoding](https://github.com/dynamick/perfectcoding)
 
-## Get involved! Make HTML5 Blank better
+## Get involved! Make Perfect Coding better
 
 There are a few ways to get involved, submit a Pull Request, or submit a comment on the website
 

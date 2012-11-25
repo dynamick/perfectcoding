@@ -31,7 +31,7 @@
 					<ul class="post_details">
 						<li class="posted_by"><?php twentyten_posted_by(); ?></li>
 						<li class="date"><?php twentyten_posted_on(); ?></li>
-						<li class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></li>
+						<li class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'perfectcoding' ), __( '1 Comment', 'perfectcoding' ), __( '% Comments', 'perfectcoding' )); ?></li>
 					</ul>
 					<!-- /Post Details -->
 			
@@ -39,11 +39,11 @@
 			
 					<?php get_template_part('newsletter'); ?>
 			
-					<?php #the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
+					<?php #the_tags( __( 'Tags: ', 'perfectcoding' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
 			
-					<!--<p><?php #_e( 'Categorised in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>-->
+					<!--<p><?php #_e( 'Categorised in: ', 'perfectcoding' ); the_category(', '); // Separated by commas ?></p>-->
 			
-					<!--<p><?php #_e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>-->
+					<!--<p><?php #_e( 'This post was written by ', 'perfectcoding' ); the_author(); ?></p>-->
 			
 					<?php #edit_post_link(); // Always handy to have Edit Post Links available ?>
 			
@@ -65,7 +65,7 @@
 				<article>
 
 					<div class="offset1 inner">
-						<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
+						<h1><?php _e( 'Sorry, nothing to display.', 'perfectcoding' ); ?></h1>
 					</div>
 			
 				</article>

@@ -7,7 +7,7 @@
 	
 		<div class="main">
 	
-			<h2 class="section"><?php /*_e( 'Tag Archive: ', 'html5blank' );*/ echo single_tag_title('', false); ?></h2>
+			<h2 class="section"><?php /*_e( 'Tag Archive: ', 'perfectcoding' );*/ echo single_tag_title('', false); ?></h2>
 	
 			<?php get_template_part('loop'); ?>
 		

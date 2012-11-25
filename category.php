@@ -7,7 +7,7 @@
 	
 		<div class="main">
 	
-			<h2 class="section"><?php _e( 'Categories for', 'html5blank' ); the_category(); ?></h2>
+			<h2 class="section"><?php _e( 'Categories for', 'perfectcoding' ); the_category(); ?></h2>
 	
 			<?php get_template_part('loop'); ?>
 		

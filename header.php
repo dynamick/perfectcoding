@@ -47,7 +47,7 @@
 						<!-- Nav -->
 						<nav>
 							<div class="ribbon">
-								<?php html5blank_nav(); ?>
+								<?php perfectcoding_nav(); ?>
 							</div>
 						</nav>
 						<!-- /Nav -->

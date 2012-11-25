@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: HTML5 Blank WordPress Theme\n"
+"Project-Id-Version: Perfect Coding WordPress Theme\n"
 "POT-Creation-Date: 2012-10-09 20:52+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Jürgen Rabe <webmaster@head-graphics.com>\n"
@@ -97,7 +97,7 @@ msgid "View Article"
 msgstr ""
 
 #: ../functions.php:362 ../functions.php:363
-msgid "HTML5 Blank Custom Post"
+msgid "Perfect Coding Custom Post"
 msgstr ""
 
 #: ../functions.php:364
@@ -105,7 +105,7 @@ msgid "Add New"
 msgstr ""
 
 #: ../functions.php:365
-msgid "Add New HTML5 Blank Custom Post"
+msgid "Add New Perfect Coding Custom Post"
 msgstr ""
 
 #: ../functions.php:366
@@ -113,27 +113,27 @@ msgid "Edit"
 msgstr ""
 
 #: ../functions.php:367
-msgid "Edit HTML5 Blank Custom Post"
+msgid "Edit Perfect Coding Custom Post"
 msgstr ""
 
 #: ../functions.php:368
-msgid "New HTML5 Blank Custom Post"
+msgid "New Perfect Coding Custom Post"
 msgstr ""
 
 #: ../functions.php:369 ../functions.php:370
-msgid "View HTML5 Blank Custom Post"
+msgid "View Perfect Coding Custom Post"
 msgstr ""
 
 #: ../functions.php:371
-msgid "Search HTML5 Blank Custom Post"
+msgid "Search Perfect Coding Custom Post"
 msgstr ""
 
 #: ../functions.php:372
-msgid "No HTML5 Blank Custom Posts found"
+msgid "No Perfect Coding Custom Posts found"
 msgstr ""
 
 #: ../functions.php:373
-msgid "No HTML5 Blank Custom Posts found in Trash"
+msgid "No Perfect Coding Custom Posts found in Trash"
 msgstr ""
 
 #: ../index.php:6

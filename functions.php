@@ -1,7 +1,7 @@
 <?php
 /*
  *  Author: Todd Motto | @toddmotto
- *  URL: html5blank.com | @html5blank
+ *  URL: perfectcoding.com | @perfectcoding
  *  Custom functions, support, custom post types and more.
  */
 
@@ -59,7 +59,7 @@ if (function_exists('add_theme_support'))
     add_theme_support('automatic-feed-links');
 
     // Localisation Support
-    load_theme_textdomain('html5blank', get_template_directory() . '/languages');
+    load_theme_textdomain('perfectcoding', get_template_directory() . '/languages');
 }
 
 /*
@@ -68,8 +68,8 @@ if (function_exists('add_theme_support'))
  * ========================================================================
  */
 
-// HTML5 Blank navigation
-function html5blank_nav()
+// Perfect Coding navigation
+function perfectcoding_nav()
 {
 	wp_nav_menu(
 	array(
@@ -117,7 +117,7 @@ function special_nav_class($classes, $item){
 
 
 // Load Custom Theme Scripts using Enqueue
-function html5blank_scripts()
+function perfectcoding_scripts()
 {
     if (!is_admin()) {
         wp_deregister_script('jquery'); // Deregister WordPress jQuery
@@ -127,10 +127,10 @@ function html5blank_scripts()
         wp_register_script('modernizr', get_template_directory_uri() . '/js/modernizr.js', array('jquery'), '2.6.2'); // Modernizr with version Number at the end
         wp_enqueue_script('modernizr'); // Enqueue it!
 
-        wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // HTML5 Blank script with version number
-        wp_enqueue_script('html5blankscripts'); // Enqueue it!
+        wp_register_script('perfectcodingscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Perfect Coding script with version number
+        wp_enqueue_script('perfectcodingscripts'); // Enqueue it!
 
-        wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '1.0.0'); // HTML5 Blank script with version number
+        wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '1.0.0'); // Perfect Coding script with version number
         wp_enqueue_script('bootstrap'); // Enqueue it!
 
     }
@@ -196,7 +196,7 @@ function enable_threaded_comments()
 }
 
 // Custom Comments Callback
-function html5blankcomments($comment, $args, $depth)
+function perfectcodingcomments($comment, $args, $depth)
 {
 	$GLOBALS['comment'] = $comment;
 	extract($args, EXTR_SKIP);
@@ -239,16 +239,13 @@ function html5blankcomments($comment, $args, $depth)
 <?php }
 
 // Theme Stylesheets using Enqueue
-function html5blank_styles()
+function perfectcoding_styles()
 {
 	    wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array(), '1.0', 'all');
 	    wp_enqueue_style('bootstrap'); // Enqueue it!
 
-	    wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
-	    wp_enqueue_style('html5blank'); // Enqueue it!
-		
-	    #wp_register_style('marcellus_font', 'http://fonts.googleapis.com/css?family=Marcellus', array(), '1.0', 'all');
-	    #wp_enqueue_style('marcellus_font'); // Enqueue it!
+	    wp_register_style('perfectcoding', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
+	    wp_enqueue_style('perfectcoding'); // Enqueue it!
 		
 	    wp_register_style('lora_font', 'http://fonts.googleapis.com/css?family=Lora:400,700', array(), '1.0', 'all');
 	    wp_enqueue_style('lora_font'); // Enqueue it!
@@ -257,15 +254,15 @@ function html5blank_styles()
 	    wp_enqueue_style('open_sans'); // Enqueue it!
 }
 
-// Register HTML5 Blank's Navigation
-function register_html5_menu()
+// Register Perfect Coding's Navigation
+function register_perfectcoding_menu()
 {
     register_nav_menus(array( // Using array to specify more menus if needed
-        'header-menu' => __('Header Menu', 'html5blank'), // Main Navigation
-        'sidebar-menu' => __('Sidebar Menu', 'html5blank'), // Sidebar Navigation
-        'footer-col1' => __('Footer col1 Menu', 'html5blank'), // Footer Col1 Menu
-        'footer-col2' => __('Footer col2 Menu', 'html5blank'), // Footer Col2 Menu
-        'footer-col3' => __('Footer col3 Menu', 'html5blank') // Footer Col3 Menu
+        'header-menu' => __('Header Menu', 'perfectcoding'), // Main Navigation
+        'sidebar-menu' => __('Sidebar Menu', 'perfectcoding'), // Sidebar Navigation
+        'footer-col1' => __('Footer col1 Menu', 'perfectcoding'), // Footer Col1 Menu
+        'footer-col2' => __('Footer col2 Menu', 'perfectcoding'), // Footer Col2 Menu
+        'footer-col3' => __('Footer col3 Menu', 'perfectcoding') // Footer Col3 Menu
     ));
 }
 
@@ -311,8 +308,8 @@ if (function_exists('register_sidebar'))
 {
     // Define Sidebar Widget Area 1 - sidebar top
     register_sidebar(array(
-        'name' => __('Widget Area 1', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'name' => __('Widget Area 1', 'perfectcoding'),
+        'description' => __('Description for Widget Area 1...', 'perfectcoding'),
         'id' => 'widget-area-1',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
@@ -322,8 +319,8 @@ if (function_exists('register_sidebar'))
 
     // Define Sidebar Widget Area 2 - sidebar middle
     register_sidebar(array(
-        'name' => __('Widget Area 2', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'name' => __('Widget Area 2', 'perfectcoding'),
+        'description' => __('Description for this Widget Area 2...', 'perfectcoding'),
         'id' => 'widget-area-2',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
@@ -333,8 +330,8 @@ if (function_exists('register_sidebar'))
 
     // Define Sidebar Widget Area 3 - footer 1° col
     register_sidebar(array(
-        'name' => __('Widget Area 3', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'name' => __('Widget Area 3', 'perfectcoding'),
+        'description' => __('Description for this Widget Area 3...', 'perfectcoding'),
         'id' => 'widget-area-3',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
@@ -344,8 +341,8 @@ if (function_exists('register_sidebar'))
 
     // Define Sidebar Widget Area 4 - footer 2° col
     register_sidebar(array(
-        'name' => __('Widget Area 4', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'name' => __('Widget Area 4', 'perfectcoding'),
+        'description' => __('Description for this Widget Area 4...', 'perfectcoding'),
         'id' => 'widget-area-4',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
@@ -355,8 +352,8 @@ if (function_exists('register_sidebar'))
 
     // Define Sidebar Widget Area 5 - footer 3° col
     register_sidebar(array(
-        'name' => __('Widget Area 5', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'name' => __('Widget Area 5', 'perfectcoding'),
+        'description' => __('Description for this Widget Area 5...', 'perfectcoding'),
         'id' => 'widget-area-5',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
@@ -420,7 +417,7 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
 // Custom View Article link to Post
 function html5wp_view_article($more)
 {
-    return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'html5blank') . '</a>';
+    return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'perfectcoding') . '</a>';
 }
 
 // Remove Admin bar
@@ -444,7 +441,7 @@ function remove_thumbnail_dimensions( $html )
 }
 
 // Custom Gravatar in Settings > Discussion
-function html5blankgravatar ($avatar_defaults)
+function perfectcodinggravatar ($avatar_defaults)
 {
     $myavatar = get_template_directory_uri() . '/img/gravatar.jpg';
     $avatar_defaults[$myavatar] = "Custom Gravatar";
@@ -458,15 +455,15 @@ function html5blankgravatar ($avatar_defaults)
  */
 
 // Add Actions
-add_action('init', 'html5blank_scripts'); // Add Custom Scripts
+add_action('init', 'perfectcoding_scripts'); // Add Custom Scripts
 add_action('wp_print_scripts', 'conditional_scripts'); // Add Conditional Page Scripts
 add_action('wp_footer', 'add_google_analytics'); // Google Analytics optimised in footer
 add_action('wp_footer', 'add_jquery_fallback'); // jQuery fallbacks loaded through footer
 //add_action('wp_footer', 'add_facebook_script'); // Facebook SDK
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
-add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
-add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
-add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
+add_action('wp_enqueue_scripts', 'perfectcoding_styles'); // Add Theme Stylesheet
+add_action('init', 'register_perfectcoding_menu'); // Add Perfect Coding Menu
+add_action('init', 'create_post_type_html5'); // Add our Perfect Coding Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
@@ -486,7 +483,7 @@ remove_action('wp_head', 'rel_canonical');
 remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
 
 // Add Filters
-add_filter('avatar_defaults', 'html5blankgravatar'); // Custom Gravatar in Settings > Discussion
+add_filter('avatar_defaults', 'perfectcodinggravatar'); // Custom Gravatar in Settings > Discussion
 add_filter('body_class', 'add_slug_to_body_class'); // Add slug to body class (Starkers build)
 add_filter('widget_text', 'do_shortcode'); // Allow shortcodes in Dynamic Sidebar
 add_filter('widget_text', 'shortcode_unautop'); // Remove <p> tags in Dynamic Sidebars (better!)
@@ -527,18 +524,18 @@ function create_post_type_html5()
     register_post_type('html5-blank', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('HTML5 Blank Custom Post', 'html5blank'), // Rename these to suit
-            'singular_name' => __('HTML5 Blank Custom Post', 'html5blank'),
-            'add_new' => __('Add New', 'html5blank'),
-            'add_new_item' => __('Add New HTML5 Blank Custom Post', 'html5blank'),
-            'edit' => __('Edit', 'html5blank'),
-            'edit_item' => __('Edit HTML5 Blank Custom Post', 'html5blank'),
-            'new_item' => __('New HTML5 Blank Custom Post', 'html5blank'),
-            'view' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'view_item' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'search_items' => __('Search HTML5 Blank Custom Post', 'html5blank'),
-            'not_found' => __('No HTML5 Blank Custom Posts found', 'html5blank'),
-            'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'html5blank')
+            'name' => __('Perfect Coding Custom Post', 'perfectcoding'), // Rename these to suit
+            'singular_name' => __('Perfect Coding Custom Post', 'perfectcoding'),
+            'add_new' => __('Add New', 'perfectcoding'),
+            'add_new_item' => __('Add New Perfect Coding Custom Post', 'perfectcoding'),
+            'edit' => __('Edit', 'perfectcoding'),
+            'edit_item' => __('Edit Perfect Coding Custom Post', 'perfectcoding'),
+            'new_item' => __('New Perfect Coding Custom Post', 'perfectcoding'),
+            'view' => __('View Perfect Coding Custom Post', 'perfectcoding'),
+            'view_item' => __('View Perfect Coding Custom Post', 'perfectcoding'),
+            'search_items' => __('Search Perfect Coding Custom Post', 'perfectcoding'),
+            'not_found' => __('No Perfect Coding Custom Posts found', 'perfectcoding'),
+            'not_found_in_trash' => __('No Perfect Coding Custom Posts found in Trash', 'perfectcoding')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
@@ -548,7 +545,7 @@ function create_post_type_html5()
             'editor',
             'excerpt',
             'thumbnail'
-        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        ), // Go to Dashboard Custom Perfect Coding post for supports
         'can_export' => true, // Allows export in Tools > Export
         'taxonomies' => array(
             'post_tag',
@@ -688,10 +685,10 @@ if ( ! function_exists( 'twentyten_posted_by' ) ) :
  * @since TwentyTen Five 1.0
  */
 function twentyten_posted_by() {
-	printf( __( 'Published by', 'html5blank' ).' %1$s',
+	printf( __( 'Published by', 'perfectcoding' ).' %1$s',
 		sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span>',
 			get_author_posts_url( get_the_author_meta( 'ID' ) ),
-			sprintf( esc_attr__( 'Published by', 'html5blank' ).' %1$s', get_the_author() ),
+			sprintf( esc_attr__( 'Published by', 'perfectcoding' ).' %1$s', get_the_author() ),
 			get_the_author() )
 	);
 }
