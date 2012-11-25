@@ -753,6 +753,67 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
     return '<h2>' . $content . '</h2>';
 }
 
+/*
+* ==========================================================================
+*  Add startup widgets 
+* ==========================================================================
+*/
 
+add_action( 'widgets_init', 'perfectcoding_default_widget_demo' );
+
+function perfectcoding_default_widget_demo()
+{
+    // Register two sidebars.
+    $sidebars = array ( 'a' => 'widget-area-1', 'b' => 'widget-area-2' );
+
+    // We don't want to undo user changes, so we look for changes first.
+    $active_widgets = get_option( 'sidebars_widgets' );
+
+    if ( ! empty ( $active_widgets[ $sidebars['a'] ] )
+        or ! empty ( $active_widgets[ $sidebars['b'] ] )
+    )
+    {   // Okay, no fun anymore. There is already some content.
+        return;
+    }
+
+    // The sidebars are empty, let's put something into them.
+    // How about a RSS widget and two instances of our demo widget?
+
+    // Note that widgets are numbered. We need a counter:
+    $counter = 1;
+
+    // Add a 'demo' widget to the top sidebar …
+    $active_widgets[ $sidebars['a'] ][0] = 'text-' . $counter;
+    // … and write some text into it:
+    $demo_widget_content[ $counter ] = array ( 'title' => "Super Titolo!", 'text' => "This works!\n\nAmazing!" );
+    update_option( 'text_widget', $demo_widget_content );
+
+    $counter++;
+
+    // That was easy. Now a RSS widget. More fields, more fun!
+    $active_widgets[ $sidebars['a'] ][] = 'rss-' . $counter;
+    // The latest 15 questions from WordPress Stack Exchange.
+    $rss_content[ $counter ] = array (
+        'title'        => 'WordPress Stack Exchange',
+        'url'          => 'http://wordpress.stackexchange.com/feeds',
+        'link'         => 'http://wordpress.stackexchange.com/questions',
+        'items'        => 15,
+        'show_summary' => 0,
+        'show_author'  => 1,
+        'show_date'    => 1,
+    );
+    update_option( 'widget_rss', $rss_content );
+
+    $counter++;
+
+    // Okay, now to our second sidebar. We make it short.
+    $active_widgets[ $sidebars['b'] ][] = 'text-' . $counter;
+    #$demo_widget_content = get_option( 'widget_t5_demo_widget', array() );
+    $demo_widget_content[ $counter ] = array ( 'text' => 'The second instance of our amazing demo widget.' );
+    update_option( 'text_widget', $demo_widget_content );
+
+    // Now save the $active_widgets array.
+    update_option( 'sidebars_widgets', $active_widgets );
+}
 
 ?>
