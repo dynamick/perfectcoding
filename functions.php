@@ -766,7 +766,7 @@ add_action('switch_theme', 'perfectcoding_default_widget_demo');
 function perfectcoding_default_widget_demo()
 {
     // Register two sidebars.
-    $sidebars = array ( 'a' => 'widget-area-1', 'b' => 'widget-area-2' );
+    $sidebars = array ( 'a' => 'widget-area-3', 'b' => 'widget-area-4' );
 
     // We don't want to undo user changes, so we look for changes first.
     $active_widgets = get_option( 'sidebars_widgets' );
