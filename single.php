@@ -29,8 +29,8 @@
 			
 					<!-- Post Details -->
 					<ul class="post_details">
-						<li class="posted_by"><?php twentyten_posted_by(); ?></li>
-						<li class="date"><?php twentyten_posted_on(); ?></li>
+						<li class="posted_by"><?php perfectcoding_posted_by(); ?></li>
+						<li class="date"><?php perfectcoding_posted_on(); ?></li>
 						<li class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'perfectcoding' ), __( '1 Comment', 'perfectcoding' ), __( '% Comments', 'perfectcoding' )); ?></li>
 					</ul>
 					<!-- /Post Details -->

@@ -196,7 +196,8 @@ License URI:	http://opensource.org/licenses/mit-license.php
 /* POST BODY
  ------------------------------------------------------------ */
    
-   #featured {background:#333; box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; -webkit-box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; position:relative; z-index:10; padding-top:18px;}
+   #featured-wrapper {background:#444; height:290px; box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; -webkit-box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; position:relative; margin-top:-17px; padding: 60px;}
+   #featured {height: 290px}
    #featured a{border:0;}
    
    nav .breadcrumb {background: transparent; font-size:0.7em; padding: 0; margin: 2em 0 0 0; position:relative; border-bottom:1px dotted #CCC;}

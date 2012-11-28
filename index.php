@@ -5,7 +5,7 @@
 	<!-- Section -->
 	<section class="span8">
 		
-		<?php #get_template_part('featured'); ?>
+		<?php get_template_part('featured'); ?>
 		
 		<div class="main">
 

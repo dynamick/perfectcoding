@@ -661,13 +661,13 @@ function create_post_type_html5()
 } // end bootstrapwp_breadcrumbs()
 
 
-if ( ! function_exists( 'twentyten_posted_on' ) ) :
+if ( ! function_exists( 'perfectcoding_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post—date/time.
  *
- * @since TwentyTen Five 1.0
+ * @since Perfect Coding  1.0
  */
-function twentyten_posted_on() {
+function perfectcoding_posted_on() {
 	printf( __( 'Posted on %2$s', 'html5-blank' ),
 		'meta-prep meta-prep-author',
 		sprintf( '<a href="%1$s" rel="bookmark"><time datetime="%2$s" pubdate>%3$s</time></a>',
@@ -678,13 +678,13 @@ function twentyten_posted_on() {
 }
 endif;
 
-if ( ! function_exists( 'twentyten_posted_by' ) ) :
+if ( ! function_exists( 'perfectcoding_posted_by' ) ) :
 /**
  * Prints HTML with meta information for the current author.
  *
- * @since TwentyTen Five 1.0
+ * @since Perfect Coding 1.0
  */
-function twentyten_posted_by() {
+function perfectcoding_posted_by() {
 	printf( __( 'Published by', 'perfectcoding' ).' %1$s',
 		sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span>',
 			get_author_posts_url( get_the_author_meta( 'ID' ) ),
@@ -697,25 +697,25 @@ endif;
 
 
 /**
- * Customise the TwentyTen Five comments fields with HTML5 form elements
+ * Customise the Perfect Coding comments fields with HTML5 form elements
  *
  *	Adds support for 	placeholder
  *						required
  *						type="email"
  *						type="url"
  *
- * @since TwentyTen Five 1.0
+ * @since Perfect Coding 1.0
  */
- function twentytenfive_comments() {
+ function perfectcoding_comments() {
 
  	$req = get_option('require_name_email');
 
  	$fields =  array(
  		'author' => '<p class="comment-form-author">' . '<label for="author">' . __( 'Name' ) . ( $req ? '<span class="required">*</span>' : '' ) .'</label> ' . 
- 		            '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' placeholder = "Come ti possiamo chiamare?"' . ( $req ? ' required' : '' ) . '/></p>',
+ 		            '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' placeholder = "' . __( 'How could we call you?' ). '"' . ( $req ? ' required' : '' ) . '/></p>',
 		            
  		'email'  => '<p class="comment-form-email"><label for="email">' . __( 'Email' ) . ( $req ? '<span class="required">*</span>' : '' ) . '</label> ' . 
- 		            '<input id="email" name="email" type="email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' placeholder="Come ti possiamo contattare?"' . ( $req ? ' required' : '' ) . ' /></p>',
+ 		            '<input id="email" name="email" type="email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' placeholder="' . __( 'How could we contact you?' ). '"' . ( $req ? ' required' : '' ) . ' /></p>',
 		            
  		'url'    => ''/*'<p class="comment-form-url"><label for="url">' . __( 'Website' ) . '</label>' .
  		            '<input id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" placeholder="Have you got a website?" /></p>'*/
@@ -725,16 +725,16 @@ endif;
  }
 
 
- function twentytenfive_commentfield() {	
+ function perfectcoding_commentfield() {	
 
- 	$commentArea = '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required placeholder="A cosa stai pensando?"	></textarea></p>';
+ 	$commentArea = '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required placeholder="' . __( 'What do you want ask me?' ). '"	></textarea></p>';
 	
  	return $commentArea;
 
  }
 
- add_filter('comment_form_default_fields', 'twentytenfive_comments');
- add_filter('comment_form_field_comment', 'twentytenfive_commentfield');
+ add_filter('comment_form_default_fields', 'perfectcoding_comments');
+ add_filter('comment_form_field_comment', 'perfectcoding_commentfield');
  /*
  * ========================================================================
  *  Shortcodes
@@ -754,68 +754,134 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 }
 
 /*
-* ==========================================================================
-*  Add startup widgets 
-* ==========================================================================
+* ========================================================================
+*  Social Badges
+* ========================================================================
 */
+function perfectcoding_twitter_badge() {
+	$twitter_url = "https://twitter.com/dynamick";
+	$twitter_label = __( 'follow @dynamick' );
+	$twitter_lang = "en";
+	$ret = <<<EOF
+<a href="{$twitter_url}" class="twitter-follow-button" data-show-count="true" data-lang="{$twitter_lang}" data-size="large">{$twitter_label}</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+EOF;
+	return $ret;	
+}
 
-add_action('switch_theme', 'perfectcoding_default_widget_demo');
+function perfectcoding_mailchimp_form() {
+	$placeholder = __( 'Add your email', 'perfectcoding' );
+	$subscribe_label = __( 'Subscribe', 'perfectcoding' );
+	$ret = <<<EOF
+	<!-- Begin MailChimp Signup Form -->
+	<form action="http://dynamick.us1.list-manage.com/subscribe/post?u=2e0cbefc07136553c3667da17&amp;id=178bb7eb74" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="{$placeholder}" required>
+		<input type="submit" value="{$subscribe_label}" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info">
+	</form>
+	<!--End mc_embed_signup-->	
+EOF;
+	return $ret;	
+}
 
-#add_action('wp_head', 'perfectcoding_default_widget_demo');
+/**
+ * Include the TGM_Plugin_Activation class.
+ */
+require_once dirname( __FILE__ ) . '/class-tgm-plugin-activation.php';
 
-function perfectcoding_default_widget_demo()
-{
-    // Register two sidebars.
-    $sidebars = array ( 'a' => 'widget-area-3', 'b' => 'widget-area-4' );
+add_action( 'tgmpa_register', 'my_theme_register_required_plugins' );
 
-    // We don't want to undo user changes, so we look for changes first.
-    $active_widgets = get_option( 'sidebars_widgets' );
+/**
+ * Register the required plugins for this theme.
+ *
+ * In this example, we register two plugins - one included with the TGMPA library
+ * and one from the .org repo.
+ *
+ * The variable passed to tgmpa_register_plugins() should be an array of plugin
+ * arrays.
+ *
+ * This function is hooked into tgmpa_init, which is fired within the
+ * TGM_Plugin_Activation class constructor.
+ */
+ 
+function my_theme_register_required_plugins() {
 
-    if ( ! empty ( $active_widgets[ $sidebars['a'] ] )
-        or ! empty ( $active_widgets[ $sidebars['b'] ] )
-    )
-    {   // Okay, no fun anymore. There is already some content.
-        return;
-    }
+	/**
+	 * Array of plugin arrays. Required keys are name and slug.
+	 * If the source is NOT from the .org repo, then source is also required.
+	 */
+	$plugins = array(
 
-    // The sidebars are empty, let's put something into them.
-    // How about a RSS widget and two instances of our demo widget?
+		// This is an example of how to include a plugin pre-packaged with a theme
+		/*
+		array(
+			'name'     				=> 'TGM Example Plugin', // The plugin name
+			'slug'     				=> 'tgm-example-plugin', // The plugin slug (typically the folder name)
+			'source'   				=> get_stylesheet_directory() . '/lib/plugins/tgm-example-plugin.zip', // The plugin source
+			'required' 				=> true, // If false, the plugin is only 'recommended' instead of required
+			'version' 				=> '', // E.g. 1.0.0. If set, the active plugin must be this version or higher, otherwise a notice is presented
+			'force_activation' 		=> false, // If true, plugin is activated upon theme activation and cannot be deactivated until theme switch
+			'force_deactivation' 	=> false, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
+			'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
+		),*/
 
-    // Note that widgets are numbered. We need a counter:
-    $counter = 1;
+		// This is an example of how to include a plugin from the WordPress Plugin Repository
+		array(
+			'name' 		=> 'Option Framework',
+			'slug' 		=> 'options-framework',
+			'force_activation' => true,
+			'required' 	=> true
+		),
+		array(
+			'name' 		=> 'Simple Nivo Slider',
+			'slug' 		=> 'simple-nivo-slider',
+			'force_activation' => true,
+			'required' 	=> true
+			)
 
-    // Add a 'demo' widget to the top sidebar …
-    $active_widgets[ $sidebars['a'] ][0] = 'text-' . $counter;
-    // … and write some text into it:
-    $demo_widget_content[ $counter ] = array ( 'title' => "Super Titolo!", 'text' => "This works!\n\nAmazing!" );
-    update_option( 'text_widget', $demo_widget_content );
+	);
 
-    $counter++;
+	// Change this to your theme text domain, used for internationalising strings
+	$theme_text_domain = 'perfectcoding';
 
-    // That was easy. Now a RSS widget. More fields, more fun!
-    $active_widgets[ $sidebars['a'] ][] = 'rss-' . $counter;
-    // The latest 15 questions from WordPress Stack Exchange.
-    $rss_content[ $counter ] = array (
-        'title'        => 'WordPress Stack Exchange',
-        'url'          => 'http://wordpress.stackexchange.com/feeds',
-        'link'         => 'http://wordpress.stackexchange.com/questions',
-        'items'        => 15,
-        'show_summary' => 0,
-        'show_author'  => 1,
-        'show_date'    => 1,
-    );
-    update_option( 'widget_rss', $rss_content );
+	/**
+	 * Array of configuration settings. Amend each line as needed.
+	 * If you want the default strings to be available under your own theme domain,
+	 * leave the strings uncommented.
+	 * Some of the strings are added into a sprintf, so see the comments at the
+	 * end of each line for what each argument will be.
+	 */
+	$config = array(
+		'domain'       		=> $theme_text_domain,         	// Text domain - likely want to be the same as your theme.
+		'default_path' 		=> '',                         	// Default absolute path to pre-packaged plugins
+		'parent_menu_slug' 	=> 'themes.php', 				// Default parent menu slug
+		'parent_url_slug' 	=> 'themes.php', 				// Default parent URL slug
+		'menu'         		=> 'install-required-plugins', 	// Menu slug
+		'has_notices'      	=> true,                       	// Show admin notices or not
+		'is_automatic'    	=> false,					   	// Automatically activate plugins after installation or not
+		'message' 			=> '',							// Message to output right before the plugins table
+		'strings'      		=> array(
+			'page_title'                       			=> __( 'Install Required Plugins', $theme_text_domain ),
+			'menu_title'                       			=> __( 'Install Plugins', $theme_text_domain ),
+			'installing'                       			=> __( 'Installing Plugin: %s', $theme_text_domain ), // %1$s = plugin name
+			'oops'                             			=> __( 'Something went wrong with the plugin API.', $theme_text_domain ),
+			'notice_can_install_required'     			=> _n_noop( 'This theme requires the following plugin: %1$s.', 'This theme requires the following plugins: %1$s.' ), // %1$s = plugin name(s)
+			'notice_can_install_recommended'			=> _n_noop( 'This theme recommends the following plugin: %1$s.', 'This theme recommends the following plugins: %1$s.' ), // %1$s = plugin name(s)
+			'notice_cannot_install'  					=> _n_noop( 'Sorry, but you do not have the correct permissions to install the %s plugin. Contact the administrator of this site for help on getting the plugin installed.', 'Sorry, but you do not have the correct permissions to install the %s plugins. Contact the administrator of this site for help on getting the plugins installed.' ), // %1$s = plugin name(s)
+			'notice_can_activate_required'    			=> _n_noop( 'The following required plugin is currently inactive: %1$s.', 'The following required plugins are currently inactive: %1$s.' ), // %1$s = plugin name(s)
+			'notice_can_activate_recommended'			=> _n_noop( 'The following recommended plugin is currently inactive: %1$s.', 'The following recommended plugins are currently inactive: %1$s.' ), // %1$s = plugin name(s)
+			'notice_cannot_activate' 					=> _n_noop( 'Sorry, but you do not have the correct permissions to activate the %s plugin. Contact the administrator of this site for help on getting the plugin activated.', 'Sorry, but you do not have the correct permissions to activate the %s plugins. Contact the administrator of this site for help on getting the plugins activated.' ), // %1$s = plugin name(s)
+			'notice_ask_to_update' 						=> _n_noop( 'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.', 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.' ), // %1$s = plugin name(s)
+			'notice_cannot_update' 						=> _n_noop( 'Sorry, but you do not have the correct permissions to update the %s plugin. Contact the administrator of this site for help on getting the plugin updated.', 'Sorry, but you do not have the correct permissions to update the %s plugins. Contact the administrator of this site for help on getting the plugins updated.' ), // %1$s = plugin name(s)
+			'install_link' 					  			=> _n_noop( 'Begin installing plugin', 'Begin installing plugins' ),
+			'activate_link' 				  			=> _n_noop( 'Activate installed plugin', 'Activate installed plugins' ),
+			'return'                           			=> __( 'Return to Required Plugins Installer', $theme_text_domain ),
+			'plugin_activated'                 			=> __( 'Plugin activated successfully.', $theme_text_domain ),
+			'complete' 									=> __( 'All plugins installed and activated successfully. %s', $theme_text_domain ), // %1$s = dashboard link
+			'nag_type'									=> 'updated' // Determines admin notice type - can only be 'updated' or 'error'
+		)
+	);
 
-    $counter++;
+	tgmpa( $plugins, $config );
 
-    // Okay, now to our second sidebar. We make it short.
-    $active_widgets[ $sidebars['b'] ][] = 'text-' . $counter;
-    #$demo_widget_content = get_option( 'widget_t5_demo_widget', array() );
-    $demo_widget_content[ $counter ] = array ( 'text' => 'The second instance of our amazing demo widget.' );
-    update_option( 'text_widget', $demo_widget_content );
-
-    // Now save the $active_widgets array.
-    update_option( 'sidebars_widgets', $active_widgets );
 }
 
 ?>

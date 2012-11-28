@@ -6,7 +6,7 @@
 									
 		<div class="inner">
 									
-			<div class="prefix"><?php twentyten_posted_on(); ?> - <?php the_tags('');?></div>
+			<div class="prefix"><?php perfectcoding_posted_on(); ?> - <?php the_tags('');?></div>
 			
 			<!-- Post Title -->
 			<h2>
@@ -17,7 +17,7 @@
 			
 			<!-- Post Details -->
 			<ul class="post_details">
-				<li class="posted_by"><span class="postit"><?php twentyten_posted_by(); ?></span></li>
+				<li class="posted_by"><span class="postit"><?php perfectcoding_posted_by(); ?></span></li>
 			</ul>
 			<!-- /Post Details -->
 
