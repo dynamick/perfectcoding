@@ -15,7 +15,13 @@
 	<meta name="description" content="<?php bloginfo('description'); ?>">
 	
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
-		
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />		
+	
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="<?php bloginfo('rss2_url'); ?>" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="<?php bloginfo('rss_url'); ?>" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />
+	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Comments Feed" href="<?php bloginfo('comments_rss2_url'); ?>" />	
+	
 	<!-- CSS + jQuery + JavaScript -->
 	<?php wp_head(); ?>
 	
@@ -27,6 +33,9 @@
 	
 		<!-- Wrapper -->
 		<div class="wrapper container">
+			
+
+						
 			
 			<div class="row">
 		
@@ -47,10 +56,50 @@
 						<!-- Nav -->
 						<nav>
 							<div class="ribbon">
-								<?php perfectcoding_nav(); ?>
-							</div>
-						</nav>
-						<!-- /Nav -->
+								<?php #perfectcoding_nav(); ?>
+								
+								
+								
+								
+								
+								<div class=" navbar">
+									<div class="navbar-inner">
+										<div class="container">
+								            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+								              <span class="icon-bar"></span>
+								              <span class="icon-bar"></span>
+								              <span class="icon-bar"></span>
+								            </a>						
+											<div class="nav-collapse collapse" >				
+											<?php
+				
+												$args = array(
+													'theme_location' => 'top-bar',
+													'depth'		 => 2,
+													'container'	 => false,
+													'menu_class'	 => 'nav',
+													'walker'	 => new Bootstrap_Walker_Nav_Menu()
+												);
+
+												wp_nav_menu($args);
+			
+											?>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+
+
+
+
+
+
+								
+								
+								
+							</div> <!-- /.ribbon -->
+						</nav>	<!-- /Nav -->
 
 					</div>
 
@@ -60,10 +109,10 @@
 							
 								
  					<ul class="channels">
- 						<li class="rss"><a title="Iscriviti al nostro feed" href="http://www.dynamick.it/feed">RSS</a></li>
- 						<li class="facebook"><a title="Seguici attraverso Facebook" href="http://www.facebook.com/dynamick.it">Facebook</a></li>
- 						<li class="twitter"><a title="Seguici con Twitter" href="http://twitter.com/dynamick">Twitter</a></li>
- 						<li class="newsletter"><a title="Sottoscrivi la nostra newsletter" href="#">Newsletter</a></li>
+ 						<li class="rss"><a title="Iscriviti al nostro feed" href="<?php echo of_get_option('feed_url', '/feed'); ?>">RSS</a></li>
+ 						<li class="facebook"><a title="Seguici attraverso Facebook" href="<?php echo of_get_option('facebook_url', '#'); ?>">Facebook</a></li>
+ 						<li class="twitter"><a title="Seguici con Twitter" href="<?php echo of_get_option('twitter_url', '#'); ?>">Twitter</a></li>
+ 						<li class="newsletter"><a title="Sottoscrivi la nostra newsletter" href="<?php echo of_get_option('mailchimp_link_url', '#'); ?>">Newsletter</a></li>
  					</ul>							
 								
 					
@@ -81,3 +130,6 @@
 	
 	<!-- Wrapper -->
 	<div class="wrapper container">
+		
+		
+			

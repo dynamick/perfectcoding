@@ -1,19 +1,5 @@
+<?php if (of_get_option('home_slides', true)) { ?>
 <div id="featured-wrapper">
-<?php if (function_exists('simple_nivo_slider')) simple_nivo_slider('featured', 'highlight'); ?>
+	<?php if (function_exists('simple_nivo_slider')) simple_nivo_slider('featured', of_get_option('home_slides_category', '')); ?>
 </div>
-<!--
-		<div id="featured">
-			<div class="xrow">
-				<ul class="thumbnails">
-					<li class="span8">
-						<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="thumbnail">
-								<?php the_post_thumbnail(); // Fullsize image for the single post ?>
-							</a>
-						<?php else: ?>
-							<a class="thumbnail"><img src="http://placehold.it/500x300" /></a>
-						<?php endif; ?>
-					</li>
-				</ul>
-			</div>
-		</div>			-->
+<?php } ?>

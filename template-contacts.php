@@ -1,3 +1,5 @@
+<?php /* Template Name: Contacts */ ?>
+
 <?php get_header(); ?>
 
 <div class="row">	
@@ -20,25 +22,11 @@
 				<!-- /Post Title -->				
 				
 				<div class="inner">
-		
-					<!-- Post Details -->
-					<ul class="post_details">
-						<li class="posted_by"><?php perfectcoding_posted_by(); ?></li>
-						<li class="date"><?php perfectcoding_posted_on(); ?></li>
-						<li class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'perfectcoding' ), __( '1 Comment', 'perfectcoding' ), __( '% Comments', 'perfectcoding' )); ?></li>
-					</ul>
-					<!-- /Post Details -->
-					
-			
-
+							
 					<?php the_content(); ?>
-					
-					<?php get_template_part('newsletter'); ?>
 			
 					<?php edit_post_link(); ?>
 
-					<?php comments_template( '', true ); // Remove if you don't want comments ?>
-			
 				</div>
 			
 			</article>

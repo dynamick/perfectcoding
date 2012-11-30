@@ -34,6 +34,7 @@ if (function_exists('add_theme_support'))
     add_image_size('large', 700, '', true); // Large Thumbnail
     add_image_size('medium', 250, '', true); // Medium Thumbnail
     add_image_size('small', 120, '', true); // Small Thumbnail
+    add_image_size('portfolio', 310, 310, true); // Small Thumbnail
     add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
@@ -241,7 +242,7 @@ function perfectcodingcomments($comment, $args, $depth)
 // Theme Stylesheets using Enqueue
 function perfectcoding_styles()
 {
-	    wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.css', array(), '1.0', 'all');
+	    wp_register_style('bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '1.0', 'all');
 	    wp_enqueue_style('bootstrap'); // Enqueue it!
 
 	    wp_register_style('perfectcoding', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
@@ -463,7 +464,7 @@ add_action('wp_footer', 'add_jquery_fallback'); // jQuery fallbacks loaded throu
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'perfectcoding_styles'); // Add Theme Stylesheet
 add_action('init', 'register_perfectcoding_menu'); // Add Perfect Coding Menu
-add_action('init', 'create_post_type_html5'); // Add our Perfect Coding Custom Post Type
+add_action('init', 'create_post_type_portfolio'); // Add our Portfolio Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
@@ -504,11 +505,11 @@ add_filter('image_send_to_editor', 'remove_thumbnail_dimensions', 10); // Remove
 remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altogether
 
 // Shortcodes
-add_shortcode('html5_shortcode_demo', 'html5_shortcode_demo'); // You can place [html5_shortcode_demo] in Pages, Posts now.
-add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [html5_shortcode_demo_2] in Pages, Posts now.
+add_shortcode('perfectcoding_shortcode_demo', 'perfectcoding_shortcode_demo'); // You can place [perfectcoding_shortcode_demo] in Pages, Posts now.
+add_shortcode('perfectcoding_shortcode_demo_2', 'perfectcoding_shortcode_demo_2'); // Place [perfeccoding_shortcode_demo_2] in Pages, Posts now.
 
 // Shortcodes above would be nested like this -
-// [html5_shortcode_demo] [html5_shortcode_demo_2] Here's the page title! [/html5_shortcode_demo_2] [/html5_shortcode_demo]
+// [perfectcoding_shortcode_demo] [perfectcoding_shortcode_demo_2] Here's the page title! [/perfectcoding_shortcode_demo_2] [/perfectcoding_shortcode_demo]
 
 /*
  * ========================================================================
@@ -516,26 +517,26 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
  * ========================================================================
  */
 
-// Create 1 Custom Post type for a Demo, called HTML5-Blank
-function create_post_type_html5()
+// Create 1 Custom Post type for a Demo, called Coding Perfect
+function create_post_type_portfolio()
 {
-    register_taxonomy_for_object_type('category', 'html5-blank'); // Register Taxonomies for Category
-    register_taxonomy_for_object_type('post_tag', 'html5-blank');
-    register_post_type('html5-blank', // Register Custom Post Type
+    register_taxonomy_for_object_type('category', 'portfolio'); // Register Taxonomies for Category
+    register_taxonomy_for_object_type('post_tag', 'portfolio');
+    register_post_type('portfolio', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('Perfect Coding Custom Post', 'perfectcoding'), // Rename these to suit
-            'singular_name' => __('Perfect Coding Custom Post', 'perfectcoding'),
+            'name' => __('Portfolio', 'perfectcoding'), // Rename these to suit
+            'singular_name' => __('Portfolio post', 'perfectcoding'),
             'add_new' => __('Add New', 'perfectcoding'),
-            'add_new_item' => __('Add New Perfect Coding Custom Post', 'perfectcoding'),
+            'add_new_item' => __('Add New Portfolio Post', 'perfectcoding'),
             'edit' => __('Edit', 'perfectcoding'),
-            'edit_item' => __('Edit Perfect Coding Custom Post', 'perfectcoding'),
-            'new_item' => __('New Perfect Coding Custom Post', 'perfectcoding'),
-            'view' => __('View Perfect Coding Custom Post', 'perfectcoding'),
-            'view_item' => __('View Perfect Coding Custom Post', 'perfectcoding'),
-            'search_items' => __('Search Perfect Coding Custom Post', 'perfectcoding'),
-            'not_found' => __('No Perfect Coding Custom Posts found', 'perfectcoding'),
-            'not_found_in_trash' => __('No Perfect Coding Custom Posts found in Trash', 'perfectcoding')
+            'edit_item' => __('Edit Portfolio Post', 'perfectcoding'),
+            'new_item' => __('New Portfolio Post', 'perfectcoding'),
+            'view' => __('View Portfolio Post', 'perfectcoding'),
+            'view_item' => __('View Portfolio Post', 'perfectcoding'),
+            'search_items' => __('Search Portfolio Post', 'perfectcoding'),
+            'not_found' => __('No portfolio post found', 'perfectcoding'),
+            'not_found_in_trash' => __('No Portfolio Posts found in Trash', 'perfectcoding')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
@@ -742,13 +743,13 @@ endif;
  */
 
 // Shortcode Demo with Nested Capability
-function html5_shortcode_demo($atts, $content = null)
+function perfectcoding_shortcode_demo($atts, $content = null)
 {
     return '<div class="shortcode-demo">' . do_shortcode($content) . '</div>'; // do_shortcode allows for nested Shortcodes
 }
 
 // Shortcode Demo with simple <h2> tag
-function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 shortcode, allows for nesting within above element. Fully expandable.
+function perfectcoding_shortcode_demo_2($atts, $content = null) // Demo Heading H2 shortcode, allows for nesting within above element. Fully expandable.
 {
     return '<h2>' . $content . '</h2>';
 }
@@ -771,9 +772,10 @@ EOF;
 function perfectcoding_mailchimp_form() {
 	$placeholder = __( 'Add your email', 'perfectcoding' );
 	$subscribe_label = __( 'Subscribe', 'perfectcoding' );
+	$action = of_get_option('mailchimp_link_url', '#'); 
 	$ret = <<<EOF
 	<!-- Begin MailChimp Signup Form -->
-	<form action="http://dynamick.us1.list-manage.com/subscribe/post?u=2e0cbefc07136553c3667da17&amp;id=178bb7eb74" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+	<form action="{$action}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 		<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="{$placeholder}" required>
 		<input type="submit" value="{$subscribe_label}" name="subscribe" id="mc-embedded-subscribe" class="btn btn-info">
 	</form>
@@ -883,5 +885,241 @@ function my_theme_register_required_plugins() {
 	tgmpa( $plugins, $config );
 
 }
+
+
+/* 
+ * Helper function to return the theme option value. If no value has been saved, it returns $default.
+ * Needed because options are saved as serialized strings.
+ *
+ */
+
+if ( !function_exists( 'of_get_option' ) ) {
+function of_get_option($name, $default = false) {
+	
+	$optionsframework_settings = get_option('optionsframework');
+	
+	// Gets the unique option id
+	$option_name = $optionsframework_settings['id'];
+	
+	if ( get_option($option_name) ) {
+		$options = get_option($option_name);
+	}
+		
+	if ( isset($options[$name]) ) {
+		return $options[$name];
+	} else {
+		return $default;
+	}
+}
+}
+
+/* Define the Ribbon Type box */
+
+add_action( 'add_meta_boxes', 'perfectcoding_add_ribbon_box' );
+
+// backwards compatible (before WP 3.0)
+// add_action( 'admin_init', 'myplugin_add_custom_box', 1 );
+
+/* Do something with the data entered */
+add_action( 'save_post', 'perfectcoding_ribbon_save_postdata' );
+
+/* Adds a box to the main column on the Post and Page edit screens */
+function perfectcoding_add_ribbon_box() {
+    add_meta_box( 
+        'myplugin_sectionid',
+        __( 'Ribbon Type', 'perfectcoding' ),
+        'perfectcoding_ribbon_box',
+        'portfolio' 
+    );
+}
+
+/* Prints the box content */
+function perfectcoding_ribbon_box( $post ) {
+
+  // Use nonce for verification
+  wp_nonce_field( plugin_basename( __FILE__ ), 'myplugin_noncename' );
+  
+  // get existing value
+  $meta_value = get_post_meta( $post->ID, 'ribbon_type', true );
+  
+  
+  // The actual fields for data entry
+  echo '<label for="myplugin_new_field">';
+       _e("Ribbon type", 'perfectcoding' );
+  echo '</label> ';
+  echo '<select id="ribbon_type_field" name="ribbon_type_field" >';
+  echo '<option value="" >';
+  		_e("[none]", 'perfectcoding' );
+  echo '</option><option value="red" '. ($meta_value == 'red' ? 'selected="selected"' : '') .'>';
+		_e("Red", 'perfectcoding' );
+  echo '</option><option value="blue" '. ($meta_value == 'blue' ? 'selected="selected"' : '') .'>';
+		_e("Blue", 'perfectcoding' );
+  echo '</option><option value="yellow" '. ($meta_value == 'yellow' ? 'selected="selected"' : '') .'>';
+		_e("Yellow", 'perfectcoding' );
+  echo '</option><option value="green" '. ($meta_value == 'green' ? 'selected="selected"' : '') .'>';
+		_e("Green", 'perfectcoding' );
+  echo '</option><option value="violet" '. ($meta_value == 'violet' ? 'selected="selected"' : '') .'>';
+		_e("Violet", 'perfectcoding' );
+  echo '</option></select>';
+}
+
+/* When the post is saved, saves our custom data */
+function perfectcoding_ribbon_save_postdata( $post_id ) {
+	
+	
+  // verify if this is an auto save routine. 
+  // If it is our form has not been submitted, so we dont want to do anything
+  if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) 
+      return;
+
+  // verify this came from the our screen and with proper authorization,
+  // because save_post can be triggered at other times
+
+  if ( !wp_verify_nonce( $_POST['myplugin_noncename'], plugin_basename( __FILE__ ) ) )
+      return;
+
+  
+  // Check permissions
+  if ( 'portfolio' == $_POST['post_type'] ) 
+  {
+    if ( !current_user_can( 'edit_post', $post_id ) )
+        return;
+  }
+
+  // OK, we're authenticated: we need to find and save the data
+
+  //if saving in a custom table, get post_ID
+  //$post_ID = $_POST['post_ID'];
+  $meta_key = 'ribbon_type';
+  $new_meta_value = $_POST['ribbon_type_field'];
+
+  // Do something with $mydata 
+  // probably using add_post_meta(), update_post_meta(), or 
+  // a custom table (see Further Reading section below)
+  update_post_meta($post_id, $meta_key, $meta_value, $prev_value);
+  
+  /* Get the meta value of the custom field key. */
+  $meta_value = get_post_meta( $post_id, $meta_key, true );
+  
+  /* If a new meta value was added and there was no previous value, add it. */
+  if (!update_post_meta( $post_id, $meta_key, $new_meta_value )) {
+		add_post_meta( $post_id, $meta_key, $new_meta_value, true );
+	}
+  /* If there is no new meta value but an old value exists, delete it. */
+  if ( '' == $new_meta_value && $meta_value ) {
+  	delete_post_meta( $post_id, $meta_key, $meta_value );
+  }
+}  
+
+
+
+add_action( 'after_setup_theme', 'bootstrap_setup' );
+
+if ( ! function_exists( 'bootstrap_setup' ) ):
+
+	function bootstrap_setup(){
+
+		add_action( 'init', 'register_menu' );
+			
+		function register_menu(){
+			register_nav_menu( 'top-bar', 'Bootstrap Top Menu' ); 
+		}
+
+		class Bootstrap_Walker_Nav_Menu extends Walker_Nav_Menu {
+
+			
+			function start_lvl( &$output, $depth ) {
+
+				$indent = str_repeat( "\t", $depth );
+				$output	   .= "\n$indent<ul class=\"dropdown-menu\">\n";
+				
+			}
+
+			function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+				
+				$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
+
+				$li_attributes = '';
+				$class_names = $value = '';
+
+				$classes = empty( $item->classes ) ? array() : (array) $item->classes;
+				$classes[] = ($args->has_children) ? 'dropdown' : '';
+				$classes[] = ($item->current || $item->current_item_ancestor) ? 'active' : '';
+				$classes[] = 'menu-item-' . $item->ID;
+
+
+				$class_names = join( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item, $args ) );
+				$class_names = ' class="' . esc_attr( $class_names ) . '"';
+
+				$id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args );
+				$id = strlen( $id ) ? ' id="' . esc_attr( $id ) . '"' : '';
+
+				$output .= $indent . '<li' . $id . $value . $class_names . $li_attributes . '>';
+
+				$attributes  = ! empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : '';
+				$attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
+				$attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
+				$attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
+				$attributes .= ($args->has_children) 	    ? ' class="disabled " data-toggle="dropdown"' : '';
+
+				$item_output = $args->before;
+				$item_output .= '<a'. $attributes .'>';
+				$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
+				$item_output .= ($args->has_children) ? ' <b class="caret"></b></a>' : '</a>';
+				$item_output .= $args->after;
+				$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+			}
+
+			function display_element( $element, &$children_elements, $max_depth, $depth=0, $args, &$output ) {
+				
+				if ( !$element )
+					return;
+				
+				$id_field = $this->db_fields['id'];
+
+				//display this element
+				if ( is_array( $args[0] ) ) 
+					$args[0]['has_children'] = ! empty( $children_elements[$element->$id_field] );
+				else if ( is_object( $args[0] ) ) 
+					$args[0]->has_children = ! empty( $children_elements[$element->$id_field] ); 
+				$cb_args = array_merge( array(&$output, $element, $depth), $args);
+				call_user_func_array(array(&$this, 'start_el'), $cb_args);
+
+				$id = $element->$id_field;
+
+				// descend only when the depth is right and there are childrens for this element
+				if ( ($max_depth == 0 || $max_depth > $depth+1 ) && isset( $children_elements[$id]) ) {
+
+					foreach( $children_elements[ $id ] as $child ){
+
+						if ( !isset($newlevel) ) {
+							$newlevel = true;
+							//start the child delimiter
+							$cb_args = array_merge( array(&$output, $depth), $args);
+							call_user_func_array(array(&$this, 'start_lvl'), $cb_args);
+						}
+						$this->display_element( $child, $children_elements, $max_depth, $depth + 1, $args, $output );
+					}
+						unset( $children_elements[ $id ] );
+				}
+
+				if ( isset($newlevel) && $newlevel ){
+					//end the child delimiter
+					$cb_args = array_merge( array(&$output, $depth), $args);
+					call_user_func_array(array(&$this, 'end_lvl'), $cb_args);
+				}
+
+				//end this element
+				$cb_args = array_merge( array(&$output, $element, $depth), $args);
+				call_user_func_array(array(&$this, 'end_el'), $cb_args);
+				
+			}
+			
+		}
+
+	}
+
+endif;
+  
 
 ?>

@@ -172,26 +172,41 @@ License URI:	http://opensource.org/licenses/mit-license.php
 
 	header nav {padding-bottom: 18px;  /*border:1px solid rgba(0,0,0,0.1); border-width: 0 0 1px 0;*/}
 
-	.ribbon {margin: 0 -11px -1px;  background: #E5E5E5; position:relative; height:59px; border-bottom:1px solid #CDCDCD; border-top:1px solid #CDCDCD;}
+	.ribbon {margin: 0 -11px -1px;  background: #E5E5E5; position:relative; border-bottom:1px solid #CDCDCD; border-top:1px solid #CDCDCD;}
 	.ribbon:after {content:""; position: absolute;right:-1px; bottom: -12px; width: 0; height: 0;border-top:0; border-left: 11px solid #4F4F4F; border-bottom: 11px solid transparent; }
 	.ribbon:before {content:""; position: absolute;left:0px; bottom: -11px;width: 0; height: 0;border-top:0; border-right: 10px solid #4F4F4F; border-bottom: 10px solid transparent; }
 
+	/* CodingPerfect custom menu nav
 	header nav ul#main {overflow:hidden; padding: 0 0 0 235px; float:left;}
 	header nav ul#main li {float:left; font-size: 12px;  padding: 21px 11px 17px 12px; border-left: 1px solid rgba(0,0,0,0.1);
-	    -webkit-transition: all .2s ease-in-out 0s;  /* Safari 3.2+, Chrome */
-	       -moz-transition: all .2s ease-in-out 0s;  /* Firefox 4-15 */
-	         -o-transition: all .2s ease-in-out 0s;  /* Opera 10.5–12.00 */
-	            transition: all .2s ease-in-out 0s;  /* Firefox 16+, Opera 12.50+ */
+	    -webkit-transition: all .2s ease-in-out 0s;  
+	       -moz-transition: all .2s ease-in-out 0s;  
+	         -o-transition: all .2s ease-in-out 0s;  
+	            transition: all .2s ease-in-out 0s;  
 		}
 	header nav ul#main li:first-child {border-left: 0px;}
-	/*header nav ul#main li#logo-small {padding: 3px 15px 4px; margin-bottom:1px}*/
 	header nav ul#main li:hover {background-color:#fff;}
 	header nav ul#main li a {color:#333; text-transform:uppercase; display:block;margin-top:-1px; text-shadow: 0 1px #FFFFFF; }
 	header nav ul#main li:hover a {color:#E65F15}
 	header nav ul#main li a:before {color: #E7492F; content: "✪ "; font-size: 1.4em;}
 	header nav ul#main li.current-menu-item a {font-weight:bold}
-	/*header nav ul#main li#menu-item-9206 a {background:url(img/chi-sono-icon.png) no-repeat; padding-left: 30px;}*/
-	/*header nav ul#main li#menu-item-9209 a {background:url(img/contatti-icon.png) no-repeat; padding-left: 26px;}*/
+	*/
+	
+	/* bootstrap menu nav */
+	.ribbon .navbar-inner {background:none; border:0; box-shadow: none; margin-left: 213px;}
+	.ribbon .navbar {margin-bottom:0;}
+	.ribbon .navbar .dropdown-menu {margin-top: -3px}
+	.dropdown-menu .active > a, .dropdown-menu .active > a:hover {background-image: none; background-color: #999;}
+	/*
+	.ribbon .navbar .nav {top: 20px;}
+	/*
+	.navbar .nav .dropdown-toggle .caret {margin-top:13px;}	
+	*/
+	.navbar .nav > li > a:before {color: #E7492F; content: "✪ "; }
+	/*.nav-collapse.collapse {height:auto;}*/
+	/*
+   	ul.nav li.dropdown:hover ul.dropdown-menu{ display: block;}
+	*/
 
 /* POST BODY
  ------------------------------------------------------------ */
@@ -199,14 +214,20 @@ License URI:	http://opensource.org/licenses/mit-license.php
    #featured-wrapper {background:#444; height:290px; box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; -webkit-box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; position:relative; margin-top:-17px; padding: 60px;}
    #featured {height: 290px}
    #featured a{border:0;}
+   #featured img{display:none;}
    
    nav .breadcrumb {background: transparent; font-size:0.7em; padding: 0; margin: 2em 0 0 0; position:relative; border-bottom:1px dotted #CCC;}
-nav .breadcrumb a {/*color: #E7492F*/}
+   nav .breadcrumb a {/*color: #E7492F*/}
    /*nav .breadcrumb {background: transparent; float: right; font-size: 0.8em; margin-left: 141px; margin-top: -16px; position: absolute; padding: 0 15px;}*/
    
-  	h2.section {padding: 2em 60px 1em; background: #F2F2F2; position:relative; top: -17px; border-bottom:1px solid #D9D9D9; }
-   	h2.section ul {display:inline; margin:0; padding:0;}
-   	h2.section li {display:inline; list-style-type:none; padding:0;}
+  	div.section {padding: 2em 60px 2em; background: #F2F2F2; position:relative; top: -17px; 
+		background:#444; box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; -webkit-box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; 
+	}
+	div.section h1, div.section h2 {color:#fff; text-shadow: 0 1px #000; }
+   	div.section ul {display:inline; margin:0; padding:0;}
+   	div.section li {display:inline; list-style-type:none; padding:0;}
+	div.section .breadcrumb {border-bottom: 0;}
+	div.section .breadcrumb li {text-shadow: 0 1px #000;}
 	
 	
    	article { border-bottom:3px solid #E7492F; position:relative;}
@@ -253,6 +274,30 @@ nav .breadcrumb a {/*color: #E7492F*/}
 	.post_content p a {border-bottom: 1px dotted #999;}
 	.post_content p a:hover {border-bottom: 1px solid #E7492F;}
 	.post_content .reset {margin: 0 -60px;}
+	
+	/* Special posts
+	 ------------------------------------------------------------ */
+	
+	article.perfectcoding_special {background:#444; color:white; box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; -webkit-box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; }
+	article.perfectcoding_special .prefix {color: #999; text-shadow: 0 1px #000;}
+	article.perfectcoding_special .prefix a{color: #999;}
+   	article.perfectcoding_special h2, article h1 {text-shadow: 0 1px #000}
+   	article.perfectcoding_special h2 a, article.perfectcoding_special h1 a {color: #fff;}
+   	article.perfectcoding_special .post_details {color: #fff; }
+	
+	
+	/* Portfolio container
+	 ------------------------------------------------------------ */
+	 
+	 .portfolio-container {padding:0 48px;}
+	 .portfolio-container article {padding-bottom:1em; position:relative;}
+   	 .portfolio-container article h3 {line-height: 1.3em; padding-top: 1em;}
+	 .portfolio-container article:before {position:absolute; content:''; background: no-repeat top left; width: 173px; height:171px; top:-11px; right: -11px;}		
+	 .portfolio-container article.green:before {background-image: url(img/green-ribbon.png);}
+	 .portfolio-container article.red:before {background-image: url(img/red-ribbon.png);}
+	 .portfolio-container article.violet:before {background-image: url(img/violet-ribbon.png);}
+	 .portfolio-container article.blue:before {background-image: url(img/blue-ribbon.png);}
+	 .portfolio-container article.yellow:before {background-image: url(img/yellow-ribbon.png);}
 
 /* Newsletter
 ------------------------------------------------------------ */
@@ -512,10 +557,18 @@ nav .breadcrumb a {/*color: #E7492F*/}
 
 
    /* Large desktop */
-   @media (min-width: 1200px) { ... }
+   @media (min-width: 1200px) {  }
      
+   @media (min-width: 980px) { 
+      	ul.nav li.dropdown:hover ul.dropdown-menu{ display: block;}
+   }
+   @media (max-width: 979px) { 
+      	ul.nav li.dropdown ul.dropdown-menu{ display: block;}
+		.nav-collapse .nav {text-align:right;}
+	}
+	 
    /* Portrait tablet to landscape and desktop */
-   @media (min-width: 768px) and (max-width: 979px) { ... }
+   @media (min-width: 768px) and (max-width: 979px) { }
      
    /* Landscape phone to portrait tablet */
    @media (max-width: 767px) { 
@@ -529,6 +582,7 @@ nav .breadcrumb a {/*color: #E7492F*/}
      
    /* Landscape phones and down */
    @media (max-width: 480px) { 
+	div.section {padding: 2em 20px; }
 	   article .inner{ padding:0 20px; }
 	   .post_content .reset {margin: 0 -20px;}
    

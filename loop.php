@@ -1,8 +1,8 @@
-
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 	<!-- Article -->
-	<article id="post-<?php the_ID(); ?>" <?php post_class(''); ?>>
+	<?php $special_class = in_category( of_get_option('special_post_category', '') ) ? "perfectcoding_special" : '' ?>
+	<article id="post-<?php the_ID(); ?>" <?php post_class($special_class); ?> >
 									
 		<div class="inner">
 									

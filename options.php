@@ -78,7 +78,8 @@ function optionsframework_options() {
 	$options_categories = array();
 	$options_categories_obj = get_categories();
 	foreach ($options_categories_obj as $category) {
-		$options_categories[$category->cat_ID] = $category->cat_name;
+		//$options_categories[$category->cat_ID] = $category->cat_name;
+		$options_categories[$category->slug] = $category->cat_name;
 	}
 	
 	// Pull all tags into an array
@@ -119,6 +120,13 @@ function optionsframework_options() {
 		'std' => 'https://twitter.com/dynamick',
 		'type' => 'text');
 
+		$options[] = array(
+			'name' => __('Feed URL', 'options_check'),
+			'desc' => __('Leave blank for the default wordpress url', 'options_check'),
+			'id' => 'feed_url',
+			'std' => '/feed',
+			'type' => 'text');
+
 	$options[] = array(
 		'name' => __('Mailchimp signup form link url', 'options_check'),
 		'desc' => __('The url of your mailchimp signup form. You could specify any other newsletter signup url.', 'options_check'),
@@ -137,7 +145,31 @@ function optionsframework_options() {
 		'name' => __('Home Slider', 'options_check'),
 		'type' => 'heading');
 
+	$options[] = array(
+		'name' => __('Home Slides?', 'options_check'),
+		'desc' => __('Do u want slides in homepage?', 'options_check'),
+		'id' => 'home_slides',
+		'std' => '1',
+		'type' => 'checkbox');
+
+	$options[] = array(
+		'name' => __('Select a slides category', 'options_check'),
+		'desc' => __('Choose the category to show in the home slides show', 'options_check'),
+		'id' => 'home_slides_category',
+		'type' => 'select',
+		'options' => $options_categories);
 		
+	$options[] = array(
+		'name' => __('Select a special post category', 'options_check'),
+		'desc' => __('Choose the category for special post', 'options_check'),
+		'id' => 'special_post_category',
+		'type' => 'select',
+		'options' => $options_categories);
+		
+		/*
+	$options[] = array(
+		'name' => __('Other', 'options_check'),
+		'type' => 'heading');
 
 	$options[] = array(
 		'name' => __('Input Select Small', 'options_check'),
@@ -280,7 +312,7 @@ function optionsframework_options() {
 	 * 'media_buttons' are not supported as there is no post to attach items to
 	 * 'textarea_name' is set by the 'id' you choose
 	 */
-
+	 /*
 	$wp_editor_settings = array(
 		'wpautop' => true, // Default
 		'textarea_rows' => 5,
@@ -293,6 +325,6 @@ function optionsframework_options() {
 		'id' => 'example_editor',
 		'type' => 'editor',
 		'settings' => $wp_editor_settings );
-
+	*/
 	return $options;
 }
