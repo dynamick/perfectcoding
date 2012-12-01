@@ -21,14 +21,15 @@
 			</ul>
 			<!-- /Post Details -->
 
-			<div class="catribbon" style=""><?php
-				$category = get_the_category(); 
-				//echo '<img src="' . get_template_directory_uri() . '/img/icons/' . $category[0]->cat_ID . '.jpg" alt="" />' ;
-				echo '<span>'.$category[0]->cat_name.'</span>';
-			?></div>
-
 			<!-- Post Thumbnail -->
 			<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
+				
+				<div class="catribbon" style=""><?php
+					$category = get_the_category(); 
+					//echo '<img src="' . get_template_directory_uri() . '/img/icons/' . $category[0]->cat_ID . '.jpg" alt="" />' ;
+					echo '<span>'.$category[0]->cat_name.'</span>';
+				?></div>
+
 				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="thumbnail post_thumbnail" style="margin:0 -60px; position:relative">
 					<?php echo the_post_thumbnail(); // Declare pixel size you need inside the array ?>
 				</a>					
