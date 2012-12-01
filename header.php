@@ -45,7 +45,7 @@
 
 						<!-- Logo -->
 						<div id="logo">
-							<?php if (get_custom_header()->url != '') { ?>
+							<?php if (true or get_custom_header()->url != '') { ?>
 							<h1><a href="<?php echo home_url(); ?>">
 								<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="Dynamick, web design, web development and seo" />
 							</a></h1>
