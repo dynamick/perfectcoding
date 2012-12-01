@@ -45,7 +45,7 @@
 			
 					<!--<p><?php #_e( 'This post was written by ', 'perfectcoding' ); the_author(); ?></p>-->
 			
-					<?php #edit_post_link(); // Always handy to have Edit Post Links available ?>
+					<?php edit_post_link('Edit Post', '<p class="label label-warning">', '</p>'); // Always handy to have Edit Post Links available ?>
 			
 					<?php comments_template(); ?>
 

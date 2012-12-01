@@ -45,7 +45,7 @@ if (function_exists('add_theme_support'))
 
     // Add Support for Custom Header - Uncomment below if you're going to use
    	add_theme_support('custom-header', array(
-	'default-image'			=> get_template_directory_uri() . '/img/headers/default.png',
+	'default-image'			=> get_template_directory_uri() . '/img/logo-perfect-coding.png',
 	'header-text'			=> false,
 	'default-text-color'		=> '000',
 	'width'				=> 158,

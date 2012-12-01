@@ -35,7 +35,7 @@
 					
 					<?php get_template_part('newsletter'); ?>
 			
-					<?php edit_post_link(); ?>
+					<?php edit_post_link('Edit Post', '<p class="label label-warning">', '</p>'); // Always handy to have Edit Post Links available ?>
 
 					<?php comments_template( '', true ); // Remove if you don't want comments ?>
 			
