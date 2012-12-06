@@ -605,7 +605,7 @@ License URI:	http://opensource.org/licenses/mit-license.php
    @media (max-width: 979px) { 
       	/*ul.nav li.dropdown ul.dropdown-menu{ display: block;}*/
 		/*.nav-collapse .nav {text-align:right;}*/
-	    .js #menu-primary { display: none; }
+	    .js #nav_menu { display: none; }
 	    .js .selectnav { display: block; margin-top:13px; float:right; }		
 	}
 	 
