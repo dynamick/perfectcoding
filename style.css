@@ -247,7 +247,7 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	article .prefix a{color: #999;}
    	article h2, article h1 {font-size:2em;line-height:1.1em;text-shadow: 0 1px #FFF}
    	article h2 a, article h1 a {color: #333;}
-   	article .post_details {font-family: 'Lora', serif; padding-top:0.5em;color: #999; padding-bottom:2em; overflow:hidden; list-style-type:none; margin:0;}
+   	article .post_details {font-family: 'Lora', serif; padding-top:0.5em;color: #999; overflow:hidden; list-style-type:none; margin: 0 0 2em;}
    	article .posted_by {font-family: 'Lora', serif; display:block; padding-bottom: 0.5em; border-bottom: 1px dotted #ccc;margin-bottom:0.5em; font-size: 1.25em;
     line-height: 1.35em;}
 	article .date {background:url(/wp-content/themes/perfectcoding/img/icon-calendar.png) 0 1px no-repeat; padding-left: 28px; float:left}
@@ -281,8 +281,8 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	.post_content h4 { font-size: 1.0em; }
 	.post_content h4 { font-size: 0.8em; }
 	.post_content img {margin: 4px 4px 4px 0; padding: 4px; background-color: white; border:0px solid rgba(0,0,0,0.1)}
-	.post_content p a {border-bottom: 1px dotted #999;}
-	.post_content p a:hover {border-bottom: 1px solid #E7492F;}
+	.post_content p a {text-decoration:underline;}
+	.post_content p a:hover {text-decoration:underline;}
 	.post_content .reset {margin: 0 -60px;}
 	
 	/* Special posts
