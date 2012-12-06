@@ -11,7 +11,9 @@
  * ========================================================================
  */
 
-	// Load any external files you have here
+	// Load external files 
+	require_once dirname( __FILE__ ) . '/framework/boxed_text_widget.php';
+	require_once dirname( __FILE__ ) . '/framework/class-tgm-plugin-activation.php';
 
 /*
  * ========================================================================
@@ -34,7 +36,7 @@ if (function_exists('add_theme_support'))
     add_image_size('large', 700, '', true); // Large Thumbnail
     add_image_size('medium', 250, '', true); // Medium Thumbnail
     add_image_size('small', 120, '', true); // Small Thumbnail
-    add_image_size('portfolio', 310, 310, true); // Small Thumbnail
+    add_image_size('portfolio', 584, 584, true); // Small Thumbnail
     add_image_size('slides', 650, 290, true); // Custom Thumbnail Size call using the_post_thumbnail('slides');
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
@@ -921,7 +923,6 @@ function curPageURL() {
 * ========================================================================
 */
 
-require_once dirname( __FILE__ ) . '/class-tgm-plugin-activation.php';
 add_action( 'tgmpa_register', 'my_theme_register_required_plugins' );
 
 /**

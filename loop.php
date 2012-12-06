@@ -30,7 +30,7 @@
 					echo '<span>'.$category[0]->cat_name.'</span>';
 				?></div>
 
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="thumbnail post_thumbnail" style="margin:0 -60px; position:relative">
+				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="thumbnail post_thumbnail" >
 					<?php echo the_post_thumbnail(); // Declare pixel size you need inside the array ?>
 				</a>					
 			<?php endif; ?>

@@ -250,7 +250,6 @@ License URI:	http://opensource.org/licenses/mit-license.php
    	article .post_details {font-family: 'Lora', serif; padding-top:0.5em;color: #999; padding-bottom:2em; overflow:hidden; list-style-type:none; margin:0;}
    	article .posted_by {font-family: 'Lora', serif; display:block; padding-bottom: 0.5em; border-bottom: 1px dotted #ccc;margin-bottom:0.5em; font-size: 1.25em;
     line-height: 1.35em;}
-
 	article .date {background:url(/wp-content/themes/perfectcoding/img/icon-calendar.png) 0 1px no-repeat; padding-left: 28px; float:left}
 	article .comments {background:url(/wp-content/themes/perfectcoding/img/icon-comments.png) 27px 1px no-repeat; padding-left: 58px; float:left;}
 	article .post_thumbnail {margin-top:1em;}
@@ -258,6 +257,7 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	article .catribbon:before {content:""; position: absolute;left:0; bottom: -10px;width: 0; height: 0;border-top:0; border-right: 10px solid #99756F; border-bottom: 10px solid transparent; }
 	article .catribbon span:before {content:'';}
 	article .catribbon span:after {content:'';}
+	article a.post_thumbnail { display:block; position:relative; margin:0 -60px; }
 	article .excerpt {margin-top: 1em;}
 	article .view-article {display:block; margin: 0.5em 0 1em;}
 	article .view-article:after {content:' ➪';}
@@ -302,12 +302,17 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	 .portfolio-container {padding:0 48px;}
 	 .portfolio-container article {padding-bottom:1em; position:relative;}
    	 .portfolio-container article h3 {line-height: 1.3em; padding-top: 1em;}
-	 .portfolio-container article:before {position:absolute; content:''; background: no-repeat top left; width: 173px; height:171px; top:-11px; right: -11px;}		
-	 .portfolio-container article.green:before {background-image: url(img/green-ribbon.png);}
-	 .portfolio-container article.red:before {background-image: url(img/red-ribbon.png);}
-	 .portfolio-container article.violet:before {background-image: url(img/violet-ribbon.png);}
-	 .portfolio-container article.blue:before {background-image: url(img/blue-ribbon.png);}
-	 .portfolio-container article.yellow:before {background-image: url(img/yellow-ribbon.png);}
+	 .portfolio-container .portfolio-thumb { display:block; position:relative;  }
+	 .portfolio-container article .portfolio-thumb:before {position:absolute; content:''; background: no-repeat top left; width: 173px; height:171px; top:-11px; right: -11px;}		
+	 .portfolio-container article.green .portfolio-thumb:before {background-image: url(img/green-ribbon.png);}
+	 .portfolio-container article.red .portfolio-thumb:before {background-image: url(img/red-ribbon.png);}
+	 .portfolio-container article.violet .portfolio-thumb:before {background-image: url(img/violet-ribbon.png);}
+	 .portfolio-container article.blue .portfolio-thumb:before {background-image: url(img/blue-ribbon.png);}
+	 .portfolio-container article.yellow .portfolio-thumb:before {background-image: url(img/yellow-ribbon.png);}
+	 /*
+	 .portfolio-container .portfolio-thumb { display:block; position:relative;  }
+	 .portfolio-container .portfolio-thumb:before { display:block; content:''; position:absolute; width:100%; height:100%; -moz-box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,0.2); -webkit-box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,0.2); box-shadow:inset 0px 0px 3px 1px rgba(0,0,0,0.2);	}
+	 */
 
 /* Newsletter
 ------------------------------------------------------------ */
@@ -500,7 +505,7 @@ License URI:	http://opensource.org/licenses/mit-license.php
 /* Sidebar
 ------------------------------------------------------------ */
 
-	aside {text-align:center; margin-top: 2em;}
+	aside {text-align:center;}
 	.sidebar {margin-top: 2em;font-size: 14px; text-align:left; line-height: 1.5em;}
 	.sidebar p {line-height: 1.5em;}
 	.sidebar-widget h3 {font-size: 24px; font-weight:bold; margin: 1em 0 0.5em; border-bottom:1px dashed rgba(0,0,0,0.2); padding-bottom:0.5em;}
@@ -511,8 +516,12 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	.sidebar-widget ul li a:hover{ color: #41B8D8;}
 	.sidebar-widget .thumbnail { border:0; box-shadow:none; -webkit-box-shadow: none;}
 
-	aside .sidebar-widget.second {margin-top: 2em;}
-	aside .sidebar-widget.second > div{
+	/* boxed text widget: white boxed and second widget sidebar area*/
+	aside .sidebar-widget.second, 
+	aside .white-boxed {margin-top: 2em;}
+	
+	aside .sidebar-widget.second > div,
+	aside .white-boxed > div {
 	 background: white;
 	 border: 1px solid #C6C6C6;
 	 border-radius: 5px;
@@ -525,7 +534,8 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	 text-shadow: 0 1px 0 #FFFFFF;
 	 z-index: 0;
 	}
-	aside .sidebar-widget.second > div:before {
+	aside .sidebar-widget.second > div:before,
+	aside .white-boxed > div:before {
 	 border: 1px dashed #BCBCBC;
 	 bottom: 3px;
 	 box-shadow: 0 0 0 1px #e7e7e7;
@@ -537,14 +547,30 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	 top: 3px;
 	 z-index: -1;
 	}	 
+	
 	aside .sidebar-widget.first h3{ opacity: 0.8;}
-	aside .sidebar-widget.first p{ /*padding-left: 30px; /*padding-right:30px;*/ }
 	aside .sidebar-widget.first { text-shadow: 0 1px 0 #FFFFFF; }
+
 	/* ebook */
 	aside .sidebar-widget .ebook p { margin-top: -20px}
 	
 	/* search widget */
 	aside .widget_search {text-align:center;}
+	
+	/* boxed text widget: inset boxed */
+	aside .inset-boxed {
+	    border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    -webkit-border-radius: 3px;
+     
+	    box-shadow: inset 1px 1px 1px #644823;
+	    -moz-box-shadow: inset 1px 1px 1px #644823;
+	    -webkit-box-shadow: -1px -1px 1px #644823;		
+		background: rgba(0,0,0,0.1);
+	}
+	aside .inset-boxed .widget_boxedclasstext {padding: 1em 30px;}
+	aside .inset-boxed .widget_boxedclasstext h3 {margin:0;}
+	
 
 /* Footer
 ------------------------------------------------------------ */

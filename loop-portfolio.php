@@ -16,7 +16,7 @@
 
 					<!-- Post Thumbnail -->
 					<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="" style="">
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="portfolio-thumb" >
 							<?php echo the_post_thumbnail('portfolio'); // Declare pixel size you need inside the array ?>
 						</a>					
 					<?php endif; ?>
