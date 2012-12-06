@@ -85,6 +85,7 @@
 													'depth'		 => 2,
 													'container'	 => false,
 													'menu_class'	 => 'nav',
+													'menu_id'         => 'nav_menu',
 													'walker'	 => new Bootstrap_Walker_Nav_Menu()
 												);
 

@@ -21,8 +21,8 @@ $(document).ready(function() {
 							});	
 							
     $('.carousel').carousel({interval: 4000	});
-	//$('#menu-primary').mobileMenu();	
-	selectnav('menu-primary'); 						
+
+	selectnav('nav_menu'); 						
 });
 
 

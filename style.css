@@ -284,6 +284,7 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	.post_content p a {text-decoration:underline;}
 	.post_content p a:hover {text-decoration:underline;}
 	.post_content .reset {margin: 0 -60px;}
+	.post_content .media-heading {padding:0!important;}
 	
 	/* Special posts
 	 ------------------------------------------------------------ */
