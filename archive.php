@@ -21,7 +21,7 @@
 		
 			<!-- Pagination -->
 			<div id="pagination">
-				<?php html5wp_pagination(); ?>
+				<?php perfectcoding_pagination(); ?>
 			</div>
 			<!-- /Pagination -->
 		

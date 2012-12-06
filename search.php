@@ -13,7 +13,7 @@
 		
 			<!-- Pagination -->
 			<nav id="pagination">
-				<?php html5wp_pagination(); ?>
+				<?php perfectcoding_pagination(); ?>
 			</nav>
 			<!-- /Pagination -->
 			

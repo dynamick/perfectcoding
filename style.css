@@ -192,11 +192,17 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	header nav ul#main li.current-menu-item a {font-weight:bold}
 	*/
 	
+	/* selectnav responsive menu */
+	.selectnav { display: none; }
+	
 	/* bootstrap menu nav */
 	.ribbon .navbar-inner {background:none; border:0; box-shadow: none; margin-left: 213px;}
 	.ribbon .navbar {margin-bottom:0;}
 	.ribbon .navbar .dropdown-menu {margin-top: -3px}
-	.dropdown-menu .active > a, .dropdown-menu .active > a:hover {background-image: none; background-color: #999;}
+	.dropdown-menu li > a:hover {background-color: #7EC200; background-image:none; color:white;}
+	.dropdown-menu .active > a, .dropdown-menu .active > a:hover {background-image: none; background-color: #96DC00; }
+	.dropdown-menu .active > a:hover  {color:white;}
+	.dropdown-menu li > a {font-weight:300; line-height:1.6em;}
 	/*
 	.ribbon .navbar .nav {top: 20px;}
 	/*
@@ -211,10 +217,14 @@ License URI:	http://opensource.org/licenses/mit-license.php
 /* POST BODY
  ------------------------------------------------------------ */
    
-   #featured-wrapper {background:#444; height:290px; box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; -webkit-box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; position:relative; margin-top:-17px; padding: 60px;}
+   #featured-wrapper {background:#444; box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; -webkit-box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; position:relative; margin-top:-17px; padding: 60px;}
+   .carousel {margin-bottom:0}
+   .carousel-caption h4 a {color:#fff; text-shadow:0 1px #000;}
+   /*
    #featured {height: 290px}
    #featured a{border:0;}
    #featured img{display:none;}
+   */
    
    nav .breadcrumb {background: transparent; font-size:0.7em; padding: 0; margin: 2em 0 0 0; position:relative; border-bottom:1px dotted #CCC;}
    nav .breadcrumb a {/*color: #E7492F*/}
@@ -532,6 +542,9 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	aside .sidebar-widget.first { text-shadow: 0 1px 0 #FFFFFF; }
 	/* ebook */
 	aside .sidebar-widget .ebook p { margin-top: -20px}
+	
+	/* search widget */
+	aside .widget_search {text-align:center;}
 
 /* Footer
 ------------------------------------------------------------ */
@@ -560,11 +573,13 @@ License URI:	http://opensource.org/licenses/mit-license.php
    @media (min-width: 1200px) {  }
      
    @media (min-width: 980px) { 
-      	ul.nav li.dropdown:hover ul.dropdown-menu{ display: block;}
+      	/*ul.nav li.dropdown:hover ul.dropdown-menu{ display: block;}*/
    }
    @media (max-width: 979px) { 
-      	ul.nav li.dropdown ul.dropdown-menu{ display: block;}
-		.nav-collapse .nav {text-align:right;}
+      	/*ul.nav li.dropdown ul.dropdown-menu{ display: block;}*/
+		/*.nav-collapse .nav {text-align:right;}*/
+	    .js #menu-primary { display: none; }
+	    .js .selectnav { display: block; margin-top:13px; float:right; }		
 	}
 	 
    /* Portrait tablet to landscape and desktop */

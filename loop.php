@@ -36,7 +36,7 @@
 			<?php endif; ?>
 			<!-- /Post Thumbnail -->			
 		
-			<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
+			<?php perfectcoding_excerpt('perfectcoding_index'); // Build your custom callback length in functions.php ?>
 		
 			<!--br class="clear"-->
 		

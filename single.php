@@ -36,7 +36,7 @@
 					<!-- /Post Details -->
 			
 					<?php the_content(); // Dynamic Content ?>
-			
+					
 					<?php get_template_part('newsletter'); ?>
 			
 					<?php #the_tags( __( 'Tags: ', 'perfectcoding' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>

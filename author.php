@@ -42,7 +42,7 @@
 			<span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'perfectcoding' ), __( '1 Comment', 'perfectcoding' ), __( '% Comments', 'perfectcoding' )); ?></span>
 			<!-- /Post Details -->
 			
-			<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
+			<?php perfectcoding_excerpt('perfectcoding_index'); // Build your custom callback length in functions.php ?>
 			
 			<br class="clear">
 			
@@ -67,7 +67,7 @@
 		
 		<!-- Pagination -->
 		<div id="pagination">
-			<?php html5wp_pagination(); ?>
+			<?php perfectcoding_pagination(); ?>
 		</div>
 		<!-- /Pagination -->
 	

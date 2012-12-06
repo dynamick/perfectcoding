@@ -142,6 +142,24 @@ function optionsframework_options() {
 		'type' => 'text');
 		
 	$options[] = array(
+		'name' => __('External API', 'options_check'),
+		'type' => 'heading');
+
+	$options[] = array(
+		'name' => __('Google Analytics Account ID', 'options_check'),
+		'desc' => __('Paste here your UA-XXXXXXXX-X code', 'options_check'),
+		'id' => 'analytics_uid',
+		'std' => 'UA-795127-3',
+		'type' => 'text');
+		
+	$options[] = array(
+		'name' => __('Facebook App ID', 'options_check'),
+		'desc' => __('Paste here your Facebook app id', 'options_check'),
+		'id' => 'facebook_app_id',
+		'std' => '235354229916474',
+		'type' => 'text');
+		
+	$options[] = array(
 		'name' => __('Home Slider', 'options_check'),
 		'type' => 'heading');
 

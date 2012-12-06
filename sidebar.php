@@ -1,6 +1,6 @@
 <!-- Sidebar -->
 <aside id="sidebar" class="span4">
-	<?php get_template_part('searchform'); ?>
+	<?php # get_template_part('searchform'); ?>
     		
 	<div class="sidebar">
 		<div class="sidebar-widget first">

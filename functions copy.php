@@ -242,11 +242,8 @@ function perfectcoding_scripts()
         wp_register_script('modernizr', get_template_directory_uri() . '/js/modernizr.js', array('jquery'), '2.6.2'); // Modernizr with version Number at the end
         wp_enqueue_script('modernizr'); // Enqueue it!
 
-    	wp_register_script('selectnav', get_template_directory_uri() . '/js/selectnav.min.js', array('jquery'), '1.0.0'); // Perfect Coding script with version number
-    	wp_enqueue_script('selectnav'); // Enqueue it!
-
-    	wp_register_script('perfectcodingscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Perfect Coding script with version number
-    	wp_enqueue_script('perfectcodingscripts'); // Enqueue it!
+        wp_register_script('perfectcodingscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Perfect Coding script with version number
+        wp_enqueue_script('perfectcodingscripts'); // Enqueue it!
 
         wp_register_script('bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '1.0.0'); // Perfect Coding script with version number
         wp_enqueue_script('bootstrap'); // Enqueue it!
@@ -904,17 +901,6 @@ EOF;
 	return $ret;	
 }
 
-function curPageURL() {
-	$pageURL = 'http';
-	if ($_SERVER["HTTPS"] == "on") {$pageURL .= "s";}
-	$pageURL .= "://";
-	if ($_SERVER["SERVER_PORT"] != "80") {
-		$pageURL .= $_SERVER["SERVER_NAME"].":".$_SERVER["SERVER_PORT"].$_SERVER["REQUEST_URI"];
-	} else {
-		$pageURL .= $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
-	}
-	return $pageURL;
-}
 /*
 * ========================================================================
 * Include the TGM_Plugin_Activation class.
@@ -1042,7 +1028,7 @@ function of_get_option($name, $default = false) {
 
 /*
 * ========================================================================
-* Define the Ribbon Type box 
+/* Define the Ribbon Type box */
 * ========================================================================
 */
 
