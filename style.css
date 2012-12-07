@@ -238,6 +238,8 @@ License URI:	http://opensource.org/licenses/mit-license.php
    	div.section li {display:inline; list-style-type:none; padding:0;}
 	div.section .breadcrumb {border-bottom: 0;}
 	div.section .breadcrumb li {text-shadow: 0 1px #000;}
+	div.section .avatar {padding: 5px 5px 5px 0;}
+	div.section .author-desc {color:#aaa; text-shadow: 0 1px #000; font-size:0.8em;}
 	
 	
    	article { border-bottom:3px solid #E7492F; position:relative;}
@@ -250,8 +252,8 @@ License URI:	http://opensource.org/licenses/mit-license.php
    	article .post_details {font-family: 'Lora', serif; padding-top:0.5em;color: #999; overflow:hidden; list-style-type:none; margin: 0 0 2em;}
    	article .posted_by {font-family: 'Lora', serif; display:block; padding-bottom: 0.5em; border-bottom: 1px dotted #ccc;margin-bottom:0.5em; font-size: 1.25em;
     line-height: 1.35em;}
-	article .date {background:url(/wp-content/themes/perfectcoding/img/icon-calendar.png) 0 1px no-repeat; padding-left: 28px; float:left}
-	article .comments {background:url(/wp-content/themes/perfectcoding/img/icon-comments.png) 27px 1px no-repeat; padding-left: 58px; float:left;}
+	article .date {background:url(/wp-content/themes/perfectcoding/img/icon-calendar.png) 0 1px no-repeat; padding-left: 28px; float:left; margin-right: 28px;}
+	article .comments {background:url(/wp-content/themes/perfectcoding/img/icon-comments.png) 0px 1px no-repeat; padding-left: 28px; float:left;}
 	article .post_thumbnail {margin-top:1em;}
 	article .catribbon {background-color: #E7492F; color: #fff;height: 32px;line-height: 32px; margin: 0 0 -32px -70px; padding-left: 10px;position: absolute;text-align: center; width: 150px;z-index: 10;}
 	article .catribbon:before {content:""; position: absolute;left:0; bottom: -10px;width: 0; height: 0;border-top:0; border-right: 10px solid #99756F; border-bottom: 10px solid transparent; }
@@ -587,6 +589,7 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	    font-weight: 700;
 		font-size:0.8em;
 		color: #E7492F;
+		line-height: 1.2em;
 	}
 	/*footer  {background: url(img/mouse-footer.png) bottom right no-repeat; }*/
 	footer .copyright {font-size: 0.7em; color: #666; margin-top: 2em;}	
@@ -617,17 +620,31 @@ License URI:	http://opensource.org/licenses/mit-license.php
 		header.head {margin: 0 -20px; padding: 0 20px;}
 		footer {margin: -4em -20px 0; padding: 6em 20px 0;}
 		header.head .span4, aside#sidebar {display:none;}
-		footer .span3 {margin-left: 30px; width: 28%; float:left;}
+		/*footer .span3 {margin-left: 30px; width: 28%; float:left;}*/
 		footer .span12 {clear:both}
 		.post_content .reset {margin:auto;}
+ 	   /*article .date {float:none;}
+ 	   article .comments {background-position:0 center; padding-left: 28px;}*/
    }
      
    /* Landscape phones and down */
    @media (max-width: 480px) { 
-	div.section {padding: 2em 20px; }
+	   div.section {padding: 2em 20px; }
 	   article .inner{ padding:0 20px; }
+	   .portfolio-container {padding: 0 0 0 20px;}
 	   .post_content .reset {margin: 0 -20px;}
+	   #logo {margin-left: 20px;}
    
+   }
+   
+   /* Landscape phones and down */
+   @media (max-width: 320px) { 
+	   .ribbon .navbar-inner {margin:0;}
+	   .js .selectnav {display:block; margin: 90px auto 10px; float:none;}
+	   #logo {left: 50%; margin-left: -79px;}
+	   #featured-wrapper {padding:10px;}
+	   #newsletter {margin: 50px -20px;}
+	   .newsletter-wrap {padding:40px 0px 40px; background:none;}
    }
    
    /* Retina screens */
