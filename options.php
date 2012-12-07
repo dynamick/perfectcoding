@@ -188,6 +188,7 @@ function optionsframework_options() {
 		'name' => __('Favicon', 'options_check'),
 		'desc' => __('Upload a 16x16 favicon image (.ico, .png or .gif).', 'options_check'),
 		'id' => 'favicon_img',
+		'std' => get_template_directory_uri() .'/favicon.ico',
 		'type' => 'upload');		
 		
 		/*

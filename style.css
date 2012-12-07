@@ -173,8 +173,8 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	header nav {padding-bottom: 18px;  /*border:1px solid rgba(0,0,0,0.1); border-width: 0 0 1px 0;*/}
 
 	.ribbon {margin: 0 -11px -1px;  background: #E5E5E5; position:relative; border-bottom:1px solid #CDCDCD; border-top:1px solid #CDCDCD;}
-	.ribbon:after {content:""; position: absolute;right:-1px; bottom: -12px; width: 0; height: 0;border-top:0; border-left: 11px solid #4F4F4F; border-bottom: 11px solid transparent; }
-	.ribbon:before {content:""; position: absolute;left:0px; bottom: -11px;width: 0; height: 0;border-top:0; border-right: 10px solid #4F4F4F; border-bottom: 10px solid transparent; }
+	.ribbon:after {content:""; position: absolute;right:-1px; bottom: -12px; width: 0; height: 0;border-top:0; border-left: 11px solid #999; border-bottom: 11px solid transparent; }
+	.ribbon:before {content:""; position: absolute;left:0px; bottom: -11px;width: 0; height: 0;border-top:0; border-right: 10px solid #999; border-bottom: 10px solid transparent; }
 
 	/* CodingPerfect custom menu nav
 	header nav ul#main {overflow:hidden; padding: 0 0 0 235px; float:left;}
@@ -567,10 +567,10 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	    -moz-border-radius: 3px;
 	    -webkit-border-radius: 3px;
      
-	    box-shadow: inset 1px 1px 1px #644823;
-	    -moz-box-shadow: inset 1px 1px 1px #644823;
-	    -webkit-box-shadow: -1px -1px 1px #644823;		
-		background: rgba(0,0,0,0.1);
+	    box-shadow: inset 0px 0px 5px #ccc;
+	    -moz-box-shadow: inset 0px 0px 5px #ccc;
+	    -webkit-box-shadow: 0px 0px 5px #ccc;		
+		background: rgba(0,0,0,0.03);
 	}
 	aside .inset-boxed .widget_boxedclasstext {padding: 1em 30px;}
 	aside .inset-boxed .widget_boxedclasstext h3 {}
