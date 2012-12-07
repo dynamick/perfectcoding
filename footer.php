@@ -20,7 +20,7 @@
 					<!-- Copyright -->
 					<p class="copyright">
 						&copy; <?php echo date("Y"); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'perfectcoding'); ?> 
-						<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="https://perfectcoding.herokuapp.com" title="PerfectCoding, a HTML5, responsive, Bootstrapped Wordpress theme">PerfectCoding</a>.
+						<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="https://freshnews.it" title="PerfectCoding, a HTML5, responsive, Bootstrapped Wordpress theme">PerfectCoding</a>.
 					</p>
 					<!-- /Copyright -->
 			
