@@ -21,7 +21,7 @@
 	<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Comments Feed" href="<?php bloginfo('comments_rss2_url'); ?>" />	
 	
-	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
+	<link rel="shortcut icon"  href="<?php echo of_get_option('favicon_img', get_template_directory_uri() .'/favicon.ico'); ?>">
 	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon-iphone.png" />
 	<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon-ipad.png" />
 	<link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/apple-touch-icon-iphone4.png" />

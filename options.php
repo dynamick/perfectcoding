@@ -160,7 +160,7 @@ function optionsframework_options() {
 		'type' => 'text');
 		
 	$options[] = array(
-		'name' => __('Home Slider', 'options_check'),
+		'name' => __('Layout', 'options_check'),
 		'type' => 'heading');
 
 	$options[] = array(
@@ -183,6 +183,12 @@ function optionsframework_options() {
 		'id' => 'special_post_category',
 		'type' => 'select',
 		'options' => $options_categories);
+		
+	$options[] = array(
+		'name' => __('Favicon', 'options_check'),
+		'desc' => __('Upload a 16x16 favicon image (.ico, .png or .gif).', 'options_check'),
+		'id' => 'favicon_img',
+		'type' => 'upload');		
 		
 		/*
 	$options[] = array(
