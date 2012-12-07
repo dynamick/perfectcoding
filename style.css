@@ -573,7 +573,7 @@ License URI:	http://opensource.org/licenses/mit-license.php
 		background: rgba(0,0,0,0.1);
 	}
 	aside .inset-boxed .widget_boxedclasstext {padding: 1em 30px;}
-	aside .inset-boxed .widget_boxedclasstext h3 {margin:0;}
+	aside .inset-boxed .widget_boxedclasstext h3 {}
 	
 
 /* Footer
