@@ -385,8 +385,8 @@ function perfectcoding_view_article($more)
 // Remove Admin bar
 function remove_admin_bar()
 {
-    return ( current_user_can( 'administrator' ) ) ? $content : false;
-    #return false;
+    #return ( current_user_can( 'administrator' ) ) ? $content : false;
+    return true;
 }
 
 // Remove 'text/css' from our enqueued stylesheet
