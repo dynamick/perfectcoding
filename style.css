@@ -511,7 +511,7 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	aside {text-align:center;}
 	.sidebar {margin-top: 2em;font-size: 14px; text-align:left; line-height: 1.5em;}
 	.sidebar p {line-height: 1.5em;}
-	.sidebar-widget h3 {font-size: 24px; font-weight:bold; margin: 1em 0 0.5em; border-bottom:1px dashed rgba(0,0,0,0.2); padding-bottom:0.5em;}
+	.sidebar-widget h3 {font-size: 24px; font-weight:bold; line-height: 1.2em; margin: 0 0 0.5em; border-bottom:1px dashed rgba(0,0,0,0.2); padding-bottom:0.5em;}
 	.sidebar-widget h3:before {content:'✪ '; color: #E7492F; font-size:1.2em;}
 	.sidebar-widget ul li { position:relative;margin-bottom:0.25em;padding-bottom:0.25em;}
 	.sidebar-widget ul li:before {content: "\2013\00a0\00a0";color: #E7492F;}
@@ -519,9 +519,10 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	.sidebar-widget ul li a:hover{ color: #41B8D8;}
 	.sidebar-widget .thumbnail { border:0; box-shadow:none; -webkit-box-shadow: none;}
 
+	.sidebar-widget > div {margin-top: 2em;}
+
 	/* boxed text widget: white boxed and second widget sidebar area*/
-	aside .sidebar-widget.second, 
-	aside .white-boxed {margin-top: 2em;}
+	aside .sidebar-widget.second, aside .white-boxed {/*margin-top: 2em;*/}
 	
 	aside .sidebar-widget.second > div,
 	aside .white-boxed > div {
@@ -531,8 +532,8 @@ License URI:	http://opensource.org/licenses/mit-license.php
 	 -webkit-border-radius: 5px;
 	 box-shadow: 0 1px 0 #9A9A9A;
 	 -webkit-box-shadow: 0 1px 0 #9A9A9A;
-	 margin: 0 0 20px 0;
-	 padding: 0 30px 30px;
+	 /*margin: 0 0 20px 0;*/
+	 padding: 1em 30px;
 	 position: relative;
 	 text-shadow: 0 1px 0 #FFFFFF;
 	 z-index: 0;
