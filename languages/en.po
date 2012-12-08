@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PerfectCoding\n"
-"POT-Creation-Date: 2012-12-04 22:18+0100\n"
-"PO-Revision-Date: 2012-12-04 22:20+0100\n"
+"POT-Creation-Date: 2012-12-08 16:57+0100\n"
+"PO-Revision-Date: 2012-12-08 16:58+0100\n"
 "Last-Translator: michele <info@dynamick.it>\n"
 "Language-Team: Michele Gobbi <info@dynamick.it>\n"
 "Language: English\n"
@@ -16,12 +16,12 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../HTML5-Blank-WordPress-Theme copia/404.php:9 copy2/404.php:9
-#: ../perfectcoding/404.php:9 ../perfectcoding_bak/404.php:9
+#: ../perfectcoding/404.php:16 ../perfectcoding_bak/404.php:9
 msgid "Page not found"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/404.php:10 copy2/404.php:10
-#: ../perfectcoding/404.php:10 ../perfectcoding_bak/404.php:10
+#: ../perfectcoding/404.php:22 ../perfectcoding_bak/404.php:10
 msgid "Return home?"
 msgstr ""
 
@@ -32,22 +32,21 @@ msgid "Archives"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/author.php:8 copy2/author.php:8
-#: ../perfectcoding/author.php:8 ../perfectcoding_bak/author.php:8
+#: ../perfectcoding/author.php:13 ../perfectcoding_bak/author.php:8
 msgid "Author Archives for "
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/author.php:41 copia/loop.php:17
 #: copia/single.php:32 copy2/author.php:41 copy2/loop.php:20
-#: copy2/single.php:29 ../perfectcoding/author.php:41
-#: ../perfectcoding/functions copy.php:697 ../perfectcoding/functions.php:697
+#: copy2/single.php:29 ../perfectcoding/functions.php:544
 #: ../perfectcoding_bak/author.php:41 ../perfectcoding_bak/functions.php:690
 msgid "Published by"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/author.php:42 copia/loop.php:19
 #: copia/single.php:33 copy2/author.php:42 copy2/loop.php:22
-#: copy2/single.php:31 ../perfectcoding/author.php:42
-#: ../perfectcoding/page.php:28 ../perfectcoding/single.php:34
+#: copy2/single.php:31 ../perfectcoding/page.php:28
+#: ../perfectcoding/single.php:34 ../perfectcoding/template-full.php:30
 #: ../perfectcoding_bak/author.php:42 ../perfectcoding_bak/page.php:31
 #: ../perfectcoding_bak/single.php:34
 msgid "Leave your thoughts"
@@ -55,8 +54,8 @@ msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/author.php:42 copia/loop.php:19
 #: copia/single.php:33 copy2/author.php:42 copy2/loop.php:22
-#: copy2/single.php:31 ../perfectcoding/author.php:42
-#: ../perfectcoding/page.php:28 ../perfectcoding/single.php:34
+#: copy2/single.php:31 ../perfectcoding/page.php:28
+#: ../perfectcoding/single.php:34 ../perfectcoding/template-full.php:30
 #: ../perfectcoding_bak/author.php:42 ../perfectcoding_bak/page.php:31
 #: ../perfectcoding_bak/single.php:34 ../twentyten/loop.php:99
 #: ../twentyten/loop.php:122 ../twentyten/loop.php:164
@@ -65,8 +64,8 @@ msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/author.php:42 copia/loop.php:19
 #: copia/single.php:33 copy2/author.php:42 copy2/loop.php:22
-#: copy2/single.php:31 ../perfectcoding/author.php:42
-#: ../perfectcoding/page.php:28 ../perfectcoding/single.php:34
+#: copy2/single.php:31 ../perfectcoding/page.php:28
+#: ../perfectcoding/single.php:34 ../perfectcoding/template-full.php:30
 #: ../perfectcoding_bak/author.php:42 ../perfectcoding_bak/page.php:31
 #: ../perfectcoding_bak/single.php:34 ../twentyten/loop.php:99
 #: ../twentyten/loop.php:122 ../twentyten/loop.php:164
@@ -76,12 +75,12 @@ msgstr ""
 #: ../HTML5-Blank-WordPress-Theme copia/author.php:61 copia/loop.php:51
 #: copia/page.php:31 copia/single.php:63 copia/template-demo.php:33
 #: copy2/author.php:61 copy2/loop.php:54 copy2/page.php:31 copy2/single.php:65
-#: copy2/template-demo.php:33 ../perfectcoding/author.php:61
-#: ../perfectcoding/loop-portfolio.php:56 ../perfectcoding/loop.php:57
-#: ../perfectcoding/page.php:56 ../perfectcoding/single.php:68
-#: ../perfectcoding/template-contacts.php:44
-#: ../perfectcoding_bak/author.php:61 ../perfectcoding_bak/loop.php:56
-#: ../perfectcoding_bak/page.php:57 ../perfectcoding_bak/single.php:68
+#: copy2/template-demo.php:33 ../perfectcoding/loop-portfolio.php:56
+#: ../perfectcoding/loop.php:57 ../perfectcoding/page.php:56
+#: ../perfectcoding/single.php:68 ../perfectcoding/template-contacts.php:44
+#: ../perfectcoding/template-full.php:58 ../perfectcoding_bak/author.php:61
+#: ../perfectcoding_bak/loop.php:56 ../perfectcoding_bak/page.php:57
+#: ../perfectcoding_bak/single.php:68
 #: ../perfectcoding_bak/template-demo.php:33
 msgid "Sorry, nothing to display."
 msgstr ""
@@ -107,43 +106,41 @@ msgid "Powered by"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:202
-#: copy2/functions.php:202 ../perfectcoding/functions copy.php:334
-#: ../perfectcoding/functions.php:334 ../perfectcoding_bak/functions.php:218
+#: copy2/functions.php:202 ../perfectcoding/functions.php:178
+#: ../perfectcoding_bak/functions.php:218
 #, php-format
 msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:205
-#: copy2/functions.php:205 ../perfectcoding/functions copy.php:337
-#: ../perfectcoding/functions.php:337 ../perfectcoding_bak/functions.php:221
-#: ../twentyeleven/functions.php:554 ../twentyten/functions.php:338
+#: copy2/functions.php:205 ../perfectcoding/functions.php:181
+#: ../perfectcoding_bak/functions.php:221 ../twentyeleven/functions.php:554
+#: ../twentyten/functions.php:338
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:212
-#: copy2/functions.php:212 ../perfectcoding/functions copy.php:341
-#: ../perfectcoding/functions.php:341 ../perfectcoding_bak/functions.php:225
-#: ../twentyeleven/functions.php:545 ../twentyten/functions.php:345
+#: copy2/functions.php:212 ../perfectcoding/functions.php:185
+#: ../perfectcoding_bak/functions.php:225 ../twentyeleven/functions.php:545
+#: ../twentyten/functions.php:345
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:212
-#: copy2/functions.php:212 ../perfectcoding/functions copy.php:341
-#: ../perfectcoding/functions.php:341 ../perfectcoding_bak/functions.php:225
-#: ../twentyten/functions.php:345 ../twentyten/functions.php:362
+#: copy2/functions.php:212 ../perfectcoding/functions.php:185
+#: ../perfectcoding_bak/functions.php:225 ../twentyten/functions.php:345
+#: ../twentyten/functions.php:362
 msgid "(Edit)"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:240
-#: copy2/functions.php:244 ../perfectcoding/functions copy.php:376
-#: ../perfectcoding/functions.php:376 ../perfectcoding_bak/functions.php:263
+#: copy2/functions.php:244 ../perfectcoding_bak/functions.php:263
 msgid "Header Menu"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:241
-#: ../perfectcoding/functions copy.php:377 ../perfectcoding/functions.php:377
-#: ../perfectcoding_bak/functions.php:264
+#: ../perfectcoding/functions.php:220 ../perfectcoding_bak/functions.php:264
 msgid "Sidebar Menu"
 msgstr ""
 
@@ -152,7 +149,6 @@ msgid "Extra Menu"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:285
-#: ../perfectcoding/functions copy.php:426 ../perfectcoding/functions.php:426
 #: ../perfectcoding_bak/functions.php:313
 msgid "Widget Area 1"
 msgstr ""
@@ -167,14 +163,13 @@ msgid "Description for this widget-area..."
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:296
-#: ../perfectcoding/functions copy.php:437 ../perfectcoding/functions.php:437
 #: ../perfectcoding_bak/functions.php:324
 msgid "Widget Area 2"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:361
-#: copy2/functions.php:367 ../perfectcoding/functions copy.php:535
-#: ../perfectcoding/functions.php:535 ../perfectcoding_bak/functions.php:422
+#: copy2/functions.php:367 ../perfectcoding/functions.php:382
+#: ../perfectcoding_bak/functions.php:422
 msgid "View Article"
 msgstr ""
 
@@ -186,8 +181,8 @@ msgid "HTML5 Blank Custom Post"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:466
-#: copy2/functions.php:473 ../perfectcoding/functions copy.php:828
-#: ../perfectcoding/functions.php:828 ../perfectcoding_bak/functions.php:531
+#: copy2/functions.php:473 ../perfectcoding/functions.php:675
+#: ../perfectcoding_bak/functions.php:531
 msgid "Add New"
 msgstr ""
 
@@ -197,9 +192,8 @@ msgid "Add New HTML5 Blank Custom Post"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:468
-#: copy2/functions.php:475 ../perfectcoding/functions copy.php:830
-#: ../perfectcoding/functions.php:830 ../perfectcoding_bak/functions.php:533
-#: ../twentyeleven/content-aside.php:44
+#: copy2/functions.php:475 ../perfectcoding/functions.php:677
+#: ../perfectcoding_bak/functions.php:533 ../twentyeleven/content-aside.php:44
 #: ../twentyeleven/content-featured.php:45
 #: ../twentyeleven/content-gallery.php:90 ../twentyeleven/content-image.php:68
 #: ../twentyeleven/content-intro.php:19 ../twentyeleven/content-link.php:44
@@ -273,6 +267,7 @@ msgid "This post was written by "
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/tag.php:6 copy2/tag.php:6
+#: ../perfectcoding/tag.php:10
 msgid "Tag Archive: "
 msgstr ""
 
@@ -291,208 +286,8 @@ msgstr ""
 msgid "Yearly Archives: %s"
 msgstr ""
 
-#: ../perfectcoding/class-tgm-plugin-activation.php:164
-#: ../perfectcoding/functions copy.php:976 ../perfectcoding/functions.php:976
-msgid "Install Required Plugins"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:165
-#: ../perfectcoding/functions copy.php:977 ../perfectcoding/functions.php:977
-msgid "Install Plugins"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:166
-#: ../perfectcoding/functions copy.php:978 ../perfectcoding/functions.php:978
-#, php-format
-msgid "Installing Plugin: %s"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:167
-msgid "Something went wrong."
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:178
-#: ../perfectcoding/class-tgm-plugin-activation.php:490
-#: ../perfectcoding/functions copy.php:990 ../perfectcoding/functions.php:990
-msgid "Return to Required Plugins Installer"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:179
-#: ../perfectcoding/class-tgm-plugin-activation.php:1846
-#: ../perfectcoding/functions copy.php:991 ../perfectcoding/functions.php:991
-msgid "Plugin activated successfully."
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:180
-#, php-format
-msgid "All plugins installed and activated successfully. %1$s"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:517
-#: ../perfectcoding/class-tgm-plugin-activation.php:2058
-msgid "Return to the Dashboard"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:545
-#, php-format
-msgid "The following plugin was activated successfully: %s."
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:704
-msgid "Dismiss this notice"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1091
-msgid "External Link"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1096
-msgid "Private Repository"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1099
-msgid "Pre-Packaged"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1103
-msgid "WordPress Repository"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1106
-msgid "Required"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1106
-msgid "Recommended"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1109
-msgid "Not Installed"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1111
-msgid "Installed But Not Activated"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1281
-#, php-format
-msgid ""
-"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
-"Dashboard\">Return to the Dashboard</a>"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1297
-msgid "Plugin"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1298
-msgid "Source"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1299
-msgid "Type"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1300
-#: ../twentyeleven/content-status.php:16
-msgid "Status"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1318
-msgid "Install"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1319
-msgid "Activate"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1829
-msgid "Install package not available."
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1830
-#, php-format
-msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1831
-msgid "Unpacking the package&#8230;"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1832
-msgid "Installing the plugin&#8230;"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1833
-msgid "Plugin install failed."
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1834
-msgid "Plugin installed successfully."
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1845
-msgid "Plugin activation failed."
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1955
-msgid ""
-"The installation and activation process is starting. This process may take a "
-"while on some hosts, so please be patient."
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1956
-#, php-format
-msgid "%1$s installed and activated successfully."
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1956
-#: ../perfectcoding/class-tgm-plugin-activation.php:1965
-msgid "Show Details"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1956
-#: ../perfectcoding/class-tgm-plugin-activation.php:1965
-msgid "Hide Details"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1957
-msgid "All installations and activations have been completed."
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1958
-#, php-format
-msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1962
-msgid ""
-"The installation process is starting. This process may take a while on some "
-"hosts, so please be patient."
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1963
-#, php-format
-msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1964
-#, php-format
-msgid "The installation of %1$s failed."
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1965
-#, php-format
-msgid "%1$s installed successfully."
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1966
-msgid "All installations have been completed."
-msgstr ""
-
-#: ../perfectcoding/class-tgm-plugin-activation.php:1967
-#, php-format
-msgid "Installing Plugin %1$s (%2$d/%3$d)"
+#: ../perfectcoding/author.php:19
+msgid "About me"
 msgstr ""
 
 #: ../perfectcoding/comments.php:35 ../perfectcoding_bak/comments.php:35
@@ -522,9 +317,8 @@ msgstr ""
 msgid "Log out &raquo;"
 msgstr ""
 
-#: ../perfectcoding/comments.php:44 ../perfectcoding/functions copy.php:723
-#: ../perfectcoding/functions.php:723 ../perfectcoding_bak/comments.php:44
-#: ../perfectcoding_bak/functions.php:716
+#: ../perfectcoding/comments.php:44 ../perfectcoding/functions.php:570
+#: ../perfectcoding_bak/comments.php:44 ../perfectcoding_bak/functions.php:716
 msgid "Name"
 msgstr ""
 
@@ -549,179 +343,197 @@ msgstr ""
 msgid "Submit Comment"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:378 ../perfectcoding/functions.php:378
-#: ../perfectcoding_bak/functions.php:265
+#: ../perfectcoding/functions.php:221 ../perfectcoding_bak/functions.php:265
 msgid "Footer col1 Menu"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:379 ../perfectcoding/functions.php:379
-#: ../perfectcoding_bak/functions.php:266
+#: ../perfectcoding/functions.php:222 ../perfectcoding_bak/functions.php:266
 msgid "Footer col2 Menu"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:380 ../perfectcoding/functions.php:380
-#: ../perfectcoding_bak/functions.php:267
+#: ../perfectcoding/functions.php:223 ../perfectcoding_bak/functions.php:267
 msgid "Footer col3 Menu"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:427 ../perfectcoding/functions.php:427
+#: ../perfectcoding/functions.php:273
+msgid "Top Sidebar"
+msgstr ""
+
+#: ../perfectcoding/functions.php:274
 msgid "Top part of the sidebar"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:438 ../perfectcoding/functions.php:438
+#: ../perfectcoding/functions.php:284
+msgid "Bottom Sidebar"
+msgstr ""
+
+#: ../perfectcoding/functions.php:285
 msgid "Bottom part of the sidebar"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:448 ../perfectcoding/functions.php:448
-#: ../perfectcoding_bak/functions.php:335
-msgid "Widget Area 3"
+#: ../perfectcoding/functions.php:295
+msgid "Footer left"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:449 ../perfectcoding/functions.php:449
+#: ../perfectcoding/functions.php:296
 msgid "Footer left area"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:459 ../perfectcoding/functions.php:459
-#: ../perfectcoding_bak/functions.php:346
-msgid "Widget Area 4"
+#: ../perfectcoding/functions.php:306
+msgid "Footer Middle"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:460 ../perfectcoding/functions.php:460
+#: ../perfectcoding/functions.php:307
 msgid "Footer middle area"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:470 ../perfectcoding/functions.php:470
-#: ../perfectcoding_bak/functions.php:357
-msgid "Widget Area 5"
+#: ../perfectcoding/functions.php:317
+msgid "Footer Right"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:471 ../perfectcoding/functions.php:471
+#: ../perfectcoding/functions.php:318
 msgid "Footer right area"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:663 ../perfectcoding/functions.php:663
-#: ../perfectcoding_bak/functions.php:656
+#: ../perfectcoding/functions.php:510 ../perfectcoding_bak/functions.php:656
 msgid "Page"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:680 ../perfectcoding/functions.php:680
-#: ../perfectcoding_bak/functions.php:673
+#: ../perfectcoding/functions.php:527 ../perfectcoding_bak/functions.php:673
 #, php-format
 msgid "Posted on %2$s"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:724 ../perfectcoding/functions.php:724
+#: ../perfectcoding/functions.php:571
 msgid "How could we call you?"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:726 ../perfectcoding/functions.php:726
-#: ../perfectcoding_bak/functions.php:719
+#: ../perfectcoding/functions.php:573 ../perfectcoding_bak/functions.php:719
 msgid "Email"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:727 ../perfectcoding/functions.php:727
+#: ../perfectcoding/functions.php:574
 msgid "How could we contact you?"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:739 ../perfectcoding/functions.php:739
+#: ../perfectcoding/functions.php:586
 msgid "What do you want ask me?"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:826 ../perfectcoding/functions.php:826
+#: ../perfectcoding/functions.php:673
 msgid "Portfolio"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:827 ../perfectcoding/functions.php:827
+#: ../perfectcoding/functions.php:674
 msgid "Portfolio post"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:829 ../perfectcoding/functions.php:829
+#: ../perfectcoding/functions.php:676
 msgid "Add New Portfolio Post"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:831 ../perfectcoding/functions.php:831
+#: ../perfectcoding/functions.php:678
 msgid "Edit Portfolio Post"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:832 ../perfectcoding/functions.php:832
+#: ../perfectcoding/functions.php:679
 msgid "New Portfolio Post"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:833 copy.php:834
-#: ../perfectcoding/functions.php:833 ../perfectcoding/functions.php:834
+#: ../perfectcoding/functions.php:680 ../perfectcoding/functions.php:681
 msgid "View Portfolio Post"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:835 ../perfectcoding/functions.php:835
+#: ../perfectcoding/functions.php:682
 msgid "Search Portfolio Post"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:836 ../perfectcoding/functions.php:836
+#: ../perfectcoding/functions.php:683
 msgid "No portfolio post found"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:837 ../perfectcoding/functions.php:837
+#: ../perfectcoding/functions.php:684
 msgid "No Portfolio Posts found in Trash"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:881 ../perfectcoding/functions.php:881
+#: ../perfectcoding/functions.php:728
 msgid "follow @dynamick"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:890 ../perfectcoding/functions.php:890
+#: ../perfectcoding/functions.php:737
 msgid "Add your email"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:891 ../perfectcoding/functions.php:891
+#: ../perfectcoding/functions.php:738
 msgid "Subscribe"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:979 ../perfectcoding/functions.php:979
+#: ../perfectcoding/functions.php:833
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:164
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../perfectcoding/functions.php:834
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:165
+msgid "Install Plugins"
+msgstr ""
+
+#: ../perfectcoding/functions.php:835
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:166
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../perfectcoding/functions.php:836
 msgid "Something went wrong with the plugin API."
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:992 ../perfectcoding/functions.php:992
+#: ../perfectcoding/functions.php:847
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:178
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:490
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../perfectcoding/functions.php:848
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:179
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1846
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../perfectcoding/functions.php:849
 #, php-format
 msgid "All plugins installed and activated successfully. %s"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:1047
-#: ../perfectcoding/functions.php:1047
+#: ../perfectcoding/functions.php:904
 msgid "Ribbon Type"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:1065
-#: ../perfectcoding/functions.php:1065
+#: ../perfectcoding/functions.php:922
 msgid "Ribbon type"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:1069
-#: ../perfectcoding/functions.php:1069
+#: ../perfectcoding/functions.php:926
 msgid "[none]"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:1071
-#: ../perfectcoding/functions.php:1071
+#: ../perfectcoding/functions.php:928
 msgid "Red"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:1073
-#: ../perfectcoding/functions.php:1073
+#: ../perfectcoding/functions.php:930
 msgid "Blue"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:1075
-#: ../perfectcoding/functions.php:1075
+#: ../perfectcoding/functions.php:932
 msgid "Yellow"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:1077
-#: ../perfectcoding/functions.php:1077
+#: ../perfectcoding/functions.php:934
 msgid "Green"
 msgstr ""
 
-#: ../perfectcoding/functions copy.php:1079
-#: ../perfectcoding/functions.php:1079
+#: ../perfectcoding/functions.php:936
 msgid "Violet"
 msgstr ""
 
@@ -839,8 +651,8 @@ msgstr ""
 msgid "Paste here your Facebook app id"
 msgstr ""
 
-#: ../perfectcoding/options.php:163
-msgid "Home Slider"
+#: ../perfectcoding/options.php:163 ../twentyeleven/inc/theme-options.php:498
+msgid "Layout"
 msgstr ""
 
 #: ../perfectcoding/options.php:167
@@ -865,6 +677,215 @@ msgstr ""
 
 #: ../perfectcoding/options.php:182
 msgid "Choose the category for special post"
+msgstr ""
+
+#: ../perfectcoding/options.php:188
+msgid "Favicon"
+msgstr ""
+
+#: ../perfectcoding/options.php:189
+msgid "Upload a 16x16 favicon image (.ico, .png or .gif)."
+msgstr ""
+
+#: ../perfectcoding/framework/boxed_text_widget.php:49
+#: ../twentyeleven/inc/widgets.php:157
+msgid "Title:"
+msgstr ""
+
+#: ../perfectcoding/framework/boxed_text_widget.php:51
+msgid "Custom Class:"
+msgstr ""
+
+#: ../perfectcoding/framework/boxed_text_widget.php:57
+msgid "Text:"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:167
+msgid "Something went wrong."
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:180
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:517
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:2058
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:545
+#, php-format
+msgid "The following plugin was activated successfully: %s."
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:704
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1091
+msgid "External Link"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1096
+msgid "Private Repository"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1099
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1103
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1106
+msgid "Required"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1106
+msgid "Recommended"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1109
+msgid "Not Installed"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1111
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1281
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1297
+msgid "Plugin"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1298
+msgid "Source"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1299
+msgid "Type"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1300
+#: ../twentyeleven/content-status.php:16
+msgid "Status"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1318
+msgid "Install"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1319
+msgid "Activate"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1829
+msgid "Install package not available."
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1830
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1831
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1832
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1833
+msgid "Plugin install failed."
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1834
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1845
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1955
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1956
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1956
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1965
+msgid "Show Details"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1956
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1965
+msgid "Hide Details"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1957
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1958
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1962
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1963
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1964
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1965
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1966
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../perfectcoding/framework/class-tgm-plugin-activation.php:1967
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../perfectcoding_bak/functions.php:335
+msgid "Widget Area 3"
+msgstr ""
+
+#: ../perfectcoding_bak/functions.php:346
+msgid "Widget Area 4"
+msgstr ""
+
+#: ../perfectcoding_bak/functions.php:357
+msgid "Widget Area 5"
 msgstr ""
 
 #: ../twentyeleven/404.php:17
@@ -1384,10 +1405,6 @@ msgstr ""
 msgid "%s Theme Options"
 msgstr ""
 
-#: ../twentyeleven/inc/theme-options.php:498
-msgid "Layout"
-msgstr ""
-
 #: ../twentyeleven/inc/widgets.php:19
 msgid ""
 "Use this widget to list your recent Aside, Status, Quote, and Link posts"
@@ -1411,10 +1428,6 @@ msgstr ""
 
 #: ../twentyeleven/inc/widgets.php:91 ../twentyeleven/inc/widgets.php:107
 msgid "% <span class=\"reply\">comments &rarr;</span>"
-msgstr ""
-
-#: ../twentyeleven/inc/widgets.php:157
-msgid "Title:"
 msgstr ""
 
 #: ../twentyeleven/inc/widgets.php:160

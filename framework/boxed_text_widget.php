@@ -41,9 +41,9 @@ Author URI: http://www.dynamick.it
                 $customClass    = esc_attr($instance['customClass']);
                 $text           = esc_attr($instance['text']);
             } else {
-                $title          = __('', 'text_domain');
-                $customClass    = __('', 'text_domain');
-                $text           = __('', 'text_domain');
+                $title          = "";
+                $customClass    = "";
+                $text           = "";
             }
              
             echo '<p><label for="'.$this->get_field_id('title').'">'._e('Title:').'</label>';
