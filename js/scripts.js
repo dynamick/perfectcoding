@@ -22,7 +22,13 @@ $(document).ready(function() {
 							
     $('.carousel').carousel({interval: 4000	});
 
-	selectnav('nav_menu'); 						
+	selectnav('nav_menu'); 		
+	
+	// Fix dropdown on iPad
+	$('body')
+		.on('touchstart.dropdown', '.dropdown-menu', function (e) {e.stopPropagation();})
+		.on('touchstart.dropdown', '.dropdown-submenu', function (e) {e.preventDefault();});
+	}					
 });
 
 
