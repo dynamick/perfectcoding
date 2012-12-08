@@ -39,20 +39,17 @@
 		<!-- Wrapper -->
 		<div class="wrapper container">
 			
-
-						
-			
 			<div class="row">
-		
-				<div class="span8 ">
+				<?php $template = trim(get_post_meta( $post->ID, '_wp_page_template', true )); ?>
+				<div class="<?php echo ($template == "template-full.php") ? "span12" : "span8"; ?>">
 					
 					<div class="inner">
 
 						<!-- Logo -->
 						<div id="logo">
 							<?php if (true or get_custom_header()->url != '') { ?>
-							<h1><a href="<?php echo home_url(); ?>">
-								<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="Dynamick, web design, web development and seo" />
+							<h1><a href="<?php echo home_url(); ?>" title="<?php bloginfo('name'); ?>">
+								<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php bloginfo('name'); ?>" />
 							</a></h1>
 							 <?php } ?>
 						</div>
@@ -61,25 +58,10 @@
 						<!-- Nav -->
 						<nav>
 							<div class="ribbon">
-								<?php #perfectcoding_nav(); ?>
-								
-								
-								
-								
-								
 								<div class=" navbar">
 									<div class="navbar-inner">
 										<div class="container">
-											<!--
-								            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-								              <span class="icon-bar"></span>
-								              <span class="icon-bar"></span>
-								              <span class="icon-bar"></span>
-								            </a>						
-											<div class="nav-collapse collapse" >				
-											-->
 											<?php
-				
 												$args = array(
 													'theme_location' => 'top-bar',
 													'depth'		 => 2,
@@ -88,56 +70,30 @@
 													'menu_id'         => 'nav_menu',
 													'walker'	 => new Bootstrap_Walker_Nav_Menu()
 												);
-
 												wp_nav_menu($args);
-			
-											?>
-											<!--</div>-->
+											?>											
 										</div>
 									</div>
-								</div>
-								
-
-
-
-
-
-
-								
-								
-								
+								</div> <!-- /navbar-->
 							</div> <!-- /.ribbon -->
 						</nav>	<!-- /Nav -->
-
-					</div>
-
-				</div>
+					</div> <!-- /.inner -->
+				</div> <!-- /.span8-->
 				
+				<?php if ($template != "template-full.php") { ?>					
 				<div class="span4">
-							
-								
  					<ul class="channels">
  						<li class="rss"><a title="Iscriviti al nostro feed" href="<?php echo of_get_option('feed_url', '/feed'); ?>">RSS</a></li>
  						<li class="facebook"><a title="Seguici attraverso Facebook" href="<?php echo of_get_option('facebook_url', '#'); ?>">Facebook</a></li>
  						<li class="twitter"><a title="Seguici con Twitter" href="<?php echo of_get_option('twitter_url', '#'); ?>">Twitter</a></li>
  						<li class="newsletter"><a title="Sottoscrivi la nostra newsletter" href="<?php echo of_get_option('mailchimp_link_url', '#'); ?>">Newsletter</a></li>
  					</ul>							
-								
-					
-					
 				</div>
-			
+				<?php } ?>					
 				
 			</div> <!-- /row -->
-			
-		</div>
-		<!-- /Wrapper -->
-	
-	</header>
-	<!-- /Header -->
+		</div> <!-- /Wrapper -->
+	</header> <!-- /Header -->
 	
 	<!-- Wrapper -->
 	<div class="wrapper container">
-		
-		
-			
