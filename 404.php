@@ -20,6 +20,7 @@
 				<div class="inner">
 							
 					<h2><a href="<?php echo home_url(); ?>"><?php _e( 'Return home?', 'perfectcoding' ); ?></a></h2>
+					<p style="height:400px">Something goes wrong.</p>
 
 				</div>
 			
