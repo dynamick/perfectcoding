@@ -27,8 +27,7 @@ $(document).ready(function() {
 	// Fix dropdown on iPad
 	$('body')
 		.on('touchstart.dropdown', '.dropdown-menu', function (e) {e.stopPropagation();})
-		.on('touchstart.dropdown', '.dropdown-submenu', function (e) {e.preventDefault();});
-	}					
+		.on('touchstart.dropdown', '.dropdown-submenu', function (e) {e.preventDefault();});					
 });
 
 
