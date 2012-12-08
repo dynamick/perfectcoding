@@ -1,20 +1,38 @@
 <?php get_header(); ?>
 
-<!-- Section -->
-<section>
+<div class="row">	
 
-	<!-- Article -->
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	
-		<h1><?php _e( 'Page not found', 'html5blank' ); ?></h1>
-		<h2><a href="<?php echo home_url(); ?>"><?php _e( 'Return home?', 'html5blank' ); ?></a></h2>
+	<!-- Section -->
+	<section  class="span8">
 		
-	</article>
-	<!-- /Article -->
+		<div class="main">
 	
-</section>
-<!-- /Section -->
+	
+			<!-- Article -->
+			<article id="post-<?php the_ID(); ?>" <?php post_class('post_content'); ?>>
+				
+				<!-- Post Title -->
+				<div class="section">
+					<h1><?php _e( 'Page not found', 'perfectcoding' ); ?></h1>
+				</div>
+				<!-- /Post Title -->				
+				
+				<div class="inner">
+							
+					<h2><a href="<?php echo home_url(); ?>"><?php _e( 'Return home?', 'perfectcoding' ); ?></a></h2>
 
-<?perfectcodingdebar(); ?>
+				</div>
+			
+			</article>
+			<!-- /Article -->
+		
+		</div>
+	
+	</section>
+	<!-- /Section -->
+	
+<?php get_sidebar(); ?>
 
-<?php get_footer(); ?>; ?
+</div>
+
+<?php get_footer(); ?>
