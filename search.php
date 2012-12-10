@@ -7,7 +7,7 @@
 		
 		<div class="main">		
 	
-			<h2 class="section"><?php echo sprintf( __( '%s Search Results for ', 'perfectcoding' ), $wp_query->found_posts ); echo get_search_query(); ?></h2>
+			<div class="section"><h2><?php echo sprintf( __( '%s Search Results for ', 'perfectcoding' ), $wp_query->found_posts ); echo get_search_query(); ?></h2></div>
 		
 			<?php get_template_part('loop'); ?>
 		
