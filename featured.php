@@ -8,6 +8,7 @@
 					'posts_per_page' => 5, 
 					'offset' => 0 
 					)); 
+					$count = 1;
 	   			 while ( $the_query->have_posts() ) : $the_query->the_post();
 				 	if ( has_post_thumbnail() ) { // the current post has a thumbnail
 			?>
@@ -24,8 +25,8 @@
 				wp_reset_postdata();
 			?>
 		</div><!-- carousel-inner -->
-		<a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-		<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
 	</div><!-- #myCarousel -->
 </div>
 <?php } ?>

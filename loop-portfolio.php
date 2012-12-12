@@ -7,7 +7,7 @@
 			
 		<ul class="thumbnails" >
 			
-			<?php while (have_posts()) : the_post(); ?>
+			<?php $count = 0; while (have_posts()) : the_post(); ?>
 		
 			<li class="span6">
 			
