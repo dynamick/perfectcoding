@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
 <div class="row">
-	
+
 	<!-- Section -->
 	<section class="span8">
-	
+
 		<div class="main">
-		
+
 			<div class="section"><h1><?php _e( 'Archives', 'perfectcoding' ); ?> <small>
 				<?php if ( is_day() ) : ?>
 					<?php printf( __( 'Daily Archives: %s', 'perfectcoding' ), '<span>' . get_the_date() . '</span>' ); ?>
@@ -16,20 +16,20 @@
 					<?php printf( __( 'Yearly Archives: %s', 'perfectcoding' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'perfectcoding' ) ) . '</span>' ); ?>
 				<?php endif; ?>
 			</small></h1></div>
-	
+
 			<?php get_template_part('loop'); ?>
-		
+
 			<!-- Pagination -->
 			<div id="pagination">
 				<?php perfectcoding_pagination(); ?>
 			</div>
 			<!-- /Pagination -->
-		
+
 		</div>
-	
+
 	</section>
 	<!-- /Section -->
-	
+
 	<?php get_sidebar(); ?>
 
 </div>

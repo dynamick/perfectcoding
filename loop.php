@@ -1,20 +1,20 @@
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 	<!-- Article -->
-	<?php $special_class = in_category( of_get_option('special_post_category', '') ) ? "perfectcoding_special" : '' ?>
-	<article id="post-<?php the_ID(); ?>" <?php post_class($special_class); ?> >
-									
+	<?php $special_class = in_category( of_get_option( 'special_post_category', '' ) ) ? "perfectcoding_special" : '' ?>
+
+	<article id="post-<?php the_ID(); ?>" <?php post_class( $special_class ); ?> >
+
 		<div class="inner">
-									
-			<div class="prefix"><?php perfectcoding_posted_on(); ?> - <?php the_tags('');?></div>
-			
+
+			<div class="prefix"><?php perfectcoding_posted_on(); ?> - <?php the_tags(''); ?></div>
+
 			<!-- Post Title -->
 			<h2>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+				<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_title() ); ?>"><?php the_title(); ?></a>
 			</h2>
 			<!-- /Post Title -->
-			
-			
+
 			<!-- Post Details -->
 			<ul class="post_details">
 				<li class="posted_by"><span class="postit"><?php perfectcoding_posted_by(); ?></span></li>
@@ -24,26 +24,24 @@
 			<!-- Post Thumbnail -->
 			<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
 				
-				<div class="catribbon" style=""><?php
+				<div class="catribbon"><?php
 					$category = get_the_category(); 
-					//echo '<img src="' . get_template_directory_uri() . '/img/icons/' . $category[0]->cat_ID . '.jpg" alt="" />' ;
-					echo '<span>'.$category[0]->cat_name.'</span>';
+					echo '<span>' . $category[0]->cat_name . '</span>';
 				?></div>
 
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="thumbnail post_thumbnail" >
+				<a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( get_the_title() ); ?>" class="thumbnail post_thumbnail" >
 					<?php echo the_post_thumbnail(); // Declare pixel size you need inside the array ?>
-				</a>					
+				</a>
+
 			<?php endif; ?>
 			<!-- /Post Thumbnail -->			
 		
-			<?php perfectcoding_excerpt('perfectcoding_index'); // Build your custom callback length in functions.php ?>
-		
-			<!--br class="clear"-->
-		
-			<?php #edit_post_link('Edit','<span class="label">', '</span>'); ?>
-			
+			<?php perfectcoding_excerpt( 'perfectcoding_index' ); // Build your custom callback length in functions.php ?>
+
+			<?php #edit_post_link('Edit','<span class="label">', '</span>');  # uncomment at will?>
+
 		</div>
-		
+
 	</article>
 	<!-- /Article -->
 

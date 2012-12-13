@@ -1,4 +1,12 @@
-<?php 
+<?php
+/**
+ * Twitter Bootstrap Walker Menu
+ *
+ * @package Wordpress
+ * @subpackage PerfectCoding
+ * @since 3.4.0
+ */
+
 if ( ! function_exists( 'bootstrap_setup' ) ):
 
 	function bootstrap_setup(){

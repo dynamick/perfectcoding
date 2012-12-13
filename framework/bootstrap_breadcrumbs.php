@@ -1,10 +1,12 @@
 <?php
-/*
-  -------------------------------------------------------------------
-  Adding Breadcrumbs
-  -------------------------------------------------------------------
-*/
-  
+/**
+ * Twitter Bootstrap Breadcrumb
+ *
+ * @package Wordpress
+ * @subpackage PerfectCoding
+ * @since 3.4.0
+ */
+
 function bootstrapwp_breadcrumbs() {
 
 	$delimiter 	= '<span class="divider">/</span>';

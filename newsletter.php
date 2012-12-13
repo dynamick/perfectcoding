@@ -7,4 +7,4 @@
 			<?php echo perfectcoding_mailchimp_form(); ?>
 		</div>
 	</div>
-</div>					
+</div>
