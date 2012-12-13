@@ -1,6 +1,6 @@
 <?php
 /**
- * Breadcrumbs
+ * Bootstrap Wordpress Breadcrumbs
  *
  * @package Wordpress
  * @subpackage PerfectCoding

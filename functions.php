@@ -548,8 +548,8 @@ remove_filter( 'the_excerpt', 'wpautop' ); // Remove <p> tags from Excerpt altog
 
 // Shortcodes
 
-add_shortcode( 'perfectcoding_shortcode_demo', 	'perfectcoding_shortcode_demo' ); // You can place [perfectcoding_shortcode_demo] in Pages, Posts now.
-add_shortcode( 'perfectcoding_shortcode_demo_2', 'perfectcoding_shortcode_demo_2' ); // Place [perfeccoding_shortcode_demo_2] in Pages, Posts now.
+add_shortcode( 'row', 'perfectcoding_shortcode_row' );
+add_shortcode( 'col', 'perfectcoding_shortcode_col' );
 
 // Shortcodes above would be nested like this -
 // [perfectcoding_shortcode_demo] [perfectcoding_shortcode_demo_2] Here's the page title! [/perfectcoding_shortcode_demo_2] [/perfectcoding_shortcode_demo]
@@ -604,17 +604,37 @@ function create_post_type_portfolio() {
  * ========================================================================
  */
 
-// Shortcode Demo with Nested Capability
+// Shortcode Row with Nested Capability
 
-function perfectcoding_shortcode_demo( $atts, $content = null ) {
-	return '<div class="shortcode-demo">' . do_shortcode( $content ) . '</div>'; // do_shortcode allows for nested Shortcodes
+function perfectcoding_shortcode_row( $atts, $content = null ) {
+	return '<div class="row-fluid">' . do_shortcode( $content ) . '</div>'; // do_shortcode allows for nested Shortcodes
 }
 
-// Shortcode Demo with simple <h2> tag
-// Demo Heading H2 shortcode, allows for nesting within above element. Fully expandable.
+// Shortcode Col 
 
-function perfectcoding_shortcode_demo_2( $atts, $content = null) { 
-	return '<h2>' . $content . '</h2>';
+function perfectcoding_shortcode_col( $atts, $content = null) {
+	extract( shortcode_atts( array( 'span' => 12 ), $atts) );	 
+	return '<div class="span' . $span . '">' . do_shortcode( $content ) . '</div>';
+}
+
+/*
+Plugin Name: Shortcode empty Paragraph fix
+Plugin URI: http://www.johannheyne.de/wordpress/shortcode-empty-paragraph-fix/
+Description: Fix issues when shortcodes are embedded in a block of content that is filtered by wpautop.
+Author URI: http://www.johannheyne.de
+Version: 0.1
+Put this in /wp-content/plugins/ of your Wordpress installation
+*/
+
+add_filter('the_content', 'shortcode_empty_paragraph_fix');
+function shortcode_empty_paragraph_fix( $content ) {   
+	$array = array (
+				'<p>['    => '[',
+				']</p>'   => ']',
+				']<br />' => ']'
+	);
+	$content = strtr($content, $array);
+	return $content;
 }
 
 /*
