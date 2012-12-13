@@ -46,13 +46,9 @@
 						<!-- Logo -->
 						<div id="logo">
 
-							<?php if ( get_custom_header()->url != '' ) { ?>
-
 							<h1><a href="<?php echo home_url(); ?>" title="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
 								<img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>" />
 							</a></h1>
-
-							 <?php } ?>
 
 						</div>
 						 <!--/Logo -->	

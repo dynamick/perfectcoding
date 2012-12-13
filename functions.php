@@ -47,12 +47,12 @@ if ( function_exists( 'add_theme_support' ) ) {
 
 	// Add Support for Custom Header - Uncomment below if you're going to use
 	add_theme_support( 'custom-header', array(
-		'default-image'			=> get_template_directory_uri() . '/img/perfectcoding-header.png',
-		'header-text'			=> false,
-		'default-text-color'	=> '000',
-		'width'					=> 158,
-		'height'				=> 110,
-		'random-default'		=> false
+		'default-image'         => get_template_directory_uri() . '/img/perfectcoding-header.png',
+		'header-text'           => false,
+		'default-text-color'    => '000',
+		'width'                 => 158,
+		'height'                => 110,
+		'random-default'        => false
 	));
 
 	// Enables post and comment RSS feed links to head
