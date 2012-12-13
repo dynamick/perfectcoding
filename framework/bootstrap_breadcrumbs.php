@@ -1,6 +1,6 @@
 <?php
 /**
- * Twitter Bootstrap Breadcrumb
+ * Breadcrumbs
  *
  * @package Wordpress
  * @subpackage PerfectCoding
@@ -9,7 +9,7 @@
 
 function bootstrapwp_breadcrumbs() {
 
-	$delimiter 	= '<span class="divider">/</span>';
+	$delimiter 	= '<li><span class="divider">/</span></li>';
 	$home 		= 'Home'; // text for the 'Home' link
 	$before 	= '<li class="active">'; // tag before the current crumb
 	$after 		= '</li>'; // tag after the current crumb
