@@ -422,7 +422,7 @@ if ( ! function_exists( 'perfectcoding_posted_on' ) ) :
 	function perfectcoding_posted_on() {
 		printf( __( 'Posted on %2$s', 'perfectcoding' ),
 			'meta-prep meta-prep-author',
-			sprintf( '<a href="%1$s" rel="bookmark"><time datetime="%2$s" pubdate>%3$s</time></a>',
+			sprintf( '<a href="%1$s" rel="bookmark"><time datetime="%2$s">%3$s</time></a>',
 				get_permalink(),
 				get_the_date('c'),
 				get_the_date())
