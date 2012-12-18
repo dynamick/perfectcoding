@@ -1,4 +1,4 @@
-<?php if ( of_get_option( 'newsletter_form', true ) ) { ?>
+<?php if ( ( is_page() and of_get_option( 'page_newsletter_form', true ) ) or ( is_single() and of_get_option( 'post_newsletter_form', true ) ) ) { ?>
 
 <div id="newsletter">
 	<div class="white-border">

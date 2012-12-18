@@ -191,9 +191,16 @@ function optionsframework_options() {
 		'type' => 'upload');
 
 $options[] = array(
-		'name' => __('Newsletter form?', 'options_check'),
+		'name' => __('Post: newsletter form?', 'options_check'),
 		'desc' => __('Do you want the newsletter form below the posts?', 'options_check'),
-		'id' => 'newsletter_form',
+		'id' => 'post_newsletter_form',
+		'std' => '1',
+		'type' => 'checkbox');
+
+$options[] = array(
+		'name' => __('Page: newsletter form?', 'options_check'),
+		'desc' => __('Do you want the newsletter form below the pages?', 'options_check'),
+		'id' => 'page_newsletter_form',
 		'std' => '1',
 		'type' => 'checkbox');
 
