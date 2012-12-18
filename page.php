@@ -32,7 +32,7 @@
 					
 					<?php get_template_part( 'newsletter' ); ?>
 			
-					<?php edit_post_link( 'Edit Post', '<p class="label label-warning">', '</p>' ); // Always handy to have Edit Post Links available ?>
+					<?php # edit_post_link( 'Edit Post', '<p class="label label-warning">', '</p>' ); // Always handy to have Edit Post Links available ?>
 
 					<?php comments_template( '', true ); // Remove if you don't want comments ?>
 
@@ -51,6 +51,8 @@
 				<div class="inner">
 
 					<h2><?php _e( 'Sorry, nothing to display.', 'perfectcoding' ); ?></h2>
+					<p><?php _e( 'You are looking for an empty page. We are sorry for the inconvenience.', 'perfectcoding' ); ?></p>
+					<p><a href="/"><?php _e( 'Return to home', 'perfectcoding' ); ?></a></p>
 
 				</div>
 

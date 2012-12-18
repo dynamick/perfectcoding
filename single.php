@@ -35,16 +35,29 @@
 					<?php the_content(); // Dynamic Content ?>
 					
 					<?php get_template_part( 'newsletter' ); ?>
-			
-					<?php #the_tags( __( 'Tags: ', 'perfectcoding' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
 
-					<?php # Author section, to be developed
-					/*
-						<p><?php #_e( 'This post was written by ', 'perfectcoding' ); the_author(); ?></p>
-					*/
-					?>
+					<?php if ( of_get_option( 'author_box', true ) ) : ?>
 
-					<?php edit_post_link( 'Edit Post', '<p class="label label-warning">', '</p>' ); // Always handy to have Edit Post Links available ?>
+						<?php if ( get_the_author_meta( 'description' ) ) : ?>
+
+							<div class="author-box">
+
+								<a class="pull-left author-avatar" rel="author" href="<?php echo get_the_author_meta( 'user_url' ) ? get_the_author_meta( 'user_url' ) : '#' ?>"><?php echo get_avatar( get_the_author_meta( 'user_email' ) ); ?></a>
+
+								<?php $author = get_the_author_meta( 'first_name' ) . get_the_author_meta( 'last_name' ); ?>
+								<?php if ( $author ) :?>
+									<h2><a href="#"><?php echo $author ?></a></h2>
+								<?php endif; ?>
+
+								<div class="author-desc"><?php the_author_meta( 'description' ); ?></div>
+
+							</div>
+
+						<?php endif; ?>
+
+					<?php endif; ?>
+
+					<?php # edit_post_link( 'Edit Post', '<p class="label label-warning">', '</p>' ); // Always handy to have Edit Post Links available ?>
 
 					<?php comments_template(); ?>
 

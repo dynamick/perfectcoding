@@ -72,14 +72,6 @@ if ( function_exists( 'add_theme_support' ) ) {
 
 function perfectcoding_scripts() {
 	if ( ! is_admin() ) {
-
-		# uncomment for better performance, but the framework updates could break wordpress
-		# if uncommented, remember to uncomment the add_jquery_fallback hook
-
-		//wp_deregister_script( 'jquery' ); // Deregister WordPress jQuery
-		//wp_register_script( 'jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js', array(), '1.8.2' ); // Load Google CDN jQuery
-		//wp_enqueue_script( 'jquery' ); // Enqueue it!
-
 		wp_register_script( 'modernizr', get_template_directory_uri() . '/js/modernizr.js', array('jquery'), '2.6.2' ); // Modernizr with version Number at the end
 		wp_enqueue_script( 'modernizr' ); // Enqueue it!
 
@@ -90,18 +82,8 @@ function perfectcoding_scripts() {
 		wp_enqueue_script( 'perfectcodingscripts' ); // Enqueue it!
 
 		wp_register_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '1.0.0' ); // Perfect Coding script with version number
-        wp_enqueue_script( 'bootstrap' ); // Enqueue it!
+		wp_enqueue_script( 'bootstrap' ); // Enqueue it!
     }
-}
-
-// jQuery Fallbacks load in the footer
-
-function add_jquery_fallback() {
-	$jqueryfallback  = "<!-- Protocol Relative jQuery fall back if Google CDN offline -->";
-	$jqueryfallback .= "<script>";
-	$jqueryfallback .= "window.jQuery || document.write('<script src=\"" . get_template_directory_uri() . "/js/jquery-1.8.2.min.js\"><\/script>')";
-	$jqueryfallback .= "</script>";
-	echo $jqueryfallback;
 }
 
 // Loading Conditional Scripts
@@ -215,21 +197,21 @@ function perfectcoding_styles() {
 	wp_enqueue_style( 'open_sans' ); // Enqueue it!
 }
 
+// Advanced Perfect Coding navigation: Bootstrap Menu 
+// the bootstrap_setup function is included from ./framework/bootstrap_walker_menu
+
+add_action( 'after_setup_theme', 'bootstrap_setup' );
+
 // Register Perfect Coding's Navigation menu, other than header menu defined above
 
 function register_perfectcoding_menu() {	
 	register_nav_menus( array( // Using array to specify more menus if needed
 		'sidebar-menu' => __( 'Sidebar Menu', 'perfectcoding' ), // Sidebar Navigation
-		'footer-col1'  => __( 'Footer col1 Menu', 'perfectcoding' ), // Footer Col1 Menu
-		'footer-col2'  => __( 'Footer col2 Menu', 'perfectcoding' ), // Footer Col2 Menu
-		'footer-col3'  => __( 'Footer col3 Menu', 'perfectcoding' ) // Footer Col3 Menu
+		'custom-menu1'  => __( 'Custom Menu 1', 'perfectcoding' ), // custom menu 1
+		'custom-menu2'  => __( 'Custom Menu 2', 'perfectcoding' ), // custom menu 2
+		'custom-menu3'  => __( 'Custom Menu 3', 'perfectcoding' )  // custom menu 3
 	));
 }
-
-// Advanced Perfect Coding navigation: Bootstrap Menu 
-// the bootstrap_setup function is included from ./framework/bootstrap_walker_menu
-
-add_action( 'after_setup_theme', 'bootstrap_setup' );
 
 // Remove the <div> surrounding the dynamic navigation to cleanup markup
 
@@ -504,7 +486,6 @@ add_action( 'init', 				'create_post_type_portfolio' ); // Add our Portfolio Pos
 add_action( 'widgets_init', 		'my_remove_recent_comments_style' ); // Remove inline Recent Comment Styles from wp_head()
 add_action( 'init', 				'perfectcoding_pagination' ); // Add our HTML5 Pagination
 # add_action( 'wp_print_scripts', 	'conditional_scripts' ); // Add Conditional Page Scripts
-# add_action( 'wp_footer', 			'add_jquery_fallback' ); // jQuery fallbacks loaded through footer
 # add_action( 'wp_footer', 			'add_facebook_script' ); // Facebook SDK
 
 // Remove Actions
@@ -615,26 +596,6 @@ function perfectcoding_shortcode_row( $atts, $content = null ) {
 function perfectcoding_shortcode_col( $atts, $content = null) {
 	extract( shortcode_atts( array( 'span' => 12 ), $atts) );	 
 	return '<div class="span' . $span . '">' . do_shortcode( $content ) . '</div>';
-}
-
-/*
-Plugin Name: Shortcode empty Paragraph fix
-Plugin URI: http://www.johannheyne.de/wordpress/shortcode-empty-paragraph-fix/
-Description: Fix issues when shortcodes are embedded in a block of content that is filtered by wpautop.
-Author URI: http://www.johannheyne.de
-Version: 0.1
-Put this in /wp-content/plugins/ of your Wordpress installation
-*/
-
-add_filter('the_content', 'shortcode_empty_paragraph_fix');
-function shortcode_empty_paragraph_fix( $content ) {   
-	$array = array (
-				'<p>['    => '[',
-				']</p>'   => ']',
-				']<br />' => ']'
-	);
-	$content = strtr($content, $array);
-	return $content;
 }
 
 /*
@@ -849,7 +810,7 @@ function perfectcoding_ribbon_save_postdata( $post_id ) {
 
 	// verify this came from the our screen and with proper authorization,
 	// because save_post can be triggered at other times
-	if ( !wp_verify_nonce( $_POST['myplugin_noncename'], plugin_basename( __FILE__ ) ) )
+	if ( ! array_key_exists( 'myplugin_noncename', $_POST ) || ! wp_verify_nonce( $_POST['myplugin_noncename'], plugin_basename( __FILE__ ) ) )
 		return;
 
 	// Check permissions

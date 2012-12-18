@@ -14,9 +14,9 @@
 		<?php wp_list_comments( 'type=comment&callback=perfectcodingcomments' ); // Custom callback in functions.php ?>
 	</ol>
 
-	<nav id="pagination">
-		<?php paginate_comments_links(); ?> 
-	</nav>	
+	<?php if ( $pagination = paginate_comments_links( array( 'echo' => false ) ) ) { ?>
+		<nav id="pagination"><?php echo $pagination; ?></nav>
+	<?php } ?>
 
 <?php elseif ( ! comments_open() && ! is_page() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 

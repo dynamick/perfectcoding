@@ -70,7 +70,7 @@ input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-s
 button::-moz-focus-inner, input::-moz-focus-inner {border:0;padding:0;}
 textarea {overflow:auto;vertical-align:top;resize:vertical;}
 input:valid, textarea:valid {}
-input:invalid, textarea:invalid {background-color:#DEEFEF;}
+input:invalid, textarea:invalid {background-color:#F3F3F3;}
 table {border-collapse:collapse;border-spacing:0;}
 td {vertical-align:top;}
 
@@ -158,7 +158,7 @@ header nav {padding-bottom: 18px;  /*border:1px solid rgba(0,0,0,0.1); border-wi
 /* POST BODY
  ------------------------------------------------------------ */
 
-#featured-wrapper {background:#444; box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; -webkit-box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; position:relative; margin-top:-17px; padding: 60px;}
+#featured-wrapper {min-height: 212px; background:#444; box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; -webkit-box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; position:relative; margin-top:-17px; padding: 60px;}
 .carousel {margin-bottom:0}
 .carousel-caption h4 a {color:#fff; text-shadow:0 1px #000;}
 nav .breadcrumb {background: transparent; font-size:0.7em; padding: 0; margin: 2em 0 0 0; position:relative; border-bottom:1px dotted #CCC;}
@@ -179,7 +179,7 @@ article .prefix {font-family: 'Lora', serif;color: #999; margin-top:2em; margin-
 article .prefix a{color: #999;}
 article h2, article h1 {font-size:2em;line-height:1.1em;text-shadow: 0 1px #FFF}
 article h2 a, article h1 a {color: #333;}
-article .post_details {font-family: 'Lora', serif; padding-top:0.5em;color: #999; overflow:hidden; list-style-type:none; margin: 0 0 2em;}
+article .post_details {font-family: 'Lora', serif; padding-top:0.5em;color: #999; overflow:hidden; list-style-type:none; margin: 0 0 1em;}
 article .posted_by {font-family: 'Lora', serif; display:block; padding-bottom: 0.5em; border-bottom: 1px dotted #ccc;margin-bottom:0.5em; font-size: 1.25em;line-height: 1.35em;}
 article .date {background:url(img/icon-calendar.png) 0 1px no-repeat; padding-left: 28px; float:left; margin-right: 28px;}
 article .comments {background:url(img/icon-comments.png) 0px 1px no-repeat; padding-left: 28px; float:left;}
@@ -189,7 +189,7 @@ article .catribbon:before {content:""; position: absolute;left:0; bottom: -10px;
 article .catribbon span:before {content:'';}
 article .catribbon span:after {content:'';}
 article a.post_thumbnail { display:block; position:relative; margin:0 -60px; }
-article .excerpt {margin-top: 1em;}
+article .excerpt {margin: 1em 0 2em;}
 article .view-article {display:block; margin: 0.5em 0 1em;}
 article .view-article:after {content:' ➪';}
 nav#pagination {text-align:center; margin: 1em 0; position:relative; /*z-index: 10*/}
@@ -205,6 +205,7 @@ section li, article li { padding: 0.25em 0;}
 .post_content h4 { font-size: 1.0em; }
 .post_content h4 { font-size: 0.8em; }
 .post_content img {margin: 4px 4px 4px 0; padding: 4px; background-color: white; border:0px solid rgba(0,0,0,0.1)}
+.post_content .carousel-inner img {margin:0; padding:0;}
 .post_content p a {text-decoration:underline;}
 .post_content p a:hover {text-decoration:underline;}
 .post_content .media-heading {padding:0!important;}
@@ -233,6 +234,16 @@ article.perfectcoding_special .post_details {color: #fff; }
 .portfolio-container article.blue .portfolio-thumb:before {background-image: url(img/blue-ribbon.png);}
 .portfolio-container article.yellow .portfolio-thumb:before {background-image: url(img/yellow-ribbon.png);}
 
+
+/* Author box
+------------------------------------------------------------ */
+
+.author-box {background:#444; color:#999; box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; -webkit-box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; font-size: 0.8em; margin: 4em -60px; padding: 2em 60px; overflow:hidden;}
+.author-avatar {margin-right: 20px;}
+.author-box h2 {padding-top:4px; color: #111;  text-shadow: 0px 2px 3px #555;}
+.author-box a {color: #111;}
+.author-box a:hover {color: #E7492F;}
+
 /* Newsletter
 ------------------------------------------------------------ */
 
@@ -253,8 +264,9 @@ article.perfectcoding_special .post_details {color: #fff; }
 /* Comments
 ------------------------------------------------------------ */
 
+#comments {margin-top: 3em;}
 h3.comments-title { border-bottom: 1px dashed rgba(0,0,0,0.2); font-size: 1.8em; padding-bottom: 0.25em; margin-bottom: 1.25em; margin-top: 30px;}
-ol.commentlist {list-style-type: none; margin: 0 0 15px; padding:0;}
+ol.commentlist {list-style-type: none; margin: 0; padding:0;}
 ol.commentlist ul, ol.commentlist ol { list-style: none outside none;}
 .comment-author.vcard {font-size: 18px; display:inline;margin-left:50px;line-height:40px; font-family: 'Lora', serif;}
 .comment-meta {display:inline}
@@ -270,7 +282,8 @@ ol.commentlist ul, ol.commentlist ol { list-style: none outside none;}
 .comment-reply-link {position: absolute;right: 20px;top: 20px;}
 .commentlist .children > li {margin-bottom: 10px;padding-bottom: 10px;padding-left: 30px;}
 .commentlist .children li > .comment-body .comment-text{background-color: #EEEEEE;}
-.commentlist .highlighted > .comment-body .comment-text{border: medium none;padding: 1px !important;}	 
+.commentlist .highlighted > .comment-body .comment-text{border: medium none;padding: 1px !important;}
+#reply-title {padding-top:0;}
 #respond {margin-bottom: 4em;}
 .form-allowed-tags {display: none;}
 #commentform label {font-family: 'Lora', serif; font-size: 1em; font-weight: bold;}
@@ -279,7 +292,7 @@ ol.commentlist ul, ol.commentlist ol { list-style: none outside none;}
 /* Sidebar
 ------------------------------------------------------------ */
 
-aside {text-align:center;}
+aside {text-align:center; margin-bottom:80px;}
 .sidebar {margin-top: 2em;font-size: 14px; text-align:left; line-height: 1.5em;}
 .sidebar p {line-height: 1.5em;}
 .sidebar-widget h3 {font-size: 24px; font-weight:bold; line-height: 1.2em; margin: 0 0 0.5em; border-bottom:1px dashed rgba(0,0,0,0.2); padding-bottom:0.5em;}
@@ -366,9 +379,9 @@ html.lt-ie8 header.head { z-index:10;}
    ========================================================================== */
    
 /* Custom Selection Styles */
-::selection {background:#D31245;color:#FFF;text-shadow:none;}
-::-webkit-selection {background:#D31245;color:#FFF;text-shadow:none;}
-::-moz-selection {background:#D31245;color:#FFF;text-shadow:none;}
+::selection {background:#41B8D8;color:#FFF;text-shadow:none;}
+::-webkit-selection {background:#41B8D8;color:#FFF;text-shadow:none;}
+::-moz-selection {background:#41B8D8;color:#FFF;text-shadow:none;}
    
 /* Input focus styles */
 input:focus {outline:0;border:1px solid #0091BD;} /* Gets rid of blue glow on field focus, adds border color instead */

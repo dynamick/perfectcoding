@@ -75,6 +75,7 @@ function optionsframework_options() {
 	// Pull all the categories into an array
 	$options_categories = array();
 	$options_categories_obj = get_categories();
+	$options_categories[] = 'Select a category';
 	foreach ($options_categories_obj as $category) {
 		//$options_categories[$category->cat_ID] = $category->cat_name;
 		$options_categories[$category->slug] = $category->cat_name;
@@ -163,7 +164,7 @@ function optionsframework_options() {
 
 	$options[] = array(
 		'name' => __('Home Slides?', 'options_check'),
-		'desc' => __('Do u want slides in homepage?', 'options_check'),
+		'desc' => __('Do you want slides in homepage?', 'options_check'),
 		'id' => 'home_slides',
 		'std' => '1',
 		'type' => 'checkbox');
@@ -181,13 +182,27 @@ function optionsframework_options() {
 		'id' => 'special_post_category',
 		'type' => 'select',
 		'options' => $options_categories);
-		
+
 	$options[] = array(
 		'name' => __('Favicon', 'options_check'),
 		'desc' => __('Upload a 16x16 favicon image (.ico, .png or .gif).', 'options_check'),
 		'id' => 'favicon_img',
 		'std' => get_template_directory_uri() .'/favicon.ico',
-		'type' => 'upload');		
+		'type' => 'upload');
+
+$options[] = array(
+		'name' => __('Newsletter form?', 'options_check'),
+		'desc' => __('Do you want the newsletter form below the posts?', 'options_check'),
+		'id' => 'newsletter_form',
+		'std' => '1',
+		'type' => 'checkbox');
+
+$options[] = array(
+		'name' => __('Author Box?', 'options_check'),
+		'desc' => __('Do you want the author box below the posts?', 'options_check'),
+		'id' => 'author_box',
+		'std' => '1',
+		'type' => 'checkbox');
 
 	return $options;
 }

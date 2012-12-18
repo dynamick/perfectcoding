@@ -1,3 +1,5 @@
+<?php if ( of_get_option( 'newsletter_form', true ) ) { ?>
+
 <div id="newsletter">
 	<div class="white-border">
 		<div class="newsletter-wrap">
@@ -8,3 +10,4 @@
 		</div>
 	</div>
 </div>
+<?php } ?>
