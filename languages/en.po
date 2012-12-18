@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PerfectCoding\n"
-"POT-Creation-Date: 2012-12-08 16:57+0100\n"
-"PO-Revision-Date: 2012-12-08 16:58+0100\n"
+"POT-Creation-Date: 2012-12-18 12:40+0100\n"
+"PO-Revision-Date: 2012-12-18 12:40+0100\n"
 "Last-Translator: michele <info@dynamick.it>\n"
 "Language-Team: Michele Gobbi <info@dynamick.it>\n"
 "Language: English\n"
@@ -16,37 +16,38 @@ msgstr ""
 "X-Poedit-SearchPath-0: ..\n"
 
 #: ../HTML5-Blank-WordPress-Theme copia/404.php:9 copy2/404.php:9
-#: ../perfectcoding/404.php:16 ../perfectcoding_bak/404.php:9
+#: ../perfectcoding/404.php:15 ../perfectcoding_bak/404.php:9
 msgid "Page not found"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/404.php:10 copy2/404.php:10
-#: ../perfectcoding/404.php:22 ../perfectcoding_bak/404.php:10
+#: ../perfectcoding/404.php:21 ../perfectcoding_bak/404.php:10
 msgid "Return home?"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/archive.php:6 copy2/archive.php:6
 #: ../perfectcoding/archive.php:10 ../perfectcoding_bak/archive.php:10
 #: ../twentyeleven/sidebar.php:19 ../twentyten/sidebar.php:27
+#: ../twentytwelve/archive.php:35
 msgid "Archives"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/author.php:8 copy2/author.php:8
-#: ../perfectcoding/author.php:13 ../perfectcoding_bak/author.php:8
+#: ../perfectcoding_bak/author.php:8
 msgid "Author Archives for "
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/author.php:41 copia/loop.php:17
 #: copia/single.php:32 copy2/author.php:41 copy2/loop.php:20
-#: copy2/single.php:29 ../perfectcoding/functions.php:544
+#: copy2/single.php:29 ../perfectcoding/functions.php:422
 #: ../perfectcoding_bak/author.php:41 ../perfectcoding_bak/functions.php:690
 msgid "Published by"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/author.php:42 copia/loop.php:19
 #: copia/single.php:33 copy2/author.php:42 copy2/loop.php:22
-#: copy2/single.php:31 ../perfectcoding/page.php:28
-#: ../perfectcoding/single.php:34 ../perfectcoding/template-full.php:30
+#: copy2/single.php:31 ../perfectcoding/page.php:27
+#: ../perfectcoding/single.php:31 ../perfectcoding/template-full.php:29
 #: ../perfectcoding_bak/author.php:42 ../perfectcoding_bak/page.php:31
 #: ../perfectcoding_bak/single.php:34
 msgid "Leave your thoughts"
@@ -54,8 +55,8 @@ msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/author.php:42 copia/loop.php:19
 #: copia/single.php:33 copy2/author.php:42 copy2/loop.php:22
-#: copy2/single.php:31 ../perfectcoding/page.php:28
-#: ../perfectcoding/single.php:34 ../perfectcoding/template-full.php:30
+#: copy2/single.php:31 ../perfectcoding/page.php:27
+#: ../perfectcoding/single.php:31 ../perfectcoding/template-full.php:29
 #: ../perfectcoding_bak/author.php:42 ../perfectcoding_bak/page.php:31
 #: ../perfectcoding_bak/single.php:34 ../twentyten/loop.php:99
 #: ../twentyten/loop.php:122 ../twentyten/loop.php:164
@@ -64,8 +65,8 @@ msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/author.php:42 copia/loop.php:19
 #: copia/single.php:33 copy2/author.php:42 copy2/loop.php:22
-#: copy2/single.php:31 ../perfectcoding/page.php:28
-#: ../perfectcoding/single.php:34 ../perfectcoding/template-full.php:30
+#: copy2/single.php:31 ../perfectcoding/page.php:27
+#: ../perfectcoding/single.php:31 ../perfectcoding/template-full.php:29
 #: ../perfectcoding_bak/author.php:42 ../perfectcoding_bak/page.php:31
 #: ../perfectcoding_bak/single.php:34 ../twentyten/loop.php:99
 #: ../twentyten/loop.php:122 ../twentyten/loop.php:164
@@ -75,10 +76,10 @@ msgstr ""
 #: ../HTML5-Blank-WordPress-Theme copia/author.php:61 copia/loop.php:51
 #: copia/page.php:31 copia/single.php:63 copia/template-demo.php:33
 #: copy2/author.php:61 copy2/loop.php:54 copy2/page.php:31 copy2/single.php:65
-#: copy2/template-demo.php:33 ../perfectcoding/loop-portfolio.php:56
-#: ../perfectcoding/loop.php:57 ../perfectcoding/page.php:56
-#: ../perfectcoding/single.php:68 ../perfectcoding/template-contacts.php:44
-#: ../perfectcoding/template-full.php:58 ../perfectcoding_bak/author.php:61
+#: copy2/template-demo.php:33 ../perfectcoding/loop-portfolio.php:55
+#: ../perfectcoding/loop.php:55 ../perfectcoding/page.php:53
+#: ../perfectcoding/single.php:80 ../perfectcoding/template-contacts.php:44
+#: ../perfectcoding/template-full.php:55 ../perfectcoding_bak/author.php:61
 #: ../perfectcoding_bak/loop.php:56 ../perfectcoding_bak/page.php:57
 #: ../perfectcoding_bak/single.php:68
 #: ../perfectcoding_bak/template-demo.php:33
@@ -91,46 +92,46 @@ msgid "Categories for"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/comments.php:3 copy2/comments.php:3
-#: ../perfectcoding/comments.php:3 ../perfectcoding_bak/comments.php:3
+#: ../perfectcoding/comments.php:4 ../perfectcoding_bak/comments.php:3
 msgid "Post is password protected. Enter the password to view any comments."
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/comments.php:18 copy2/comments.php:18
-#: ../perfectcoding/comments.php:24 ../perfectcoding_bak/comments.php:24
+#: ../perfectcoding/comments.php:23 ../perfectcoding_bak/comments.php:24
 msgid "Comments are closed here."
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/footer.php:7 copy2/footer.php:7
-#: ../perfectcoding/footer.php:22 ../perfectcoding_bak/footer.php:22
+#: ../perfectcoding/footer.php:21 ../perfectcoding_bak/footer.php:22
 msgid "Powered by"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:202
-#: copy2/functions.php:202 ../perfectcoding/functions.php:178
+#: copy2/functions.php:202 ../perfectcoding/functions.php:160
 #: ../perfectcoding_bak/functions.php:218
 #, php-format
 msgid "<cite class=\"fn\">%s</cite> <span class=\"says\">says:</span>"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:205
-#: copy2/functions.php:205 ../perfectcoding/functions.php:181
-#: ../perfectcoding_bak/functions.php:221 ../twentyeleven/functions.php:554
-#: ../twentyten/functions.php:338
+#: copy2/functions.php:205 ../perfectcoding/functions.php:163
+#: ../perfectcoding_bak/functions.php:221 ../twentyeleven/functions.php:557
+#: ../twentyten/functions.php:341 ../twentytwelve/functions.php:304
 msgid "Your comment is awaiting moderation."
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:212
-#: copy2/functions.php:212 ../perfectcoding/functions.php:185
-#: ../perfectcoding_bak/functions.php:225 ../twentyeleven/functions.php:545
-#: ../twentyten/functions.php:345
+#: copy2/functions.php:212 ../perfectcoding/functions.php:167
+#: ../perfectcoding_bak/functions.php:225 ../twentyeleven/functions.php:548
+#: ../twentyten/functions.php:348 ../twentytwelve/functions.php:298
 #, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:212
-#: copy2/functions.php:212 ../perfectcoding/functions.php:185
-#: ../perfectcoding_bak/functions.php:225 ../twentyten/functions.php:345
-#: ../twentyten/functions.php:362
+#: copy2/functions.php:212 ../perfectcoding/functions.php:167
+#: ../perfectcoding_bak/functions.php:225 ../twentyten/functions.php:348
+#: ../twentyten/functions.php:365 ../twentytwelve/functions.php:277
 msgid "(Edit)"
 msgstr ""
 
@@ -140,7 +141,7 @@ msgid "Header Menu"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:241
-#: ../perfectcoding/functions.php:220 ../perfectcoding_bak/functions.php:264
+#: ../perfectcoding_bak/functions.php:264
 msgid "Sidebar Menu"
 msgstr ""
 
@@ -168,7 +169,7 @@ msgid "Widget Area 2"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:361
-#: copy2/functions.php:367 ../perfectcoding/functions.php:382
+#: copy2/functions.php:367 ../perfectcoding/functions.php:372
 #: ../perfectcoding_bak/functions.php:422
 msgid "View Article"
 msgstr ""
@@ -181,7 +182,7 @@ msgid "HTML5 Blank Custom Post"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:466
-#: copy2/functions.php:473 ../perfectcoding/functions.php:675
+#: copy2/functions.php:473 ../perfectcoding/functions.php:553
 #: ../perfectcoding_bak/functions.php:531
 msgid "Add New"
 msgstr ""
@@ -192,19 +193,23 @@ msgid "Add New HTML5 Blank Custom Post"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:468
-#: copy2/functions.php:475 ../perfectcoding/functions.php:677
+#: copy2/functions.php:475 ../perfectcoding/functions.php:555
 #: ../perfectcoding_bak/functions.php:533 ../twentyeleven/content-aside.php:44
 #: ../twentyeleven/content-featured.php:45
 #: ../twentyeleven/content-gallery.php:90 ../twentyeleven/content-image.php:68
 #: ../twentyeleven/content-intro.php:19 ../twentyeleven/content-link.php:44
 #: ../twentyeleven/content-page.php:21 ../twentyeleven/content-quote.php:72
 #: ../twentyeleven/content-single.php:52 ../twentyeleven/content-status.php:45
-#: ../twentyeleven/content.php:80 ../twentyeleven/functions.php:522
-#: ../twentyeleven/functions.php:550 ../twentyeleven/image.php:41
+#: ../twentyeleven/content.php:82 ../twentyeleven/functions.php:525
+#: ../twentyeleven/functions.php:553 ../twentyeleven/image.php:41
 #: ../twentyten/loop-attachment.php:63 ../twentyten/loop-attachment.php:111
 #: ../twentyten/loop-page.php:30 ../twentyten/loop-single.php:56
 #: ../twentyten/loop.php:100 ../twentyten/loop.php:123
-#: ../twentyten/loop.php:165
+#: ../twentyten/loop.php:165 ../twentytwelve/content-aside.php:26
+#: ../twentytwelve/content-image.php:26 ../twentytwelve/content-link.php:24
+#: ../twentytwelve/content-page.php:21 ../twentytwelve/content-quote.php:23
+#: ../twentytwelve/content-status.php:30 ../twentytwelve/content.php:46
+#: ../twentytwelve/functions.php:309 ../twentytwelve/image.php:37
 msgid "Edit"
 msgstr ""
 
@@ -248,9 +253,8 @@ msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/searchform.php:6
 #: copia/searchform.php:7 copy2/searchform.php:6 copy2/searchform.php:7
-#: ../perfectcoding/searchform.php:6 ../perfectcoding/searchform.php:7
-#: ../perfectcoding_bak/searchform.php:6 ../perfectcoding_bak/searchform.php:7
-#: ../twentyeleven/searchform.php:11
+#: ../perfectcoding/searchform.php:6 ../perfectcoding_bak/searchform.php:6
+#: ../perfectcoding_bak/searchform.php:7 ../twentyeleven/searchform.php:11
 msgid "Search"
 msgstr ""
 
@@ -272,419 +276,411 @@ msgid "Tag Archive: "
 msgstr ""
 
 #: ../perfectcoding/archive.php:12 ../twentyeleven/archive.php:25
+#: ../twentytwelve/archive.php:29
 #, php-format
 msgid "Daily Archives: %s"
 msgstr ""
 
 #: ../perfectcoding/archive.php:14 ../twentyeleven/archive.php:27
+#: ../twentytwelve/archive.php:31
 #, php-format
 msgid "Monthly Archives: %s"
 msgstr ""
 
 #: ../perfectcoding/archive.php:16 ../twentyeleven/archive.php:29
+#: ../twentytwelve/archive.php:33
 #, php-format
 msgid "Yearly Archives: %s"
 msgstr ""
 
-#: ../perfectcoding/author.php:19
+#: ../perfectcoding/author.php:17
 msgid "About me"
 msgstr ""
 
-#: ../perfectcoding/comments.php:35 ../perfectcoding_bak/comments.php:35
-msgid "Leave a Reply"
+#: ../perfectcoding/functions.php:209
+msgid "Custom Menu 1"
 msgstr ""
 
-#: ../perfectcoding/comments.php:35 ../perfectcoding_bak/comments.php:35
-#, php-format
-msgid "Leave a Reply to %s"
+#: ../perfectcoding/functions.php:210
+msgid "Custom Menu 2"
 msgstr ""
 
-#: ../perfectcoding/comments.php:38 ../perfectcoding_bak/comments.php:38
-#, php-format
-msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+#: ../perfectcoding/functions.php:211
+msgid "Custom Menu 3"
 msgstr ""
 
-#: ../perfectcoding/comments.php:42 ../perfectcoding_bak/comments.php:42
-#, php-format
-msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
-msgstr ""
-
-#: ../perfectcoding/comments.php:42 ../perfectcoding_bak/comments.php:42
-msgid "Log out of this account"
-msgstr ""
-
-#: ../perfectcoding/comments.php:42 ../perfectcoding_bak/comments.php:42
-msgid "Log out &raquo;"
-msgstr ""
-
-#: ../perfectcoding/comments.php:44 ../perfectcoding/functions.php:570
-#: ../perfectcoding_bak/comments.php:44 ../perfectcoding_bak/functions.php:716
-msgid "Name"
-msgstr ""
-
-#: ../perfectcoding/comments.php:44 ../perfectcoding/comments.php:46
-#: ../perfectcoding_bak/comments.php:44 ../perfectcoding_bak/comments.php:46
-msgid " (required)"
-msgstr ""
-
-#: ../perfectcoding/comments.php:46 ../perfectcoding_bak/comments.php:46
-msgid "Email (will not be published)"
-msgstr ""
-
-#: ../perfectcoding/comments.php:48 ../perfectcoding_bak/comments.php:48
-msgid "Website"
-msgstr ""
-
-#: ../perfectcoding/comments.php:51 ../perfectcoding_bak/comments.php:51
-msgid "Comment"
-msgstr ""
-
-#: ../perfectcoding/comments.php:53 ../perfectcoding_bak/comments.php:53
-msgid "Submit Comment"
-msgstr ""
-
-#: ../perfectcoding/functions.php:221 ../perfectcoding_bak/functions.php:265
-msgid "Footer col1 Menu"
-msgstr ""
-
-#: ../perfectcoding/functions.php:222 ../perfectcoding_bak/functions.php:266
-msgid "Footer col2 Menu"
-msgstr ""
-
-#: ../perfectcoding/functions.php:223 ../perfectcoding_bak/functions.php:267
-msgid "Footer col3 Menu"
-msgstr ""
-
-#: ../perfectcoding/functions.php:273
+#: ../perfectcoding/functions.php:258
 msgid "Top Sidebar"
 msgstr ""
 
-#: ../perfectcoding/functions.php:274
+#: ../perfectcoding/functions.php:259
 msgid "Top part of the sidebar"
 msgstr ""
 
-#: ../perfectcoding/functions.php:284
+#: ../perfectcoding/functions.php:270
 msgid "Bottom Sidebar"
 msgstr ""
 
-#: ../perfectcoding/functions.php:285
+#: ../perfectcoding/functions.php:271
 msgid "Bottom part of the sidebar"
 msgstr ""
 
-#: ../perfectcoding/functions.php:295
+#: ../perfectcoding/functions.php:282
 msgid "Footer left"
 msgstr ""
 
-#: ../perfectcoding/functions.php:296
+#: ../perfectcoding/functions.php:283
 msgid "Footer left area"
 msgstr ""
 
-#: ../perfectcoding/functions.php:306
+#: ../perfectcoding/functions.php:294
 msgid "Footer Middle"
 msgstr ""
 
-#: ../perfectcoding/functions.php:307
+#: ../perfectcoding/functions.php:295
 msgid "Footer middle area"
 msgstr ""
 
-#: ../perfectcoding/functions.php:317
+#: ../perfectcoding/functions.php:306
 msgid "Footer Right"
 msgstr ""
 
-#: ../perfectcoding/functions.php:318
+#: ../perfectcoding/functions.php:307
 msgid "Footer right area"
 msgstr ""
 
-#: ../perfectcoding/functions.php:510 ../perfectcoding_bak/functions.php:656
-msgid "Page"
-msgstr ""
-
-#: ../perfectcoding/functions.php:527 ../perfectcoding_bak/functions.php:673
+#: ../perfectcoding/functions.php:404 ../perfectcoding_bak/functions.php:673
 #, php-format
 msgid "Posted on %2$s"
 msgstr ""
 
-#: ../perfectcoding/functions.php:571
+#: ../perfectcoding/functions.php:449 ../perfectcoding_bak/comments.php:44
+#: ../perfectcoding_bak/functions.php:716
+msgid "Name"
+msgstr ""
+
+#: ../perfectcoding/functions.php:450
 msgid "How could we call you?"
 msgstr ""
 
-#: ../perfectcoding/functions.php:573 ../perfectcoding_bak/functions.php:719
+#: ../perfectcoding/functions.php:451 ../perfectcoding_bak/functions.php:719
 msgid "Email"
 msgstr ""
 
-#: ../perfectcoding/functions.php:574
+#: ../perfectcoding/functions.php:452
 msgid "How could we contact you?"
 msgstr ""
 
-#: ../perfectcoding/functions.php:586
+#: ../perfectcoding/functions.php:462
 msgid "What do you want ask me?"
 msgstr ""
 
-#: ../perfectcoding/functions.php:673
+#: ../perfectcoding/functions.php:551
 msgid "Portfolio"
 msgstr ""
 
-#: ../perfectcoding/functions.php:674
+#: ../perfectcoding/functions.php:552
 msgid "Portfolio post"
 msgstr ""
 
-#: ../perfectcoding/functions.php:676
+#: ../perfectcoding/functions.php:554
 msgid "Add New Portfolio Post"
 msgstr ""
 
-#: ../perfectcoding/functions.php:678
+#: ../perfectcoding/functions.php:556
 msgid "Edit Portfolio Post"
 msgstr ""
 
-#: ../perfectcoding/functions.php:679
+#: ../perfectcoding/functions.php:557
 msgid "New Portfolio Post"
 msgstr ""
 
-#: ../perfectcoding/functions.php:680 ../perfectcoding/functions.php:681
+#: ../perfectcoding/functions.php:558 ../perfectcoding/functions.php:559
 msgid "View Portfolio Post"
 msgstr ""
 
-#: ../perfectcoding/functions.php:682
+#: ../perfectcoding/functions.php:560
 msgid "Search Portfolio Post"
 msgstr ""
 
-#: ../perfectcoding/functions.php:683
+#: ../perfectcoding/functions.php:561
 msgid "No portfolio post found"
 msgstr ""
 
-#: ../perfectcoding/functions.php:684
+#: ../perfectcoding/functions.php:562
 msgid "No Portfolio Posts found in Trash"
 msgstr ""
 
-#: ../perfectcoding/functions.php:728
+#: ../perfectcoding/functions.php:608
 msgid "follow @dynamick"
 msgstr ""
 
-#: ../perfectcoding/functions.php:737
+#: ../perfectcoding/functions.php:617
 msgid "Add your email"
 msgstr ""
 
-#: ../perfectcoding/functions.php:738
+#: ../perfectcoding/functions.php:618
 msgid "Subscribe"
 msgstr ""
 
-#: ../perfectcoding/functions.php:833
+#: ../perfectcoding/functions.php:700
 #: ../perfectcoding/framework/class-tgm-plugin-activation.php:164
 msgid "Install Required Plugins"
 msgstr ""
 
-#: ../perfectcoding/functions.php:834
+#: ../perfectcoding/functions.php:701
 #: ../perfectcoding/framework/class-tgm-plugin-activation.php:165
 msgid "Install Plugins"
 msgstr ""
 
-#: ../perfectcoding/functions.php:835
+#: ../perfectcoding/functions.php:702
 #: ../perfectcoding/framework/class-tgm-plugin-activation.php:166
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr ""
 
-#: ../perfectcoding/functions.php:836
+#: ../perfectcoding/functions.php:703
 msgid "Something went wrong with the plugin API."
 msgstr ""
 
-#: ../perfectcoding/functions.php:847
+#: ../perfectcoding/functions.php:714
 #: ../perfectcoding/framework/class-tgm-plugin-activation.php:178
 #: ../perfectcoding/framework/class-tgm-plugin-activation.php:490
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
-#: ../perfectcoding/functions.php:848
+#: ../perfectcoding/functions.php:715
 #: ../perfectcoding/framework/class-tgm-plugin-activation.php:179
 #: ../perfectcoding/framework/class-tgm-plugin-activation.php:1846
 msgid "Plugin activated successfully."
 msgstr ""
 
-#: ../perfectcoding/functions.php:849
+#: ../perfectcoding/functions.php:716
 #, php-format
 msgid "All plugins installed and activated successfully. %s"
 msgstr ""
 
-#: ../perfectcoding/functions.php:904
+#: ../perfectcoding/functions.php:765
 msgid "Ribbon Type"
 msgstr ""
 
-#: ../perfectcoding/functions.php:922
+#: ../perfectcoding/functions.php:783
 msgid "Ribbon type"
 msgstr ""
 
-#: ../perfectcoding/functions.php:926
+#: ../perfectcoding/functions.php:787
 msgid "[none]"
 msgstr ""
 
-#: ../perfectcoding/functions.php:928
+#: ../perfectcoding/functions.php:789
 msgid "Red"
 msgstr ""
 
-#: ../perfectcoding/functions.php:930
+#: ../perfectcoding/functions.php:791
 msgid "Blue"
 msgstr ""
 
-#: ../perfectcoding/functions.php:932
+#: ../perfectcoding/functions.php:793
 msgid "Yellow"
 msgstr ""
 
-#: ../perfectcoding/functions.php:934
+#: ../perfectcoding/functions.php:795
 msgid "Green"
 msgstr ""
 
-#: ../perfectcoding/functions.php:936
+#: ../perfectcoding/functions.php:797
 msgid "Violet"
 msgstr ""
 
-#: ../perfectcoding/newsletter.php:4
+#: ../perfectcoding/loop.php:56 ../perfectcoding/page.php:54
+msgid "You are looking for an empty page. We are sorry for the inconvenience."
+msgstr ""
+
+#: ../perfectcoding/loop.php:57 ../perfectcoding/page.php:55
+msgid "Return to home"
+msgstr ""
+
+#: ../perfectcoding/newsletter.php:6
 msgid "Newsletter"
 msgstr ""
 
-#: ../perfectcoding/newsletter.php:5
+#: ../perfectcoding/newsletter.php:7
 msgid "Stay up to date with my web activities"
 msgstr ""
 
-#: ../perfectcoding/options.php:32
+#: ../perfectcoding/options.php:30
 msgid "One"
 msgstr ""
 
-#: ../perfectcoding/options.php:33
+#: ../perfectcoding/options.php:31
 msgid "Two"
 msgstr ""
 
-#: ../perfectcoding/options.php:34
+#: ../perfectcoding/options.php:32
 msgid "Three"
 msgstr ""
 
-#: ../perfectcoding/options.php:35
+#: ../perfectcoding/options.php:33
 msgid "Four"
 msgstr ""
 
-#: ../perfectcoding/options.php:36
+#: ../perfectcoding/options.php:34
 msgid "Five"
 msgstr ""
 
-#: ../perfectcoding/options.php:41
+#: ../perfectcoding/options.php:39
 msgid "French Toast"
 msgstr ""
 
-#: ../perfectcoding/options.php:42
+#: ../perfectcoding/options.php:40
 msgid "Pancake"
 msgstr ""
 
-#: ../perfectcoding/options.php:43
+#: ../perfectcoding/options.php:41
 msgid "Omelette"
 msgstr ""
 
-#: ../perfectcoding/options.php:44
+#: ../perfectcoding/options.php:42
 msgid "Crepe"
 msgstr ""
 
-#: ../perfectcoding/options.php:45
+#: ../perfectcoding/options.php:43
 msgid "Waffle"
 msgstr ""
 
-#: ../perfectcoding/options.php:106
+#: ../perfectcoding/options.php:105
 msgid "Social Settings"
 msgstr ""
 
-#: ../perfectcoding/options.php:110
+#: ../perfectcoding/options.php:109
 msgid "Facebook Fan Page"
 msgstr ""
 
-#: ../perfectcoding/options.php:111
+#: ../perfectcoding/options.php:110
 msgid "The URL of your Facebook fan page"
 msgstr ""
 
-#: ../perfectcoding/options.php:117
+#: ../perfectcoding/options.php:116
 msgid "Twitter Page"
 msgstr ""
 
-#: ../perfectcoding/options.php:118
+#: ../perfectcoding/options.php:117
 msgid "The url of your Twitter page."
 msgstr ""
 
-#: ../perfectcoding/options.php:124
+#: ../perfectcoding/options.php:123
 msgid "Feed URL"
 msgstr ""
 
-#: ../perfectcoding/options.php:125
+#: ../perfectcoding/options.php:124
 msgid "Leave blank for the default wordpress url"
 msgstr ""
 
-#: ../perfectcoding/options.php:131
+#: ../perfectcoding/options.php:130
 msgid "Mailchimp signup form link url"
 msgstr ""
 
-#: ../perfectcoding/options.php:132
+#: ../perfectcoding/options.php:131
 msgid ""
 "The url of your mailchimp signup form. You could specify any other "
 "newsletter signup url."
 msgstr ""
 
-#: ../perfectcoding/options.php:138
+#: ../perfectcoding/options.php:137
 msgid "Mailchimp signup form action url"
 msgstr ""
 
-#: ../perfectcoding/options.php:139
+#: ../perfectcoding/options.php:138
 msgid "The url of the form action of your mailchimp list"
 msgstr ""
 
-#: ../perfectcoding/options.php:145
+#: ../perfectcoding/options.php:144
 msgid "External API"
 msgstr ""
 
-#: ../perfectcoding/options.php:149
+#: ../perfectcoding/options.php:148
 msgid "Google Analytics Account ID"
 msgstr ""
 
-#: ../perfectcoding/options.php:150
+#: ../perfectcoding/options.php:149
 msgid "Paste here your UA-XXXXXXXX-X code"
 msgstr ""
 
-#: ../perfectcoding/options.php:156
+#: ../perfectcoding/options.php:155
 msgid "Facebook App ID"
 msgstr ""
 
-#: ../perfectcoding/options.php:157
+#: ../perfectcoding/options.php:156
 msgid "Paste here your Facebook app id"
 msgstr ""
 
-#: ../perfectcoding/options.php:163 ../twentyeleven/inc/theme-options.php:498
+#: ../perfectcoding/options.php:162 ../twentyeleven/inc/theme-options.php:498
 msgid "Layout"
 msgstr ""
 
-#: ../perfectcoding/options.php:167
+#: ../perfectcoding/options.php:166
 msgid "Home Slides?"
 msgstr ""
 
-#: ../perfectcoding/options.php:168
-msgid "Do u want slides in homepage?"
+#: ../perfectcoding/options.php:167
+msgid "Do you want slides in homepage?"
 msgstr ""
 
-#: ../perfectcoding/options.php:174
+#: ../perfectcoding/options.php:173
 msgid "Select a slides category"
 msgstr ""
 
-#: ../perfectcoding/options.php:175
+#: ../perfectcoding/options.php:174
 msgid "Choose the category to show in the home slides show"
 msgstr ""
 
-#: ../perfectcoding/options.php:181
+#: ../perfectcoding/options.php:180
 msgid "Select a special post category"
 msgstr ""
 
-#: ../perfectcoding/options.php:182
+#: ../perfectcoding/options.php:181
 msgid "Choose the category for special post"
 msgstr ""
 
-#: ../perfectcoding/options.php:188
+#: ../perfectcoding/options.php:187
 msgid "Favicon"
 msgstr ""
 
-#: ../perfectcoding/options.php:189
+#: ../perfectcoding/options.php:188
 msgid "Upload a 16x16 favicon image (.ico, .png or .gif)."
+msgstr ""
+
+#: ../perfectcoding/options.php:194
+msgid "Post: newsletter form?"
+msgstr ""
+
+#: ../perfectcoding/options.php:195
+msgid "Do you want the newsletter form below the posts?"
+msgstr ""
+
+#: ../perfectcoding/options.php:201
+msgid "Page: newsletter form?"
+msgstr ""
+
+#: ../perfectcoding/options.php:202
+msgid "Do you want the newsletter form below the pages?"
+msgstr ""
+
+#: ../perfectcoding/options.php:208
+msgid "Author Box?"
+msgstr ""
+
+#: ../perfectcoding/options.php:209
+msgid "Do you want the author box below the posts?"
+msgstr ""
+
+#: ../perfectcoding/single.php:49
+msgid "the post author"
+msgstr ""
+
+#: ../perfectcoding/framework/bootstrap_breadcrumbs.php:116
+#: ../perfectcoding_bak/functions.php:656
+msgid "Page"
 msgstr ""
 
 #: ../perfectcoding/framework/boxed_text_widget.php:49
@@ -876,6 +872,65 @@ msgstr ""
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
+#: ../perfectcoding_bak/comments.php:35
+msgid "Leave a Reply"
+msgstr ""
+
+#: ../perfectcoding_bak/comments.php:35
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: ../perfectcoding_bak/comments.php:38
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: ../perfectcoding_bak/comments.php:42
+#, php-format
+msgid "Logged in as <a href=\"%s/wp-admin/profile.php\">%s</a>."
+msgstr ""
+
+#: ../perfectcoding_bak/comments.php:42
+msgid "Log out of this account"
+msgstr ""
+
+#: ../perfectcoding_bak/comments.php:42
+msgid "Log out &raquo;"
+msgstr ""
+
+#: ../perfectcoding_bak/comments.php:44 ../perfectcoding_bak/comments.php:46
+msgid " (required)"
+msgstr ""
+
+#: ../perfectcoding_bak/comments.php:46
+msgid "Email (will not be published)"
+msgstr ""
+
+#: ../perfectcoding_bak/comments.php:48
+msgid "Website"
+msgstr ""
+
+#: ../perfectcoding_bak/comments.php:51
+msgid "Comment"
+msgstr ""
+
+#: ../perfectcoding_bak/comments.php:53
+msgid "Submit Comment"
+msgstr ""
+
+#: ../perfectcoding_bak/functions.php:265
+msgid "Footer col1 Menu"
+msgstr ""
+
+#: ../perfectcoding_bak/functions.php:266
+msgid "Footer col2 Menu"
+msgstr ""
+
+#: ../perfectcoding_bak/functions.php:267
+msgid "Footer col3 Menu"
+msgstr ""
+
 #: ../perfectcoding_bak/functions.php:335
 msgid "Widget Area 3"
 msgstr ""
@@ -888,7 +943,7 @@ msgstr ""
 msgid "Widget Area 5"
 msgstr ""
 
-#: ../twentyeleven/404.php:17
+#: ../twentyeleven/404.php:17 ../twentytwelve/404.php:17
 msgid "This is somewhat embarrassing, isn&rsquo;t it?"
 msgstr ""
 
@@ -914,7 +969,8 @@ msgstr ""
 #: ../twentyeleven/archive.php:57 ../twentyeleven/author.php:74
 #: ../twentyeleven/category.php:50 ../twentyeleven/index.php:37
 #: ../twentyeleven/search.php:42 ../twentyeleven/tag.php:50
-#: ../twentyten/search.php:26
+#: ../twentyten/search.php:26 ../twentytwelve/content-none.php:13
+#: ../twentytwelve/index.php:49 ../twentytwelve/search.php:34
 msgid "Nothing Found"
 msgstr ""
 
@@ -927,17 +983,20 @@ msgid ""
 msgstr ""
 
 #: ../twentyeleven/author.php:28 ../twentyten/author.php:27
+#: ../twentytwelve/author.php:32
 #, php-format
 msgid "Author Archives: %s"
 msgstr ""
 
 #: ../twentyeleven/author.php:49 ../twentyeleven/content-single.php:60
 #: ../twentyten/author.php:37 ../twentyten/loop-single.php:43
+#: ../twentytwelve/author.php:53 ../twentytwelve/content.php:53
 #, php-format
 msgid "About %s"
 msgstr ""
 
 #: ../twentyeleven/category.php:19 ../twentyten/category.php:16
+#: ../twentytwelve/category.php:21
 #, php-format
 msgid "Category Archives: %s"
 msgstr ""
@@ -948,19 +1007,40 @@ msgid ""
 msgstr ""
 
 #: ../twentyeleven/comments.php:40 ../twentyeleven/comments.php:60
+#: ../twentytwelve/comments.php:42
 msgid "Comment navigation"
 msgstr ""
 
 #: ../twentyeleven/comments.php:41 ../twentyeleven/comments.php:61
+#: ../twentytwelve/comments.php:43
 msgid "&larr; Older Comments"
 msgstr ""
 
 #: ../twentyeleven/comments.php:42 ../twentyeleven/comments.php:62
+#: ../twentytwelve/comments.php:44
 msgid "Newer Comments &rarr;"
 msgstr ""
 
-#: ../twentyeleven/comments.php:72 ../twentyten/comments.php:72
+#: ../twentyeleven/comments.php:71 ../twentyten/comments.php:70
+#: ../twentytwelve/comments.php:53
 msgid "Comments are closed."
+msgstr ""
+
+#: ../twentyeleven/content-aside.php:16
+#: ../twentyeleven/content-featured.php:14
+#: ../twentyeleven/content-gallery.php:16
+#: ../twentyeleven/content-gallery.php:48 ../twentyeleven/content-image.php:15
+#: ../twentyeleven/content-link.php:16 ../twentyeleven/content-quote.php:14
+#: ../twentyeleven/content-status.php:15 ../twentyeleven/content.php:15
+#: ../twentyeleven/content.php:19 ../twentyeleven/showcase.php:120
+#: ../twentyeleven/showcase.php:199 ../twentyeleven/inc/widgets.php:89
+#: ../twentyten/loop.php:62 ../twentyten/loop.php:83 ../twentyten/loop.php:131
+#: ../twentytwelve/content-aside.php:13 ../twentytwelve/content-aside.php:20
+#: ../twentytwelve/content-image.php:17 ../twentytwelve/content-link.php:18
+#: ../twentytwelve/content-quote.php:17 ../twentytwelve/content-status.php:15
+#: ../twentytwelve/content.php:23
+#, php-format
+msgid "Permalink to %s"
 msgstr ""
 
 #: ../twentyeleven/content-aside.php:17
@@ -970,15 +1050,19 @@ msgstr ""
 #: ../twentyeleven/content-aside.php:22 ../twentyeleven/content-image.php:21
 #: ../twentyeleven/content-link.php:22 ../twentyeleven/content-quote.php:24
 #: ../twentyeleven/content-status.php:21 ../twentyeleven/content.php:30
+#: ../twentytwelve/functions.php:313
 msgid "Reply"
 msgstr ""
 
 #: ../twentyeleven/content-aside.php:33 ../twentyeleven/content-gallery.php:32
 #: ../twentyeleven/content-image.php:27 ../twentyeleven/content-link.php:33
 #: ../twentyeleven/content-quote.php:35 ../twentyeleven/content-status.php:34
-#: ../twentyeleven/content.php:41 ../twentyeleven/functions.php:344
-#: ../twentyten/functions.php:253 ../twentyten/loop-attachment.php:104
+#: ../twentyeleven/content.php:41 ../twentyeleven/functions.php:345
+#: ../twentyten/functions.php:255 ../twentyten/loop-attachment.php:104
 #: ../twentyten/loop.php:115 ../twentyten/loop.php:143
+#: ../twentytwelve/content-aside.php:15 ../twentytwelve/content-image.php:13
+#: ../twentytwelve/content-link.php:14 ../twentytwelve/content-quote.php:13
+#: ../twentytwelve/content-status.php:21 ../twentytwelve/content.php:39
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
@@ -991,27 +1075,32 @@ msgstr ""
 #: ../twentyeleven/content.php:42 ../twentyeleven/image.php:90
 #: ../twentyten/loop-attachment.php:105 ../twentyten/loop-page.php:29
 #: ../twentyten/loop-single.php:34 ../twentyten/loop.php:144
+#: ../twentytwelve/content-page.php:18 ../twentytwelve/content.php:40
+#: ../twentytwelve/image.php:92
 msgid "Pages:"
 msgstr ""
 
 #: ../twentyeleven/content-aside.php:42 ../twentyeleven/content-gallery.php:87
 #: ../twentyeleven/content-image.php:64 ../twentyeleven/content-link.php:42
 #: ../twentyeleven/content-quote.php:69 ../twentyeleven/content-status.php:43
-#: ../twentyeleven/content.php:77 ../twentyeleven/showcase.php:201
+#: ../twentyeleven/content.php:79 ../twentyeleven/showcase.php:201
+#: ../twentytwelve/content-aside.php:23 ../twentytwelve/content-image.php:23
+#: ../twentytwelve/content-link.php:21 ../twentytwelve/content-quote.php:20
+#: ../twentytwelve/content-status.php:27 ../twentytwelve/content.php:28
 msgid "Leave a reply"
 msgstr ""
 
 #: ../twentyeleven/content-aside.php:42 ../twentyeleven/content-gallery.php:87
 #: ../twentyeleven/content-image.php:64 ../twentyeleven/content-link.php:42
 #: ../twentyeleven/content-quote.php:69 ../twentyeleven/content-status.php:43
-#: ../twentyeleven/content.php:77 ../twentyeleven/showcase.php:201
+#: ../twentyeleven/content.php:79 ../twentyeleven/showcase.php:201
 msgid "<b>1</b> Reply"
 msgstr ""
 
 #: ../twentyeleven/content-aside.php:42 ../twentyeleven/content-gallery.php:87
 #: ../twentyeleven/content-image.php:64 ../twentyeleven/content-link.php:42
 #: ../twentyeleven/content-quote.php:69 ../twentyeleven/content-status.php:43
-#: ../twentyeleven/content.php:77 ../twentyeleven/showcase.php:201
+#: ../twentyeleven/content.php:79 ../twentyeleven/showcase.php:201
 msgid "<b>%</b> Replies"
 msgstr ""
 
@@ -1022,18 +1111,19 @@ msgstr ""
 #: ../twentyeleven/content-image.php:56 ../twentyeleven/content-quote.php:44
 #: ../twentyeleven/content-quote.php:54 ../twentyeleven/content-single.php:30
 #: ../twentyeleven/content-single.php:33 ../twentyeleven/content.php:51
-#: ../twentyeleven/content.php:61
+#: ../twentyeleven/content.php:63 ../twentytwelve/functions.php:332
+#: ../twentytwelve/functions.php:335
 msgid ", "
 msgstr ""
 
-#: ../twentyeleven/content-featured.php:31 ../twentyten/functions.php:498
+#: ../twentyeleven/content-featured.php:31 ../twentyten/functions.php:501
 #, php-format
 msgid ""
 "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" "
 "title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
 msgstr ""
 
-#: ../twentyeleven/content-featured.php:33 ../twentyten/functions.php:500
+#: ../twentyeleven/content-featured.php:33 ../twentyten/functions.php:503
 #, php-format
 msgid ""
 "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title="
@@ -1052,7 +1142,7 @@ msgid "<span class=\"%1$s\">Posted in</span> %2$s"
 msgstr ""
 
 #: ../twentyeleven/content-gallery.php:78 ../twentyeleven/content-image.php:59
-#: ../twentyeleven/content-quote.php:60 ../twentyeleven/content.php:67
+#: ../twentyeleven/content-quote.php:60 ../twentyeleven/content.php:69
 #: ../twentyten/loop.php:160
 #, php-format
 msgid "<span class=\"%1$s\">Tagged</span> %2$s"
@@ -1066,18 +1156,19 @@ msgstr ""
 #, php-format
 msgid ""
 "<a href=\"%1$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%2$s"
-"\" pubdate>%3$s</time></a><span class=\"by-author\"> <span class=\"sep\"> by "
-"</span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%4$s\" "
-"title=\"%5$s\" rel=\"author\">%6$s</a></span></span>"
+"\">%3$s</time></a><span class=\"by-author\"> <span class=\"sep\"> by </span> "
+"<span class=\"author vcard\"><a class=\"url fn n\" href=\"%4$s\" title=\"%5$s"
+"\" rel=\"author\">%6$s</a></span></span>"
 msgstr ""
 
-#: ../twentyeleven/content-image.php:39 ../twentyeleven/functions.php:587
-#: ../twentyten/functions.php:481 ../twentyten/loop-attachment.php:36
+#: ../twentyeleven/content-image.php:39 ../twentyeleven/functions.php:590
+#: ../twentyten/functions.php:484 ../twentyten/loop-attachment.php:36
+#: ../twentytwelve/functions.php:346
 #, php-format
 msgid "View all posts by %s"
 msgstr ""
 
-#: ../twentyeleven/content-link.php:17
+#: ../twentyeleven/content-link.php:17 ../twentytwelve/content-link.php:12
 msgid "Link"
 msgstr ""
 
@@ -1108,6 +1199,7 @@ msgid ""
 msgstr ""
 
 #: ../twentyeleven/content-single.php:64 ../twentyten/loop-single.php:47
+#: ../twentytwelve/content.php:57
 #, php-format
 msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
@@ -1117,15 +1209,16 @@ msgid "Featured"
 msgstr ""
 
 #: ../twentyeleven/footer.php:27 ../twentyten/footer.php:33
+#: ../twentytwelve/footer.php:17
 msgid "http://wordpress.org/"
 msgstr ""
 
-#: ../twentyeleven/footer.php:27
+#: ../twentyeleven/footer.php:27 ../twentytwelve/footer.php:17
 #, php-format
 msgid "Proudly powered by %s"
 msgstr ""
 
-#: ../twentyeleven/functions.php:95
+#: ../twentyeleven/functions.php:95 ../twentytwelve/functions.php:64
 msgid "Primary Menu"
 msgstr ""
 
@@ -1161,73 +1254,76 @@ msgstr ""
 msgid "Hanoi Plant"
 msgstr ""
 
-#: ../twentyeleven/functions.php:391
+#: ../twentyeleven/functions.php:394 ../twentytwelve/functions.php:206
 msgid "Main Sidebar"
 msgstr ""
 
-#: ../twentyeleven/functions.php:400
+#: ../twentyeleven/functions.php:403
 msgid "Showcase Sidebar"
 msgstr ""
 
-#: ../twentyeleven/functions.php:402
+#: ../twentyeleven/functions.php:405
 msgid "The sidebar for the optional Showcase Template"
 msgstr ""
 
-#: ../twentyeleven/functions.php:410
+#: ../twentyeleven/functions.php:413
 msgid "Footer Area One"
 msgstr ""
 
-#: ../twentyeleven/functions.php:412 ../twentyeleven/functions.php:422
-#: ../twentyeleven/functions.php:432
+#: ../twentyeleven/functions.php:415 ../twentyeleven/functions.php:425
+#: ../twentyeleven/functions.php:435
 msgid "An optional widget area for your site footer"
 msgstr ""
 
-#: ../twentyeleven/functions.php:420
+#: ../twentyeleven/functions.php:423
 msgid "Footer Area Two"
 msgstr ""
 
-#: ../twentyeleven/functions.php:430
+#: ../twentyeleven/functions.php:433
 msgid "Footer Area Three"
 msgstr ""
 
-#: ../twentyeleven/functions.php:450 ../twentyeleven/single.php:18
+#: ../twentyeleven/functions.php:453 ../twentyeleven/single.php:18
+#: ../twentytwelve/functions.php:250 ../twentytwelve/single.php:20
 msgid "Post navigation"
 msgstr ""
 
-#: ../twentyeleven/functions.php:451 ../twentyten/loop.php:25
-#: ../twentyten/loop.php:178
+#: ../twentyeleven/functions.php:454 ../twentyten/loop.php:25
+#: ../twentyten/loop.php:178 ../twentytwelve/functions.php:251
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
 msgstr ""
 
-#: ../twentyeleven/functions.php:452 ../twentyten/loop.php:26
-#: ../twentyten/loop.php:179
+#: ../twentyeleven/functions.php:455 ../twentyten/loop.php:26
+#: ../twentyten/loop.php:179 ../twentytwelve/functions.php:252
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: ../twentyeleven/functions.php:522 ../twentyten/functions.php:362
+#: ../twentyeleven/functions.php:525 ../twentyten/functions.php:365
+#: ../twentytwelve/functions.php:277
 msgid "Pingback:"
 msgstr ""
 
-#: ../twentyeleven/functions.php:539
+#: ../twentyeleven/functions.php:542
 #, php-format
 msgid "%1$s on %2$s <span class=\"says\">said:</span>"
 msgstr ""
 
-#: ../twentyeleven/functions.php:563
+#: ../twentyeleven/functions.php:566
 msgid "Reply <span>&darr;</span>"
 msgstr ""
 
-#: ../twentyeleven/functions.php:581
+#: ../twentyeleven/functions.php:584
 #, php-format
 msgid ""
 "<span class=\"sep\">Posted on </span><a href=\"%1$s\" title=\"%2$s\" rel="
-"\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\" pubdate>%4$s</"
-"time></a><span class=\"by-author\"> <span class=\"sep\"> by </span> <span "
-"class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" "
-"rel=\"author\">%7$s</a></span></span>"
+"\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\">%4$s</time></"
+"a><span class=\"by-author\"> <span class=\"sep\"> by </span> <span class="
+"\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel="
+"\"author\">%7$s</a></span></span>"
 msgstr ""
 
 #: ../twentyeleven/header.php:45 ../twentyten/header.php:33
+#: ../twentytwelve/functions.php:181
 #, php-format
 msgid "Page %s"
 msgstr ""
@@ -1248,11 +1344,11 @@ msgstr ""
 msgid "Image navigation"
 msgstr ""
 
-#: ../twentyeleven/image.php:19
+#: ../twentyeleven/image.php:19 ../twentytwelve/image.php:41
 msgid "&larr; Previous"
 msgstr ""
 
-#: ../twentyeleven/image.php:20
+#: ../twentyeleven/image.php:20 ../twentytwelve/image.php:42
 msgid "Next &rarr;"
 msgstr ""
 
@@ -1266,11 +1362,13 @@ msgid ""
 msgstr ""
 
 #: ../twentyeleven/search.php:18 ../twentyten/search.php:16
+#: ../twentytwelve/search.php:18
 #, php-format
 msgid "Search Results for: %s"
 msgstr ""
 
 #: ../twentyeleven/search.php:46 ../twentyten/search.php:28
+#: ../twentytwelve/search.php:38
 msgid ""
 "Sorry, but nothing matched your search criteria. Please try again with some "
 "different keywords."
@@ -1278,6 +1376,11 @@ msgstr ""
 
 #: ../twentyeleven/showcase.php:77
 msgid "Featured Post"
+msgstr ""
+
+#: ../twentyeleven/showcase.php:150
+#, php-format
+msgid "Featuring: %s"
 msgstr ""
 
 #: ../twentyeleven/showcase.php:160
@@ -1297,6 +1400,7 @@ msgid "Next <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
 #: ../twentyeleven/tag.php:19 ../twentyten/tag.php:16
+#: ../twentytwelve/tag.php:21
 #, php-format
 msgid "Tag Archives: %s"
 msgstr ""
@@ -1430,6 +1534,11 @@ msgstr ""
 msgid "% <span class=\"reply\">comments &rarr;</span>"
 msgstr ""
 
+#: ../twentyeleven/inc/widgets.php:105
+#, php-format
+msgid "Link to %s"
+msgstr ""
+
 #: ../twentyeleven/inc/widgets.php:160
 msgid "Number of posts to show:"
 msgstr ""
@@ -1508,74 +1617,74 @@ msgstr ""
 msgid "Sunset"
 msgstr ""
 
-#: ../twentyten/functions.php:335
+#: ../twentyten/functions.php:338
 #, php-format
 msgid "%s <span class=\"says\">says:</span>"
 msgstr ""
 
-#: ../twentyten/functions.php:381
+#: ../twentyten/functions.php:384
 msgid "Primary Widget Area"
 msgstr ""
 
-#: ../twentyten/functions.php:383
+#: ../twentyten/functions.php:386
 msgid "The primary widget area"
 msgstr ""
 
-#: ../twentyten/functions.php:392
+#: ../twentyten/functions.php:395
 msgid "Secondary Widget Area"
 msgstr ""
 
-#: ../twentyten/functions.php:394
+#: ../twentyten/functions.php:397
 msgid "The secondary widget area"
 msgstr ""
 
-#: ../twentyten/functions.php:403
+#: ../twentyten/functions.php:406
 msgid "First Footer Widget Area"
 msgstr ""
 
-#: ../twentyten/functions.php:405
+#: ../twentyten/functions.php:408
 msgid "The first footer widget area"
 msgstr ""
 
-#: ../twentyten/functions.php:414
+#: ../twentyten/functions.php:417
 msgid "Second Footer Widget Area"
 msgstr ""
 
-#: ../twentyten/functions.php:416
+#: ../twentyten/functions.php:419
 msgid "The second footer widget area"
 msgstr ""
 
-#: ../twentyten/functions.php:425
+#: ../twentyten/functions.php:428
 msgid "Third Footer Widget Area"
 msgstr ""
 
-#: ../twentyten/functions.php:427
+#: ../twentyten/functions.php:430
 msgid "The third footer widget area"
 msgstr ""
 
-#: ../twentyten/functions.php:436
+#: ../twentyten/functions.php:439
 msgid "Fourth Footer Widget Area"
 msgstr ""
 
-#: ../twentyten/functions.php:438
+#: ../twentyten/functions.php:441
 msgid "The fourth footer widget area"
 msgstr ""
 
-#: ../twentyten/functions.php:472
+#: ../twentyten/functions.php:475
 #, php-format
 msgid ""
 "<span class=\"%1$s\">Posted on</span> %2$s <span class=\"meta-sep\">by</"
 "span> %3$s"
 msgstr ""
 
-#: ../twentyten/functions.php:502
+#: ../twentyten/functions.php:505
 #, php-format
 msgid ""
 "Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark"
 "\">permalink</a>."
 msgstr ""
 
-#: ../twentyten/header.php:101
+#: ../twentyten/header.php:101 ../twentytwelve/header.php:44
 msgid "Skip to content"
 msgstr ""
 
@@ -1615,4 +1724,98 @@ msgstr ""
 #: ../twentyten/loop.php:99 ../twentyten/loop.php:122
 #: ../twentyten/loop.php:164
 msgid "Leave a comment"
+msgstr ""
+
+#: ../twentytwelve/404.php:21
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../twentytwelve/content-aside.php:23 ../twentytwelve/content-image.php:23
+#: ../twentytwelve/content-link.php:21 ../twentytwelve/content-quote.php:20
+#: ../twentytwelve/content-status.php:27 ../twentytwelve/content.php:28
+msgid "1 Reply"
+msgstr ""
+
+#: ../twentytwelve/content-aside.php:23 ../twentytwelve/content-image.php:23
+#: ../twentytwelve/content-link.php:21 ../twentytwelve/content-quote.php:20
+#: ../twentytwelve/content-status.php:27 ../twentytwelve/content.php:28
+msgid "% Replies"
+msgstr ""
+
+#: ../twentytwelve/content-none.php:17 ../twentytwelve/index.php:53
+msgid ""
+"Apologies, but no results were found. Perhaps searching will help find a "
+"related post."
+msgstr ""
+
+#: ../twentytwelve/content.php:14
+msgid "Featured post"
+msgstr ""
+
+#: ../twentytwelve/functions.php:208
+msgid ""
+"Appears on posts and pages except the optional Front Page template, which "
+"has its own widgets"
+msgstr ""
+
+#: ../twentytwelve/functions.php:216
+msgid "First Front Page Widget Area"
+msgstr ""
+
+#: ../twentytwelve/functions.php:218 ../twentytwelve/functions.php:228
+msgid ""
+"Appears when using the optional Front Page template with a page set as "
+"Static Front Page"
+msgstr ""
+
+#: ../twentytwelve/functions.php:226
+msgid "Second Front Page Widget Area"
+msgstr ""
+
+#: ../twentytwelve/functions.php:292
+msgid "Post author"
+msgstr ""
+
+#: ../twentytwelve/functions.php:352
+#, php-format
+msgid ""
+"This entry was posted in %1$s and tagged %2$s on %3$s<span class=\"by-author"
+"\"> by %4$s</span>."
+msgstr ""
+
+#: ../twentytwelve/functions.php:354
+#, php-format
+msgid ""
+"This entry was posted in %1$s on %3$s<span class=\"by-author\"> by %4$s</"
+"span>."
+msgstr ""
+
+#: ../twentytwelve/functions.php:356
+#, php-format
+msgid "This entry was posted on %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr ""
+
+#: ../twentytwelve/header.php:43
+msgid "Menu"
+msgstr ""
+
+#: ../twentytwelve/image.php:26
+#, php-format
+msgid ""
+"<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class="
+"\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></"
+"span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; "
+"%5$s</a> in <a href=\"%6$s\" title=\"Return to %7$s\" rel=\"gallery\">%8$s</"
+"a>."
+msgstr ""
+
+#: ../twentytwelve/index.php:38
+msgid "No posts to display"
+msgstr ""
+
+#: ../twentytwelve/index.php:42
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
 msgstr ""

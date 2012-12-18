@@ -1,4 +1,4 @@
-<?php if ( of_get_option( 'home_slides', true ) and ! isset( $_GET['paged'] ) ) { ?>
+<?php if ( of_get_option( 'home_slides', true ) and $paged <= 0 ) { ?>
 
 <div id="featured-wrapper">
 	<div id="myCarousel" class="carousel slide">

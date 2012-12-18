@@ -206,7 +206,6 @@ add_action( 'after_setup_theme', 'bootstrap_setup' );
 
 function register_perfectcoding_menu() {	
 	register_nav_menus( array( // Using array to specify more menus if needed
-		'sidebar-menu' => __( 'Sidebar Menu', 'perfectcoding' ), // Sidebar Navigation
 		'custom-menu1'  => __( 'Custom Menu 1', 'perfectcoding' ), // custom menu 1
 		'custom-menu2'  => __( 'Custom Menu 2', 'perfectcoding' ), // custom menu 2
 		'custom-menu3'  => __( 'Custom Menu 3', 'perfectcoding' )  // custom menu 3
