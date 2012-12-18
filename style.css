@@ -241,6 +241,7 @@ article.perfectcoding_special .post_details {color: #fff; }
 .author-box {background:#444; color:#999; box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; -webkit-box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; font-size: 0.8em; margin: 4em -60px; padding: 2em 60px; overflow:hidden;}
 .author-avatar {margin-right: 20px;}
 .author-box h2 {padding-top:4px; color: #111;  text-shadow: 0px 2px 3px #555;}
+.author-box h2 small {letter-spacing:0; font-size: 0.8em;}
 .author-box a {color: #111;}
 .author-box a:hover {color: #E7492F;}
 

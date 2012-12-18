@@ -44,9 +44,9 @@
 
 								<a class="pull-left author-avatar" rel="author" href="<?php echo get_the_author_meta( 'user_url' ) ? get_the_author_meta( 'user_url' ) : '#' ?>"><?php echo get_avatar( get_the_author_meta( 'user_email' ) ); ?></a>
 
-								<?php $author = get_the_author_meta( 'first_name' ) . get_the_author_meta( 'last_name' ); ?>
+								<?php $author = get_the_author_meta( 'first_name' ) . ' ' . get_the_author_meta( 'last_name' ); ?>
 								<?php if ( $author ) :?>
-									<h2><a href="#"><?php echo $author ?></a></h2>
+									<h2><a href="#"><?php echo $author ?> <small><?php _e( 'the post author', 'perfectcoding' );?></small></a></h2>
 								<?php endif; ?>
 
 								<div class="author-desc"><?php the_author_meta( 'description' ); ?></div>
