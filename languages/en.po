@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PerfectCoding\n"
-"POT-Creation-Date: 2012-12-18 12:40+0100\n"
-"PO-Revision-Date: 2012-12-18 12:40+0100\n"
+"POT-Creation-Date: 2012-12-19 21:55+0100\n"
+"PO-Revision-Date: 2012-12-19 21:55+0100\n"
 "Last-Translator: michele <info@dynamick.it>\n"
 "Language-Team: Michele Gobbi <info@dynamick.it>\n"
 "Language: English\n"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/author.php:41 copia/loop.php:17
 #: copia/single.php:32 copy2/author.php:41 copy2/loop.php:20
-#: copy2/single.php:29 ../perfectcoding/functions.php:422
+#: copy2/single.php:29 ../perfectcoding/functions.php:418
 #: ../perfectcoding_bak/author.php:41 ../perfectcoding_bak/functions.php:690
 msgid "Published by"
 msgstr ""
@@ -136,7 +136,8 @@ msgid "(Edit)"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:240
-#: copy2/functions.php:244 ../perfectcoding_bak/functions.php:263
+#: copy2/functions.php:244 ../perfectcoding/functions.php:204
+#: ../perfectcoding_bak/functions.php:263
 msgid "Header Menu"
 msgstr ""
 
@@ -169,7 +170,7 @@ msgid "Widget Area 2"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:361
-#: copy2/functions.php:367 ../perfectcoding/functions.php:372
+#: copy2/functions.php:367 ../perfectcoding/functions.php:368
 #: ../perfectcoding_bak/functions.php:422
 msgid "View Article"
 msgstr ""
@@ -182,7 +183,7 @@ msgid "HTML5 Blank Custom Post"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:466
-#: copy2/functions.php:473 ../perfectcoding/functions.php:553
+#: copy2/functions.php:473 ../perfectcoding/functions.php:549
 #: ../perfectcoding_bak/functions.php:531
 msgid "Add New"
 msgstr ""
@@ -193,7 +194,7 @@ msgid "Add New HTML5 Blank Custom Post"
 msgstr ""
 
 #: ../HTML5-Blank-WordPress-Theme copia/functions.php:468
-#: copy2/functions.php:475 ../perfectcoding/functions.php:555
+#: copy2/functions.php:475 ../perfectcoding/functions.php:551
 #: ../perfectcoding_bak/functions.php:533 ../twentyeleven/content-aside.php:44
 #: ../twentyeleven/content-featured.php:45
 #: ../twentyeleven/content-gallery.php:90 ../twentyeleven/content-image.php:68
@@ -297,198 +298,198 @@ msgstr ""
 msgid "About me"
 msgstr ""
 
-#: ../perfectcoding/functions.php:209
+#: ../perfectcoding/functions.php:205
 msgid "Custom Menu 1"
 msgstr ""
 
-#: ../perfectcoding/functions.php:210
+#: ../perfectcoding/functions.php:206
 msgid "Custom Menu 2"
 msgstr ""
 
-#: ../perfectcoding/functions.php:211
+#: ../perfectcoding/functions.php:207
 msgid "Custom Menu 3"
 msgstr ""
 
-#: ../perfectcoding/functions.php:258
+#: ../perfectcoding/functions.php:254
 msgid "Top Sidebar"
 msgstr ""
 
-#: ../perfectcoding/functions.php:259
+#: ../perfectcoding/functions.php:255
 msgid "Top part of the sidebar"
 msgstr ""
 
-#: ../perfectcoding/functions.php:270
+#: ../perfectcoding/functions.php:266
 msgid "Bottom Sidebar"
 msgstr ""
 
-#: ../perfectcoding/functions.php:271
+#: ../perfectcoding/functions.php:267
 msgid "Bottom part of the sidebar"
 msgstr ""
 
-#: ../perfectcoding/functions.php:282
+#: ../perfectcoding/functions.php:278
 msgid "Footer left"
 msgstr ""
 
-#: ../perfectcoding/functions.php:283
+#: ../perfectcoding/functions.php:279
 msgid "Footer left area"
 msgstr ""
 
-#: ../perfectcoding/functions.php:294
+#: ../perfectcoding/functions.php:290
 msgid "Footer Middle"
 msgstr ""
 
-#: ../perfectcoding/functions.php:295
+#: ../perfectcoding/functions.php:291
 msgid "Footer middle area"
 msgstr ""
 
-#: ../perfectcoding/functions.php:306
+#: ../perfectcoding/functions.php:302
 msgid "Footer Right"
 msgstr ""
 
-#: ../perfectcoding/functions.php:307
+#: ../perfectcoding/functions.php:303
 msgid "Footer right area"
 msgstr ""
 
-#: ../perfectcoding/functions.php:404 ../perfectcoding_bak/functions.php:673
+#: ../perfectcoding/functions.php:400 ../perfectcoding_bak/functions.php:673
 #, php-format
 msgid "Posted on %2$s"
 msgstr ""
 
-#: ../perfectcoding/functions.php:449 ../perfectcoding_bak/comments.php:44
+#: ../perfectcoding/functions.php:445 ../perfectcoding_bak/comments.php:44
 #: ../perfectcoding_bak/functions.php:716
 msgid "Name"
 msgstr ""
 
-#: ../perfectcoding/functions.php:450
+#: ../perfectcoding/functions.php:446
 msgid "How could we call you?"
 msgstr ""
 
-#: ../perfectcoding/functions.php:451 ../perfectcoding_bak/functions.php:719
+#: ../perfectcoding/functions.php:447 ../perfectcoding_bak/functions.php:719
 msgid "Email"
 msgstr ""
 
-#: ../perfectcoding/functions.php:452
+#: ../perfectcoding/functions.php:448
 msgid "How could we contact you?"
 msgstr ""
 
-#: ../perfectcoding/functions.php:462
+#: ../perfectcoding/functions.php:458
 msgid "What do you want ask me?"
 msgstr ""
 
-#: ../perfectcoding/functions.php:551
+#: ../perfectcoding/functions.php:547
 msgid "Portfolio"
 msgstr ""
 
-#: ../perfectcoding/functions.php:552
+#: ../perfectcoding/functions.php:548
 msgid "Portfolio post"
 msgstr ""
 
-#: ../perfectcoding/functions.php:554
+#: ../perfectcoding/functions.php:550
 msgid "Add New Portfolio Post"
 msgstr ""
 
-#: ../perfectcoding/functions.php:556
+#: ../perfectcoding/functions.php:552
 msgid "Edit Portfolio Post"
 msgstr ""
 
-#: ../perfectcoding/functions.php:557
+#: ../perfectcoding/functions.php:553
 msgid "New Portfolio Post"
 msgstr ""
 
-#: ../perfectcoding/functions.php:558 ../perfectcoding/functions.php:559
+#: ../perfectcoding/functions.php:554 ../perfectcoding/functions.php:555
 msgid "View Portfolio Post"
 msgstr ""
 
-#: ../perfectcoding/functions.php:560
+#: ../perfectcoding/functions.php:556
 msgid "Search Portfolio Post"
 msgstr ""
 
-#: ../perfectcoding/functions.php:561
+#: ../perfectcoding/functions.php:557
 msgid "No portfolio post found"
 msgstr ""
 
-#: ../perfectcoding/functions.php:562
+#: ../perfectcoding/functions.php:558
 msgid "No Portfolio Posts found in Trash"
 msgstr ""
 
-#: ../perfectcoding/functions.php:608
+#: ../perfectcoding/functions.php:604
 msgid "follow @dynamick"
 msgstr ""
 
-#: ../perfectcoding/functions.php:617
+#: ../perfectcoding/functions.php:613
 msgid "Add your email"
 msgstr ""
 
-#: ../perfectcoding/functions.php:618
+#: ../perfectcoding/functions.php:614
 msgid "Subscribe"
 msgstr ""
 
-#: ../perfectcoding/functions.php:700
+#: ../perfectcoding/functions.php:696
 #: ../perfectcoding/framework/class-tgm-plugin-activation.php:164
 msgid "Install Required Plugins"
 msgstr ""
 
-#: ../perfectcoding/functions.php:701
+#: ../perfectcoding/functions.php:697
 #: ../perfectcoding/framework/class-tgm-plugin-activation.php:165
 msgid "Install Plugins"
 msgstr ""
 
-#: ../perfectcoding/functions.php:702
+#: ../perfectcoding/functions.php:698
 #: ../perfectcoding/framework/class-tgm-plugin-activation.php:166
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr ""
 
-#: ../perfectcoding/functions.php:703
+#: ../perfectcoding/functions.php:699
 msgid "Something went wrong with the plugin API."
 msgstr ""
 
-#: ../perfectcoding/functions.php:714
+#: ../perfectcoding/functions.php:710
 #: ../perfectcoding/framework/class-tgm-plugin-activation.php:178
 #: ../perfectcoding/framework/class-tgm-plugin-activation.php:490
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
-#: ../perfectcoding/functions.php:715
+#: ../perfectcoding/functions.php:711
 #: ../perfectcoding/framework/class-tgm-plugin-activation.php:179
 #: ../perfectcoding/framework/class-tgm-plugin-activation.php:1846
 msgid "Plugin activated successfully."
 msgstr ""
 
-#: ../perfectcoding/functions.php:716
+#: ../perfectcoding/functions.php:712
 #, php-format
 msgid "All plugins installed and activated successfully. %s"
 msgstr ""
 
-#: ../perfectcoding/functions.php:765
+#: ../perfectcoding/functions.php:761
 msgid "Ribbon Type"
 msgstr ""
 
-#: ../perfectcoding/functions.php:783
+#: ../perfectcoding/functions.php:779
 msgid "Ribbon type"
 msgstr ""
 
-#: ../perfectcoding/functions.php:787
+#: ../perfectcoding/functions.php:783
 msgid "[none]"
 msgstr ""
 
-#: ../perfectcoding/functions.php:789
+#: ../perfectcoding/functions.php:785
 msgid "Red"
 msgstr ""
 
-#: ../perfectcoding/functions.php:791
+#: ../perfectcoding/functions.php:787
 msgid "Blue"
 msgstr ""
 
-#: ../perfectcoding/functions.php:793
+#: ../perfectcoding/functions.php:789
 msgid "Yellow"
 msgstr ""
 
-#: ../perfectcoding/functions.php:795
+#: ../perfectcoding/functions.php:791
 msgid "Green"
 msgstr ""
 
-#: ../perfectcoding/functions.php:797
+#: ../perfectcoding/functions.php:793
 msgid "Violet"
 msgstr ""
 
@@ -549,133 +550,137 @@ msgid "Waffle"
 msgstr ""
 
 #: ../perfectcoding/options.php:105
-msgid "Social Settings"
+msgid "Home"
 msgstr ""
 
 #: ../perfectcoding/options.php:109
-msgid "Facebook Fan Page"
+msgid "Home Slides?"
 msgstr ""
 
 #: ../perfectcoding/options.php:110
-msgid "The URL of your Facebook fan page"
+msgid "Do you want slides in homepage?"
 msgstr ""
 
 #: ../perfectcoding/options.php:116
-msgid "Twitter Page"
+msgid "Select a slides category"
 msgstr ""
 
 #: ../perfectcoding/options.php:117
-msgid "The url of your Twitter page."
+msgid "Choose the category to show in the home slides show"
 msgstr ""
 
 #: ../perfectcoding/options.php:123
-msgid "Feed URL"
+msgid "Favicon"
 msgstr ""
 
 #: ../perfectcoding/options.php:124
-msgid "Leave blank for the default wordpress url"
+msgid "Upload a 16x16 favicon image (.ico, .png or .gif)."
 msgstr ""
 
 #: ../perfectcoding/options.php:130
+msgid "Post & Pages"
+msgstr ""
+
+#: ../perfectcoding/options.php:134
+msgid "Select a special post category"
+msgstr ""
+
+#: ../perfectcoding/options.php:135
+msgid "Choose the category for special post"
+msgstr ""
+
+#: ../perfectcoding/options.php:141
+msgid "Post: newsletter form?"
+msgstr ""
+
+#: ../perfectcoding/options.php:142
+msgid "Do you want the newsletter form below the posts?"
+msgstr ""
+
+#: ../perfectcoding/options.php:148
+msgid "Author Box?"
+msgstr ""
+
+#: ../perfectcoding/options.php:149
+msgid "Do you want the author box below the posts?"
+msgstr ""
+
+#: ../perfectcoding/options.php:155
+msgid "Page: newsletter form?"
+msgstr ""
+
+#: ../perfectcoding/options.php:156
+msgid "Do you want the newsletter form below the pages?"
+msgstr ""
+
+#: ../perfectcoding/options.php:162
+msgid "Social Settings"
+msgstr ""
+
+#: ../perfectcoding/options.php:166
+msgid "Facebook Fan Page"
+msgstr ""
+
+#: ../perfectcoding/options.php:167
+msgid "The URL of your Facebook fan page"
+msgstr ""
+
+#: ../perfectcoding/options.php:173
+msgid "Twitter Page"
+msgstr ""
+
+#: ../perfectcoding/options.php:174
+msgid "The url of your Twitter page."
+msgstr ""
+
+#: ../perfectcoding/options.php:180
+msgid "Feed URL"
+msgstr ""
+
+#: ../perfectcoding/options.php:181
+msgid "Leave blank for the default wordpress url"
+msgstr ""
+
+#: ../perfectcoding/options.php:187
 msgid "Mailchimp signup form link url"
 msgstr ""
 
-#: ../perfectcoding/options.php:131
+#: ../perfectcoding/options.php:188
 msgid ""
 "The url of your mailchimp signup form. You could specify any other "
 "newsletter signup url."
 msgstr ""
 
-#: ../perfectcoding/options.php:137
+#: ../perfectcoding/options.php:194
 msgid "Mailchimp signup form action url"
 msgstr ""
 
-#: ../perfectcoding/options.php:138
+#: ../perfectcoding/options.php:195
 msgid "The url of the form action of your mailchimp list"
 msgstr ""
 
-#: ../perfectcoding/options.php:144
+#: ../perfectcoding/options.php:201
 msgid "External API"
 msgstr ""
 
-#: ../perfectcoding/options.php:148
+#: ../perfectcoding/options.php:205
 msgid "Google Analytics Account ID"
 msgstr ""
 
-#: ../perfectcoding/options.php:149
+#: ../perfectcoding/options.php:206
 msgid "Paste here your UA-XXXXXXXX-X code"
 msgstr ""
 
-#: ../perfectcoding/options.php:155
+#: ../perfectcoding/options.php:212
 msgid "Facebook App ID"
 msgstr ""
 
-#: ../perfectcoding/options.php:156
+#: ../perfectcoding/options.php:213
 msgid "Paste here your Facebook app id"
 msgstr ""
 
-#: ../perfectcoding/options.php:162 ../twentyeleven/inc/theme-options.php:498
-msgid "Layout"
-msgstr ""
-
-#: ../perfectcoding/options.php:166
-msgid "Home Slides?"
-msgstr ""
-
-#: ../perfectcoding/options.php:167
-msgid "Do you want slides in homepage?"
-msgstr ""
-
-#: ../perfectcoding/options.php:173
-msgid "Select a slides category"
-msgstr ""
-
-#: ../perfectcoding/options.php:174
-msgid "Choose the category to show in the home slides show"
-msgstr ""
-
-#: ../perfectcoding/options.php:180
-msgid "Select a special post category"
-msgstr ""
-
-#: ../perfectcoding/options.php:181
-msgid "Choose the category for special post"
-msgstr ""
-
-#: ../perfectcoding/options.php:187
-msgid "Favicon"
-msgstr ""
-
-#: ../perfectcoding/options.php:188
-msgid "Upload a 16x16 favicon image (.ico, .png or .gif)."
-msgstr ""
-
-#: ../perfectcoding/options.php:194
-msgid "Post: newsletter form?"
-msgstr ""
-
-#: ../perfectcoding/options.php:195
-msgid "Do you want the newsletter form below the posts?"
-msgstr ""
-
-#: ../perfectcoding/options.php:201
-msgid "Page: newsletter form?"
-msgstr ""
-
-#: ../perfectcoding/options.php:202
-msgid "Do you want the newsletter form below the pages?"
-msgstr ""
-
-#: ../perfectcoding/options.php:208
-msgid "Author Box?"
-msgstr ""
-
-#: ../perfectcoding/options.php:209
-msgid "Do you want the author box below the posts?"
-msgstr ""
-
 #: ../perfectcoding/single.php:49
-msgid "the post author"
+msgid "the author"
 msgstr ""
 
 #: ../perfectcoding/framework/bootstrap_breadcrumbs.php:116
@@ -1507,6 +1512,10 @@ msgstr ""
 #: ../twentyeleven/inc/theme-options.php:312
 #, php-format
 msgid "%s Theme Options"
+msgstr ""
+
+#: ../twentyeleven/inc/theme-options.php:498
+msgid "Layout"
 msgstr ""
 
 #: ../twentyeleven/inc/widgets.php:19

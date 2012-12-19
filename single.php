@@ -46,7 +46,7 @@
 
 								<?php $author = get_the_author_meta( 'first_name' ) . ' ' . get_the_author_meta( 'last_name' ); ?>
 								<?php if ( $author ) :?>
-									<h2><a href="#"><?php echo $author ?> <small><?php _e( 'the post author', 'perfectcoding' );?></small></a></h2>
+									<h2><a href="#"><?php echo $author ?> <small><?php _e( 'the author', 'perfectcoding' );?></small></a></h2>
 								<?php endif; ?>
 
 								<div class="author-desc"><?php the_author_meta( 'description' ); ?></div>
