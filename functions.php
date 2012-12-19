@@ -197,15 +197,11 @@ function perfectcoding_styles() {
 	wp_enqueue_style( 'open_sans' ); // Enqueue it!
 }
 
-// Advanced Perfect Coding navigation: Bootstrap Menu 
-// the bootstrap_setup function is included from ./framework/bootstrap_walker_menu
-
-add_action( 'after_setup_theme', 'bootstrap_setup' );
-
 // Register Perfect Coding's Navigation menu, other than header menu defined above
 
 function register_perfectcoding_menu() {	
 	register_nav_menus( array( // Using array to specify more menus if needed
+		'top-bar'       => __( 'Header Menu', 'perfectcoding' ), // custom menu 1
 		'custom-menu1'  => __( 'Custom Menu 1', 'perfectcoding' ), // custom menu 1
 		'custom-menu2'  => __( 'Custom Menu 2', 'perfectcoding' ), // custom menu 2
 		'custom-menu3'  => __( 'Custom Menu 3', 'perfectcoding' )  // custom menu 3

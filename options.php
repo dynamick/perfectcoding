@@ -102,6 +102,63 @@ function optionsframework_options() {
 	$options = array();
 
 	$options[] = array(
+		'name' => __('Home', 'options_check'),
+		'type' => 'heading');
+
+	$options[] = array(
+		'name' => __('Home Slides?', 'options_check'),
+		'desc' => __('Do you want slides in homepage?', 'options_check'),
+		'id' => 'home_slides',
+		'std' => '1',
+		'type' => 'checkbox');
+
+	$options[] = array(
+		'name' => __('Select a slides category', 'options_check'),
+		'desc' => __('Choose the category to show in the home slides show', 'options_check'),
+		'id' => 'home_slides_category',
+		'type' => 'select',
+		'options' => $options_categories);
+		
+	$options[] = array(
+		'name' => __('Favicon', 'options_check'),
+		'desc' => __('Upload a 16x16 favicon image (.ico, .png or .gif).', 'options_check'),
+		'id' => 'favicon_img',
+		'std' => get_template_directory_uri() .'/favicon.ico',
+		'type' => 'upload');
+
+	$options[] = array(
+		'name' => __('Post & Pages', 'options_check'),
+		'type' => 'heading');
+
+	$options[] = array(
+		'name' => __('Select a special post category', 'options_check'),
+		'desc' => __('Choose the category for special post', 'options_check'),
+		'id' => 'special_post_category',
+		'type' => 'select',
+		'options' => $options_categories);
+
+	$options[] = array(
+		'name' => __('Post: newsletter form?', 'options_check'),
+		'desc' => __('Do you want the newsletter form below the posts?', 'options_check'),
+		'id' => 'post_newsletter_form',
+		'std' => '1',
+		'type' => 'checkbox');
+
+	$options[] = array(
+		'name' => __('Author Box?', 'options_check'),
+		'desc' => __('Do you want the author box below the posts?', 'options_check'),
+		'id' => 'author_box',
+		'std' => '1',
+		'type' => 'checkbox');
+
+	$options[] = array(
+		'name' => __('Page: newsletter form?', 'options_check'),
+		'desc' => __('Do you want the newsletter form below the pages?', 'options_check'),
+		'id' => 'page_newsletter_form',
+		'std' => '1',
+		'type' => 'checkbox');
+
+	$options[] = array(
 		'name' => __('Social Settings', 'options_check'),
 		'type' => 'heading');
 
@@ -120,11 +177,11 @@ function optionsframework_options() {
 		'type' => 'text');
 
 		$options[] = array(
-			'name' => __('Feed URL', 'options_check'),
-			'desc' => __('Leave blank for the default wordpress url', 'options_check'),
-			'id' => 'feed_url',
-			'std' => '/feed',
-			'type' => 'text');
+		'name' => __('Feed URL', 'options_check'),
+		'desc' => __('Leave blank for the default wordpress url', 'options_check'),
+		'id' => 'feed_url',
+		'std' => '/feed',
+		'type' => 'text');
 
 	$options[] = array(
 		'name' => __('Mailchimp signup form link url', 'options_check'),
@@ -157,59 +214,6 @@ function optionsframework_options() {
 		'id' => 'facebook_app_id',
 		'std' => '235354229916474',
 		'type' => 'text');
-		
-	$options[] = array(
-		'name' => __('Layout', 'options_check'),
-		'type' => 'heading');
-
-	$options[] = array(
-		'name' => __('Home Slides?', 'options_check'),
-		'desc' => __('Do you want slides in homepage?', 'options_check'),
-		'id' => 'home_slides',
-		'std' => '1',
-		'type' => 'checkbox');
-
-	$options[] = array(
-		'name' => __('Select a slides category', 'options_check'),
-		'desc' => __('Choose the category to show in the home slides show', 'options_check'),
-		'id' => 'home_slides_category',
-		'type' => 'select',
-		'options' => $options_categories);
-		
-	$options[] = array(
-		'name' => __('Select a special post category', 'options_check'),
-		'desc' => __('Choose the category for special post', 'options_check'),
-		'id' => 'special_post_category',
-		'type' => 'select',
-		'options' => $options_categories);
-
-	$options[] = array(
-		'name' => __('Favicon', 'options_check'),
-		'desc' => __('Upload a 16x16 favicon image (.ico, .png or .gif).', 'options_check'),
-		'id' => 'favicon_img',
-		'std' => get_template_directory_uri() .'/favicon.ico',
-		'type' => 'upload');
-
-$options[] = array(
-		'name' => __('Post: newsletter form?', 'options_check'),
-		'desc' => __('Do you want the newsletter form below the posts?', 'options_check'),
-		'id' => 'post_newsletter_form',
-		'std' => '1',
-		'type' => 'checkbox');
-
-$options[] = array(
-		'name' => __('Page: newsletter form?', 'options_check'),
-		'desc' => __('Do you want the newsletter form below the pages?', 'options_check'),
-		'id' => 'page_newsletter_form',
-		'std' => '1',
-		'type' => 'checkbox');
-
-$options[] = array(
-		'name' => __('Author Box?', 'options_check'),
-		'desc' => __('Do you want the author box below the posts?', 'options_check'),
-		'id' => 'author_box',
-		'std' => '1',
-		'type' => 'checkbox');
 
 	return $options;
 }

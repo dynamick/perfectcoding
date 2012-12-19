@@ -62,7 +62,7 @@
 											<?php
 												$args = array(
 													'theme_location' => 'top-bar',
-													'depth'          => 2,
+													'depth'          => 4,
 													'container'      => false,
 													'menu_class'     => 'nav',
 													'menu_id'        => 'nav_menu',

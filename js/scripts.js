@@ -1,23 +1,25 @@
-
-
 // DOM Ready
 jQuery(document).ready(function() {
-	// jQuery Code
-	
+
 	// Responsive Projects, iPhone/iPad URL bar hides itself on pageload
 	if (navigator.userAgent.indexOf('iPhone') != -1) {
-	    addEventListener("load", function () {
-	        setTimeout(hideURLbar, 0);
-	    }, false);
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
 	}
-	function hideURLbar() {window.scrollTo(0, 0);}
-	jQuery('.dropdown-toggle').dropdownHover({delay: 500,instantlyCloseOthers: true});	
-    jQuery('.carousel').carousel({interval: 4000	});
-	selectnav('nav_menu'); 		
-	jQuery('body').on('touchstart.dropdown', '.dropdown-menu', function (e) {e.stopPropagation();})
-		.on('touchstart.dropdown', '.dropdown-submenu', function (e) {e.preventDefault();});					
-});
 
+	function hideURLbar() {window.scrollTo(0, 0);}
+
+	jQuery('#nav_menu > li > .dropdown-toggle').dropdownHover({delay: 500,instantlyCloseOthers: true});
+
+	jQuery('.carousel').carousel({interval: 4000});
+
+	selectnav('nav_menu');
+
+	jQuery('body').on('touchstart.dropdown', '.dropdown-menu', function (e) {e.stopPropagation();})
+		.on('touchstart.dropdown', '.dropdown-submenu', function (e) {e.preventDefault();});
+
+});
 
 //********************************************************
 // Custom jQuery Plugins
