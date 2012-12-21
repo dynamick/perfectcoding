@@ -3,7 +3,7 @@
  * Bootstrap Wordpress Breadcrumbs
  *
  * @package Wordpress
- * @subpackage PerfectCoding
+ * @subpackage Spritz
  * @since 3.4.0
  */
 
@@ -113,7 +113,7 @@ function bootstrapwp_breadcrumbs() {
 		if ( get_query_var( 'paged' ) ) {
 			if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) 
 				echo ' (';
-			echo __( 'Page', 'perfectcoding' ) . ' ' . get_query_var( 'paged' );
+			echo __( 'Page', 'spritz' ) . ' ' . get_query_var( 'paged' );
 			if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) 
 				echo ')';
 		}

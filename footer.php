@@ -18,8 +18,8 @@
 
 					<!-- Copyright -->
 					<p class="copyright">
-						&copy; <?php echo date( "Y" ); ?> Copyright <?php bloginfo( 'name' ); ?>. <?php _e( 'Powered by', 'perfectcoding' ); ?>
-						<a href="http://wordpress.org" title="WordPress">WordPress</a> &amp; <a href="https://freshnews.it" title="PerfectCoding, a HTML5, responsive, Bootstrapped Wordpress theme">PerfectCoding</a>.
+						&copy; <?php echo date( "Y" ); ?> Copyright <?php bloginfo( 'name' ); ?>. <?php _e( 'Powered by', 'spritz' ); ?>
+						<a href="http://wordpress.org" title="WordPress">WordPress</a> &amp; <a href="https://freshnews.it" title="Spritz, a HTML5, responsive, Bootstrapped Wordpress theme">Spritz</a>.
 					</p>
 					<!-- /Copyright -->
 

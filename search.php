@@ -7,13 +7,13 @@
 
 		<div class="main">		
 
-			<div class="section"><h2><?php echo sprintf( __( '%s Search Results for ', 'perfectcoding' ), $wp_query->found_posts ); echo get_search_query(); ?></h2></div>
+			<div class="section"><h2><?php echo sprintf( __( '%s Search Results for ', 'spritz' ), $wp_query->found_posts ); echo get_search_query(); ?></h2></div>
 
 			<?php get_template_part( 'loop' ); ?>
 
 			<!-- Pagination -->
 			<nav id="pagination">
-				<?php perfectcoding_pagination(); ?>
+				<?php spritz_pagination(); ?>
 			</nav>
 			<!-- /Pagination -->
 

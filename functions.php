@@ -1,7 +1,7 @@
 <?php
 /*
  *  Author: Michele Gobbi | @dynamick.it
- *  URL: perfectcoding.com | @perfectcoding
+ *  URL: dynamick.it | @dynamick
  *  Custom functions, support, custom post types and more.
  */
 
@@ -47,7 +47,7 @@ if ( function_exists( 'add_theme_support' ) ) {
 
 	// Add Support for Custom Header - Uncomment below if you're going to use
 	add_theme_support( 'custom-header', array(
-		'default-image'         => get_template_directory_uri() . '/img/perfectcoding-header.png',
+		'default-image'         => get_template_directory_uri() . '/img/spritz-header.png',
 		'header-text'           => false,
 		'default-text-color'    => '000',
 		'width'                 => 158,
@@ -59,7 +59,7 @@ if ( function_exists( 'add_theme_support' ) ) {
 	add_theme_support( 'automatic-feed-links' );
 
 	// Localisation Support
-	load_theme_textdomain( 'perfectcoding', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'spritz', get_template_directory() . '/languages' );
 }
 
 /*
@@ -70,18 +70,18 @@ if ( function_exists( 'add_theme_support' ) ) {
 
 // Load Custom Theme Scripts using Enqueue
 
-function perfectcoding_scripts() {
+function spritz_scripts() {
 	if ( ! is_admin() ) {
 		wp_register_script( 'modernizr', get_template_directory_uri() . '/js/modernizr.js', array('jquery'), '2.6.2' ); // Modernizr with version Number at the end
 		wp_enqueue_script( 'modernizr' ); // Enqueue it!
 
-		wp_register_script( 'selectnav', get_template_directory_uri() . '/js/selectnav.min.js', array('jquery'), '1.0.0' ); // Perfect Coding script with version number
+		wp_register_script( 'selectnav', get_template_directory_uri() . '/js/selectnav.min.js', array('jquery'), '1.0.0' ); // SelectNav script with version number
 		wp_enqueue_script( 'selectnav'); // Enqueue it!
 
-		wp_register_script( 'perfectcodingscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0' ); // Perfect Coding script with version number
-		wp_enqueue_script( 'perfectcodingscripts' ); // Enqueue it!
+		wp_register_script( 'spritzscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0' ); // Spritz script with version number
+		wp_enqueue_script( 'spritzscripts' ); // Enqueue it!
 
-		wp_register_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '1.0.0' ); // Perfect Coding script with version number
+		wp_register_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '1.0.0' ); // Bootstrap script with version number
 		wp_enqueue_script( 'bootstrap' ); // Enqueue it!
     }
 }
@@ -138,7 +138,7 @@ function enable_threaded_comments() {
 
 // Custom Comments Callback
 
-function perfectcodingcomments( $comment, $args, $depth ) {
+function spritzcomments( $comment, $args, $depth ) {
 	$GLOBALS['comment'] = $comment;
 	extract( $args, EXTR_SKIP );
 
@@ -157,14 +157,14 @@ function perfectcodingcomments( $comment, $args, $depth ) {
 	<header>
 		<div class="comment-author vcard">
 			<?php if ( $args['avatar_size'] != 0 ) echo get_avatar( $comment, '180' ); ?>
-			<?php printf(__( '<cite class="fn">%s</cite> <span class="says">says:</span>', 'perfectcoding' ), get_comment_author_link()) ?>
+			<?php printf(__( '<cite class="fn">%s</cite> <span class="says">says:</span>', 'spritz' ), get_comment_author_link()) ?>
 		</div>
 		<?php if ( $comment->comment_approved == '0' ) : ?>
-			<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'perfectcoding' ) ?></em>
+			<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'spritz' ) ?></em>
 			<br />
 		<?php endif; ?>
 		<div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars( get_comment_link( $comment->comment_ID ) ) ?>">
-			<?php printf( __( '%1$s at %2$s', 'perfectcoding' ), get_comment_date(),  get_comment_time() ) ?></a><?php edit_comment_link( __( '(Edit)', 'perfectcoding' ),'  ','' ); ?>
+			<?php printf( __( '%1$s at %2$s', 'spritz' ), get_comment_date(),  get_comment_time() ) ?></a><?php edit_comment_link( __( '(Edit)', 'spritz' ),'  ','' ); ?>
 		</div>
 	</header>
 	<div class="comment-text">
@@ -182,13 +182,13 @@ function perfectcodingcomments( $comment, $args, $depth ) {
 
 // Theme Stylesheets using Enqueue
 
-function perfectcoding_styles() {
+function spritz_styles() {
 	
 	wp_register_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '1.0', 'all' );
 	wp_enqueue_style( 'bootstrap' ); // Enqueue it!
 
-	wp_register_style( 'perfectcoding', get_template_directory_uri() . '/style.css', array(), '1.0', 'all' );
-	wp_enqueue_style( 'perfectcoding' ); // Enqueue it!
+	wp_register_style( 'spritz', get_template_directory_uri() . '/style.css', array(), '1.0', 'all' );
+	wp_enqueue_style( 'spritz' ); // Enqueue it!
 
 	wp_register_style( 'lora_font', 'http://fonts.googleapis.com/css?family=Lora:400,700', array(), '1.0', 'all' );
 	wp_enqueue_style( 'lora_font' ); // Enqueue it!
@@ -197,14 +197,14 @@ function perfectcoding_styles() {
 	wp_enqueue_style( 'open_sans' ); // Enqueue it!
 }
 
-// Register Perfect Coding's Navigation menu, other than header menu defined above
+// Register Spritz's Navigation menu, other than header menu defined above
 
-function register_perfectcoding_menu() {	
+function register_spritz_menu() {	
 	register_nav_menus( array( // Using array to specify more menus if needed
-		'top-bar'       => __( 'Header Menu', 'perfectcoding' ), // custom menu 1
-		'custom-menu1'  => __( 'Custom Menu 1', 'perfectcoding' ), // custom menu 1
-		'custom-menu2'  => __( 'Custom Menu 2', 'perfectcoding' ), // custom menu 2
-		'custom-menu3'  => __( 'Custom Menu 3', 'perfectcoding' )  // custom menu 3
+		'top-bar'       => __( 'Header Menu', 'spritz' ), // custom menu 1
+		'custom-menu1'  => __( 'Custom Menu 1', 'spritz' ), // custom menu 1
+		'custom-menu2'  => __( 'Custom Menu 2', 'spritz' ), // custom menu 2
+		'custom-menu3'  => __( 'Custom Menu 3', 'spritz' )  // custom menu 3
 	));
 }
 
@@ -251,8 +251,8 @@ if ( function_exists( 'register_sidebar' ) ) {
 	// Define Sidebar Widget Area 1 - sidebar top
 	
 	register_sidebar( array(
-		'name'          => __( 'Top Sidebar', 'perfectcoding' ),
-		'description'   => __( 'Top part of the sidebar', 'perfectcoding' ),
+		'name'          => __( 'Top Sidebar', 'spritz' ),
+		'description'   => __( 'Top part of the sidebar', 'spritz' ),
 		'id'            => 'widget-area-1',
 		'before_widget' => '<div id="%1$s" class="%2$s">',
 		'after_widget'  => '</div>',
@@ -263,8 +263,8 @@ if ( function_exists( 'register_sidebar' ) ) {
 	// Define Sidebar Widget Area 2 - sidebar middle
 
 	register_sidebar( array(
-		'name'          => __( 'Bottom Sidebar', 'perfectcoding' ),
-		'description'   => __( 'Bottom part of the sidebar', 'perfectcoding' ),
+		'name'          => __( 'Bottom Sidebar', 'spritz' ),
+		'description'   => __( 'Bottom part of the sidebar', 'spritz' ),
 		'id'            => 'widget-area-2',
 		'before_widget' => '<div id="%1$s" class="%2$s">',
 		'after_widget'  => '</div>',
@@ -275,8 +275,8 @@ if ( function_exists( 'register_sidebar' ) ) {
 	// Define Sidebar Widget Area 3 - footer 1° col
 
 	register_sidebar( array(
-		'name'          => __( 'Footer left', 'perfectcoding' ),
-		'description'   => __( 'Footer left area', 'perfectcoding' ),
+		'name'          => __( 'Footer left', 'spritz' ),
+		'description'   => __( 'Footer left area', 'spritz' ),
 		'id'            => 'widget-area-3',
 		'before_widget' => '<div id="%1$s" class="%2$s">',
 		'after_widget'  => '</div>',
@@ -287,8 +287,8 @@ if ( function_exists( 'register_sidebar' ) ) {
 	// Define Sidebar Widget Area 4 - footer 2° col
 
 	register_sidebar( array(
-		'name'          => __( 'Footer Middle', 'perfectcoding' ),
-		'description'   => __( 'Footer middle area', 'perfectcoding' ),
+		'name'          => __( 'Footer Middle', 'spritz' ),
+		'description'   => __( 'Footer middle area', 'spritz' ),
 		'id'            => 'widget-area-4',
 		'before_widget' => '<div id="%1$s" class="%2$s">',
 		'after_widget'  => '</div>',
@@ -299,8 +299,8 @@ if ( function_exists( 'register_sidebar' ) ) {
 	// Define Sidebar Widget Area 5 - footer 3° col
 
 	register_sidebar( array(
-		'name'          => __( 'Footer Right', 'perfectcoding' ),
-		'description'   => __( 'Footer right area', 'perfectcoding' ),
+		'name'          => __( 'Footer Right', 'spritz' ),
+		'description'   => __( 'Footer right area', 'spritz' ),
 		'id'            => 'widget-area-5',
 		'before_widget' => '<div id="%1$s" class="%2$s">',
 		'after_widget'  => '</div>',
@@ -321,7 +321,7 @@ function my_remove_recent_comments_style() {
 
 // Pagination for paged posts, Page 1, Page 2, Page 3, with Next and Previous Links, No plugin
 
-function perfectcoding_pagination() {
+function spritz_pagination() {
 	global $wp_query;
 	$big = 999999999;
 	echo paginate_links( array(
@@ -333,20 +333,20 @@ function perfectcoding_pagination() {
 }
 
 // Custom Excerpts
-// Create 20 Word Callback for Index page Excerpts, call using perfectcoding_excerpt('perfectcoding_index');
+// Create 20 Word Callback for Index page Excerpts, call using spritz_excerpt('spritz_index');
 
-function perfectcoding_index( $length ) { 
+function spritz_index( $length ) { 
 	return 30;
 }
 
-// Create 40 Word Callback for Custom Post Excerpts, call using perfectcoding_excerpt('perfectcoding_custom_post');
-function perfectcoding_custom_post( $length ) {
+// Create 40 Word Callback for Custom Post Excerpts, call using spritz_excerpt('spritz_custom_post');
+function spritz_custom_post( $length ) {
 	return 40;
 }
 
 // Create the Custom Excerpts callback
 
-function perfectcoding_excerpt( $length_callback = '', $more_callback = '' ) {
+function spritz_excerpt( $length_callback = '', $more_callback = '' ) {
 	global $post;
 	if ( function_exists( $length_callback ) ) {
 		add_filter( 'excerpt_length', $length_callback );
@@ -363,9 +363,9 @@ function perfectcoding_excerpt( $length_callback = '', $more_callback = '' ) {
 
 // Custom View Article link to Post
 
-function perfectcoding_view_article( $more ) {
+function spritz_view_article( $more ) {
 	global $post;
-	return '... <a class="view-article" href="' . get_permalink( $post->ID ) . '">' . __( 'View Article', 'perfectcoding' ) . '</a>';
+	return '... <a class="view-article" href="' . get_permalink( $post->ID ) . '">' . __( 'View Article', 'spritz' ) . '</a>';
 }
 
 // Remove 'text/css' from our enqueued stylesheet
@@ -383,7 +383,7 @@ function remove_thumbnail_dimensions( $html ) {
 
 // Custom Gravatar in Settings > Discussion
 
-function perfectcodinggravatar ( $avatar_defaults ) {
+function spritzgravatar ( $avatar_defaults ) {
 	$myavatar                   = get_template_directory_uri() . '/img/default-avatar.png';
 	$avatar_defaults[$myavatar] = "Custom Gravatar";
 	return $avatar_defaults;
@@ -392,12 +392,12 @@ function perfectcodinggravatar ( $avatar_defaults ) {
 /**
  * Prints HTML with meta information for the current post—date/time.
  *
- * @since Perfect Coding  1.0
+ * @since Spritz  1.0
  */
 
-if ( ! function_exists( 'perfectcoding_posted_on' ) ) :
-	function perfectcoding_posted_on() {
-		printf( __( 'Posted on %2$s', 'perfectcoding' ),
+if ( ! function_exists( 'spritz_posted_on' ) ) :
+	function spritz_posted_on() {
+		printf( __( 'Posted on %2$s', 'spritz' ),
 			'meta-prep meta-prep-author',
 			sprintf( '<a href="%1$s" rel="bookmark"><time datetime="%2$s">%3$s</time></a>',
 				get_permalink(),
@@ -410,42 +410,42 @@ endif;
 /**
  * Prints HTML with meta information for the current author.
  *
- * @since Perfect Coding 1.0
+ * @since Spritz 1.0
  */
 
-if ( ! function_exists( 'perfectcoding_posted_by' ) ) :
-	function perfectcoding_posted_by() {
-		printf( __( 'Published by', 'perfectcoding' ).' %1$s',
+if ( ! function_exists( 'spritz_posted_by' ) ) :
+	function spritz_posted_by() {
+		printf( __( 'Published by', 'spritz' ).' %1$s',
 			sprintf( '<span class="author vcard"><a class="url fn n" href="%1$s" title="%2$s">%3$s</a></span>',
 				get_author_posts_url( get_the_author_meta( 'ID' ) ),
-				sprintf( esc_attr__( 'Published by', 'perfectcoding' ).' %1$s', get_the_author() ),
+				sprintf( esc_attr__( 'Published by', 'spritz' ).' %1$s', get_the_author() ),
 				get_the_author() )
 		);
 	}
 endif;
 
 /**
- * Customise the Perfect Coding comments fields with HTML5 form elements
+ * Customise the Spritz comments fields with HTML5 form elements
  *
  *	Adds support for 	placeholder
  *						required
  *						type="email"
  *						type="url"
  *
- * @since Perfect Coding 1.0
+ * @since Spritz 1.0
  */
 
-function perfectcoding_comments() {
+function spritz_comments() {
 
 	$req = get_option( 'require_name_email' );
 	$commenter = wp_get_current_commenter();
 	$aria_req = ( $req ? " aria-required='true'" : '' );
 
 	$fields =  array(
-		'author' => '<p class="comment-form-author">' . '<label for="author">' . __( 'Name', 'perfectcoding' ) . ( $req ? '<span class="required">*</span>' : '' ) .'</label> ' . 
- 		            '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' placeholder = "' . __( 'How could we call you?', 'perfectcoding' ). '"' . ( $req ? ' required' : '' ) . '/></p>',
- 		'email'  => '<p class="comment-form-email"><label for="email">' . __( 'Email', 'perfectcoding' ) . ( $req ? '<span class="required">*</span>' : '' ) . '</label> ' . 
- 		            '<input id="email" name="email" type="email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' placeholder="' . __( 'How could we contact you?', 'perfectcoding' ). '"' . ( $req ? ' required' : '' ) . ' /></p>',		            
+		'author' => '<p class="comment-form-author">' . '<label for="author">' . __( 'Name', 'spritz' ) . ( $req ? '<span class="required">*</span>' : '' ) .'</label> ' . 
+ 		            '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' placeholder = "' . __( 'How could we call you?', 'spritz' ). '"' . ( $req ? ' required' : '' ) . '/></p>',
+ 		'email'  => '<p class="comment-form-email"><label for="email">' . __( 'Email', 'spritz' ) . ( $req ? '<span class="required">*</span>' : '' ) . '</label> ' . 
+ 		            '<input id="email" name="email" type="email" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' placeholder="' . __( 'How could we contact you?', 'spritz' ). '"' . ( $req ? ' required' : '' ) . ' /></p>',		            
  		'url'    => '' /*'<p class="comment-form-url"><label for="url">' . __( 'Website' ) . '</label>' .
  		            '<input id="url" name="url" type="url" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" placeholder="Have you got a website?" /></p>'*/
  	);
@@ -453,16 +453,16 @@ function perfectcoding_comments() {
  	return $fields;
  }
 
-function perfectcoding_commentfield() {	
+function spritz_commentfield() {	
 
-	$commentArea = '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'perfectcoding' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required placeholder="' . __( 'What do you want ask me?', 'perfectcoding' ). '"	></textarea></p>';
+	$commentArea = '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'spritz' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required placeholder="' . __( 'What do you want ask me?', 'spritz' ). '"	></textarea></p>';
 
 	return $commentArea;
 
 }
 
- add_filter( 'comment_form_default_fields', 'perfectcoding_comments' );
- add_filter( 'comment_form_field_comment', 'perfectcoding_commentfield' );
+ add_filter( 'comment_form_default_fields', 'spritz_comments' );
+ add_filter( 'comment_form_field_comment', 'spritz_commentfield' );
 
 /*
  * ========================================================================
@@ -472,14 +472,14 @@ function perfectcoding_commentfield() {
 
 // Add Actions
 
-add_action( 'init', 				'perfectcoding_scripts' ); // Add Custom Scripts
+add_action( 'init', 				'spritz_scripts' ); // Add Custom Scripts
 add_action( 'wp_footer', 			'add_google_analytics' ); // Google Analytics optimised in footer
 add_action( 'get_header', 			'enable_threaded_comments' ); // Enable Threaded Comments
-add_action( 'wp_enqueue_scripts',	'perfectcoding_styles' ); // Add Theme Stylesheet
-add_action( 'init', 				'register_perfectcoding_menu' ); // Add Perfect Coding Menu
+add_action( 'wp_enqueue_scripts',	'spritz_styles' ); // Add Theme Stylesheet
+add_action( 'init', 				'register_spritz_menu' ); // Add Spritz Menu
 add_action( 'init', 				'create_post_type_portfolio' ); // Add our Portfolio Post Type
 add_action( 'widgets_init', 		'my_remove_recent_comments_style' ); // Remove inline Recent Comment Styles from wp_head()
-add_action( 'init', 				'perfectcoding_pagination' ); // Add our HTML5 Pagination
+add_action( 'init', 				'spritz_pagination' ); // Add our HTML5 Pagination
 # add_action( 'wp_print_scripts', 	'conditional_scripts' ); // Add Conditional Page Scripts
 # add_action( 'wp_footer', 			'add_facebook_script' ); // Facebook SDK
 
@@ -502,7 +502,7 @@ add_action( 'init', 				'perfectcoding_pagination' ); // Add our HTML5 Paginatio
 
 // Add Filters
 
-add_filter( 'avatar_defaults', 		'perfectcodinggravatar' ); // Custom Gravatar in Settings > Discussion
+add_filter( 'avatar_defaults', 		'spritzgravatar' ); // Custom Gravatar in Settings > Discussion
 add_filter( 'body_class', 			'add_slug_to_body_class' ); // Add slug to body class (Starkers build)
 add_filter( 'widget_text', 			'do_shortcode' ); // Allow shortcodes in Dynamic Sidebar
 add_filter( 'widget_text', 			'shortcode_unautop' ); // Remove <p> tags in Dynamic Sidebars (better!)
@@ -510,7 +510,7 @@ add_filter( 'wp_nav_menu_args', 	'my_wp_nav_menu_args' ); // Remove surrounding 
 add_filter( 'the_category', 		'remove_category_rel_from_category_list' ); // Remove invalid rel attribute
 add_filter( 'the_excerpt', 			'shortcode_unautop' ); // Remove auto <p> tags in Excerpt (Manual Excerpts only)
 add_filter( 'the_excerpt', 			'do_shortcode' ); // Allows Shortcodes to be executed in Excerpt (Manual Excerpts only)
-add_filter( 'excerpt_more', 		'perfectcoding_view_article' ); // Add 'View Article' button instead of [...] for Excerpts
+add_filter( 'excerpt_more', 		'spritz_view_article' ); // Add 'View Article' button instead of [...] for Excerpts
 add_filter( 'post_thumbnail_html', 	'remove_thumbnail_dimensions', 10 ); // Remove width and height dynamic attributes to thumbnails
 add_filter( 'image_send_to_editor', 'remove_thumbnail_dimensions', 10 ); // Remove width and height dynamic attributes to post images
 # add_filter( 'style_loader_tag', 	'html5_style_remove' ); // Remove 'text/css' from enqueued stylesheet
@@ -524,11 +524,11 @@ remove_filter( 'the_excerpt', 'wpautop' ); // Remove <p> tags from Excerpt altog
 
 // Shortcodes
 
-add_shortcode( 'row', 'perfectcoding_shortcode_row' );
-add_shortcode( 'col', 'perfectcoding_shortcode_col' );
+add_shortcode( 'row', 'spritz_shortcode_row' );
+add_shortcode( 'col', 'spritz_shortcode_col' );
 
 // Shortcodes above would be nested like this -
-// [perfectcoding_shortcode_demo] [perfectcoding_shortcode_demo_2] Here's the page title! [/perfectcoding_shortcode_demo_2] [/perfectcoding_shortcode_demo]
+// [spritz_shortcode_demo] [spritz_shortcode_demo_2] Here's the page title! [/spritz_shortcode_demo_2] [/spritz_shortcode_demo]
 
 /*
  * ========================================================================
@@ -544,18 +544,18 @@ function create_post_type_portfolio() {
 	register_post_type( 'portfolio', // Register Custom Post Type
 		array(
 			'labels' 			=> array(
-			'name' 				=> __( 'Portfolio', 'perfectcoding' ), // Rename these to suit
-			'singular_name' 	=> __( 'Portfolio post', 'perfectcoding' ),
-			'add_new' 			=> __( 'Add New', 'perfectcoding' ),
-			'add_new_item' 		=> __( 'Add New Portfolio Post', 'perfectcoding' ),
-			'edit' 				=> __( 'Edit', 'perfectcoding' ),
-			'edit_item' 		=> __( 'Edit Portfolio Post', 'perfectcoding' ),
-			'new_item' 			=> __( 'New Portfolio Post', 'perfectcoding' ),
-			'view' 				=> __( 'View Portfolio Post', 'perfectcoding' ),
-			'view_item' 		=> __( 'View Portfolio Post', 'perfectcoding' ),
-			'search_items' 		=> __( 'Search Portfolio Post', 'perfectcoding' ),
-			'not_found' 		=> __( 'No portfolio post found', 'perfectcoding' ),
-			'not_found_in_trash'=> __( 'No Portfolio Posts found in Trash', 'perfectcoding' )
+			'name' 				=> __( 'Portfolio', 'spritz' ), // Rename these to suit
+			'singular_name' 	=> __( 'Portfolio post', 'spritz' ),
+			'add_new' 			=> __( 'Add New', 'spritz' ),
+			'add_new_item' 		=> __( 'Add New Portfolio Post', 'spritz' ),
+			'edit' 				=> __( 'Edit', 'spritz' ),
+			'edit_item' 		=> __( 'Edit Portfolio Post', 'spritz' ),
+			'new_item' 			=> __( 'New Portfolio Post', 'spritz' ),
+			'view' 				=> __( 'View Portfolio Post', 'spritz' ),
+			'view_item' 		=> __( 'View Portfolio Post', 'spritz' ),
+			'search_items' 		=> __( 'Search Portfolio Post', 'spritz' ),
+			'not_found' 		=> __( 'No portfolio post found', 'spritz' ),
+			'not_found_in_trash'=> __( 'No Portfolio Posts found in Trash', 'spritz' )
 		),
 		'public' 		=> true,
 		'hierarchical' 	=> true, // Allows your posts to behave like Hierarchy Pages
@@ -565,7 +565,7 @@ function create_post_type_portfolio() {
 			'editor',
 			'excerpt',
 			'thumbnail'
-		), // Go to Dashboard Custom Perfect Coding post for supports
+		), // Go to Dashboard Custom Spritz post for supports
 		'can_export' => true, // Allows export in Tools > Export
 		'taxonomies' => array(
 			'post_tag',
@@ -582,13 +582,13 @@ function create_post_type_portfolio() {
 
 // Shortcode Row with Nested Capability
 
-function perfectcoding_shortcode_row( $atts, $content = null ) {
+function spritz_shortcode_row( $atts, $content = null ) {
 	return '<div class="row-fluid">' . do_shortcode( $content ) . '</div>'; // do_shortcode allows for nested Shortcodes
 }
 
 // Shortcode Col 
 
-function perfectcoding_shortcode_col( $atts, $content = null) {
+function spritz_shortcode_col( $atts, $content = null) {
 	extract( shortcode_atts( array( 'span' => 12 ), $atts) );	 
 	return '<div class="span' . $span . '">' . do_shortcode( $content ) . '</div>';
 }
@@ -599,9 +599,9 @@ function perfectcoding_shortcode_col( $atts, $content = null) {
 * ========================================================================
 */
 
-function perfectcoding_twitter_badge() {
+function spritz_twitter_badge() {
 	$twitter_url 	= of_get_option( 'twitter_url', "https://twitter.com/dynamick" );
-	$twitter_label 	= __( 'follow @dynamick', 'perfectcoding' );
+	$twitter_label 	= __( 'follow @dynamick', 'spritz' );
 	$twitter_lang 	= "en";
 	$ret 			= <<<EOF
 <a href="{$twitter_url}" class="twitter-follow-button" data-show-count="true" data-lang="{$twitter_lang}" data-size="large">{$twitter_label}</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
@@ -609,9 +609,9 @@ EOF;
 	return $ret;	
 }
 
-function perfectcoding_mailchimp_form() {
-	$placeholder 		= __( 'Add your email', 'perfectcoding' );
-	$subscribe_label 	= __( 'Subscribe', 'perfectcoding' );
+function spritz_mailchimp_form() {
+	$placeholder 		= __( 'Add your email', 'spritz' );
+	$subscribe_label 	= __( 'Subscribe', 'spritz' );
 	$action 			= of_get_option( 'mailchimp_link_url', '#' ); 
 	$ret 				= <<<EOF
 	<!-- Begin MailChimp Signup Form -->
@@ -674,7 +674,7 @@ function my_theme_register_required_plugins() {
 		)
 	);
 
-	$theme_text_domain = 'perfectcoding';
+	$theme_text_domain = 'spritz';
 
 	/**
 	 * Array of configuration settings. Amend each line as needed.
@@ -750,23 +750,23 @@ if ( !function_exists( 'of_get_option' ) ) {
 * ========================================================================
 */
 
-add_action( 'add_meta_boxes', 'perfectcoding_add_ribbon_box' );
-add_action( 'save_post', 'perfectcoding_ribbon_save_postdata' );
+add_action( 'add_meta_boxes', 'spritz_add_ribbon_box' );
+add_action( 'save_post', 'spritz_ribbon_save_postdata' );
 
 /* Adds a box to the main column on the Post and Page edit screens */
 
-function perfectcoding_add_ribbon_box() {
+function spritz_add_ribbon_box() {
 	add_meta_box( 
 		'myplugin_sectionid',
-		__( 'Ribbon Type', 'perfectcoding' ),
-		'perfectcoding_ribbon_box',
+		__( 'Ribbon Type', 'spritz' ),
+		'spritz_ribbon_box',
 		'portfolio'
 	);
 }
 
 /* Prints the box content */
 
-function perfectcoding_ribbon_box( $post ) {
+function spritz_ribbon_box( $post ) {
 
 	// Use nonce for verification
 	wp_nonce_field( plugin_basename( __FILE__ ), 'myplugin_noncename' );
@@ -776,27 +776,27 @@ function perfectcoding_ribbon_box( $post ) {
 
 	// The actual fields for data entry
 	echo '<label for="myplugin_new_field">';
-	_e( "Ribbon type", 'perfectcoding' );
+	_e( "Ribbon type", 'spritz' );
 	echo '</label> ';
 	echo '<select id="ribbon_type_field" name="ribbon_type_field" >';
 	echo '<option value="" >';
-	_e( "[none]", 'perfectcoding' );
+	_e( "[none]", 'spritz' );
 	echo '</option><option value="red" '. ( $meta_value == 'red' ? 'selected="selected"' : '' ) .'>';
-	_e( "Red", 'perfectcoding' );
+	_e( "Red", 'spritz' );
 	echo '</option><option value="blue" '. ( $meta_value == 'blue' ? 'selected="selected"' : '' ) .'>';
-	_e( "Blue", 'perfectcoding' );
+	_e( "Blue", 'spritz' );
 	echo '</option><option value="yellow" '. ( $meta_value == 'yellow' ? 'selected="selected"' : '' ) .'>';
-	_e( "Yellow", 'perfectcoding' );
+	_e( "Yellow", 'spritz' );
 	echo '</option><option value="green" '. ( $meta_value == 'green' ? 'selected="selected"' : '' ) .'>';
-	_e( "Green", 'perfectcoding' );
+	_e( "Green", 'spritz' );
 	echo '</option><option value="violet" '. ( $meta_value == 'violet' ? 'selected="selected"' : '' ) .'>';
-	_e( "Violet", 'perfectcoding' );
+	_e( "Violet", 'spritz' );
 	echo '</option></select>';
 }
 
 /* When the post is saved, saves our custom data */
 
-function perfectcoding_ribbon_save_postdata( $post_id ) {
+function spritz_ribbon_save_postdata( $post_id ) {
 
 	// verify if this is an auto save routine. 
 	// If it is our form has not been submitted, so we dont want to do anything

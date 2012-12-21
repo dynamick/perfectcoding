@@ -1,8 +1,8 @@
-### [Perfect Coding](http://perfectcoding.com) Changelog
+### [Spritz](http://spritz.com) Changelog
 
 ## 1.2.4 (15 October, 2012)
 
-* Custom Comments callback - wp_list_comments('type=comment&callback=perfectcodingcomments'); editable comments now in functions.php
+* Custom Comments callback - wp_list_comments('type=comment&callback=spritzcomments'); editable comments now in functions.php
 * Custom default Gravatar now built in, with demo gravatar.jpg inside the 'img' folder, swap it out
 * Changed date format from the_date to the_time('F j, Y')
 * Changed time format from the_time to the_time('g:i a')
@@ -20,7 +20,7 @@
 
 ## 1.2.1 (07 October, 2012)
 
-* Custom callback for wp_nav_menu, now in functions.php with perfectcoding_nav(); in header.php
+* Custom callback for wp_nav_menu, now in functions.php with spritz_nav(); in header.php
 * JavaScript added to 'scripts.js', hides URL bar after page load on iPhone/iPad, great for responsive projects
 * Meta tag 'apple-mobile-web-app-capable' added to header.php
 * Meta tag 'apple-mobile-web-app-status-bar-style' added to header.php
@@ -79,13 +79,13 @@
 * Added Custom Background support into functions.php
 * Remove WordPress Admin bar by default
 * Remove 'text/css' from enqueued stylesheet
-* Updated screenshot.png logo to new Perfect Coding branding
+* Updated screenshot.png logo to new Spritz branding
 * CSS change, :focus changed to input:focus as FireFox was adding focus styles to any element
 * CSS change, new Chrome updates renders fonts thicker, reduced font-weight on body from 400 to 300
 * CSS change, create non-semantic section below media queries, moved text-selection colors etc
 * CSS change, default font-family for h1-h6 Helvetica Neue with Helvetica/Arial fallbacks (previous Georgia)
 * CSS header theme details updated to new URL
-* Move toddmotto.com/perfectcoding/ to new perfectcoding.com domain
+* Move toddmotto.com/spritz/ to new spritz.com domain
 * Favicon support for theme directory favicon.ico
 * Apple touch icon support, drag into root folder
 * LICENSE.md and README.md added and fully updated

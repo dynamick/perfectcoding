@@ -14,7 +14,7 @@
 
 						<a class="pull-left thumbnails"><?php echo get_avatar( get_the_author_meta( 'user_email' ) ); ?></a>
 
-						<h2><?php echo get_the_author() ; ?> <small><?php _e( 'About me', 'perfectcoding' );?></small></h2>
+						<h2><?php echo get_the_author() ; ?> <small><?php _e( 'About me', 'spritz' );?></small></h2>
 
 						<div class="author-desc"><?php the_author_meta( 'description' ); ?></div>
 
@@ -30,7 +30,7 @@
 
 			<!-- Pagination -->
 			<nav id="pagination">
-				<?php perfectcoding_pagination(); ?>
+				<?php spritz_pagination(); ?>
 			</nav>
 			<!-- /Pagination -->
 

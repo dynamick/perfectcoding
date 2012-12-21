@@ -1,19 +1,19 @@
 
-# [PerfectCoding](http://www.dynamick.it)
+# [Spritz](http://www.dynamick.it)
 
 A Wordpress theme with HTML5 structure, with Twitter Bootstrap layout and with Html5 Boilerplate recipes.
-It is an implementation of Perfect Coding Wordpress Theme, which is a powerful shell for rapidly deploying your WordPress projects. Get developing in minutes, with the robust, preloaded shell. Perfect Coding.
+It is an implementation of Spritz Wordpress Theme, which is a powerful shell for rapidly deploying your WordPress projects. Get developing in minutes, with the robust, preloaded shell. Spritz.
 
-* Project: [github.com/dynamick/perfectcoding](https://github.com/dynamick/perfectcoding)
+* Project: [github.com/dynamick/spritz](https://github.com/dynamick/spritz)
 * Web: [dynamick.it](http://www.dynamick.it)
 * Twitter: [@dynamick.it](http://twitter.com/dynamick)
 
 
-## Getting Started with Perfect Coding
+## Getting Started with Spritz
 
-Download the latest version from [github.com/dynamick/perfectcoding](https://github.com/dynamick/perfectcoding)
+Download the latest version from [github.com/dynamick/spritz](https://github.com/dynamick/spritz)
 
-## Get involved! Make Perfect Coding better
+## Get involved! Make Spritz better
 
 There are a few ways to get involved, submit a Pull Request, or submit a comment on the website
 

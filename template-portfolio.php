@@ -20,14 +20,14 @@
 				query_posts ( array(
 					'post_type'      => array('portfolio'), 
 					'posts_per_page' => 8,
-					'paged'          =>$paged
+					'paged'          => $paged
 				));
 				get_template_part( 'loop-portfolio' ); 
 			?>
 
 			<!-- Pagination -->
 			<nav id="pagination">
-				<?php perfectcoding_pagination(); ?>
+				<?php spritz_pagination(); ?>
 			</nav>
 			<!-- /Pagination -->
 		</div>

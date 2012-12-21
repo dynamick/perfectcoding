@@ -13,7 +13,7 @@
 
 			<!-- Pagination -->
 			<nav id="pagination">
-				<?php perfectcoding_pagination(); ?>
+				<?php spritz_pagination(); ?>
 			</nav>
 			<!-- /Pagination -->
 

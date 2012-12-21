@@ -1,14 +1,14 @@
 /*
-Theme Name: 	PerfectCoding
-Theme URI: 	http://www.dynamick.it
-Description: 	A Perfect coding HTML5 WordPress Theme
-Version: 	1.2.4
-Author: 	Michele Gobbi (@dynamick)
-Author URI: 	http://www.dynamick.it
-Tags: 		bootstrap, HTML5, CSS3
+Theme Name: Spritz
+Theme URI: http://www.dynamick.it
+Description: A tasty HTML5 WordPress Theme
+Version: 1.3
+Author: Michele Gobbi (@dynamick)
+Author URI: http://www.dynamick.it
+Tags: bootstrap, HTML5, CSS3
 
-License:	MIT
-License URI:	http://opensource.org/licenses/mit-license.php
+License: MIT
+License URI: http://opensource.org/licenses/mit-license.php
 */
 
 /* =============================================================================
@@ -212,12 +212,12 @@ section li, article li { padding: 0.25em 0;}
 /* Special posts
 ------------------------------------------------------------ */
 
-article.perfectcoding_special {background:#444; color:white; box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; -webkit-box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; }
-article.perfectcoding_special .prefix {color: #999; text-shadow: 0 1px #000;}
-article.perfectcoding_special .prefix a{color: #999;}
-article.perfectcoding_special h2, article h1 {text-shadow: 0 1px #000}
-article.perfectcoding_special h2 a, article.perfectcoding_special h1 a {color: #fff;}
-article.perfectcoding_special .post_details {color: #fff; }
+article.spritz_special {background:#444; color:white; box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; -webkit-box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; }
+article.spritz_special .prefix {color: #999; text-shadow: 0 1px #000;}
+article.spritz_special .prefix a{color: #999;}
+article.spritz_special h2, article h1 {text-shadow: 0 1px #000}
+article.spritz_special h2 a, article.spritz_special h1 a {color: #fff;}
+article.spritz_special .post_details {color: #fff; }
 	
 /* Portfolio container
 ------------------------------------------------------------ */

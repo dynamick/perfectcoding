@@ -41,7 +41,7 @@
 
 				<div class="inner">
 
-					<h2><?php _e( 'Sorry, nothing to display.', 'perfectcoding' ); ?></h2>
+					<h2><?php _e( 'Sorry, nothing to display.', 'spritz' ); ?></h2>
 
 				</div>
 

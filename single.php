@@ -26,9 +26,9 @@
 
 					<!-- Post Details -->
 					<ul class="post_details">
-						<li class="posted_by"><?php perfectcoding_posted_by(); ?></li>
-						<li class="date"><?php perfectcoding_posted_on(); ?></li>
-						<li class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'perfectcoding' ), __( '1 Comment', 'perfectcoding' ), __( '% Comments', 'perfectcoding' )); ?></li>
+						<li class="posted_by"><?php spritz_posted_by(); ?></li>
+						<li class="date"><?php spritz_posted_on(); ?></li>
+						<li class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'spritz' ), __( '1 Comment', 'spritz' ), __( '% Comments', 'spritz' )); ?></li>
 					</ul>
 					<!-- /Post Details -->
 
@@ -46,7 +46,7 @@
 
 								<?php $author = get_the_author_meta( 'first_name' ) . ' ' . get_the_author_meta( 'last_name' ); ?>
 								<?php if ( $author ) :?>
-									<h2><a href="#"><?php echo $author ?> <small><?php _e( 'the author', 'perfectcoding' );?></small></a></h2>
+									<h2><a href="#"><?php echo $author ?> <small><?php _e( 'the author', 'spritz' );?></small></a></h2>
 								<?php endif; ?>
 
 								<div class="author-desc"><?php the_author_meta( 'description' ); ?></div>
@@ -77,7 +77,7 @@
 				<article>
 
 					<div class="offset1 inner">
-						<h1><?php _e( 'Sorry, nothing to display.', 'perfectcoding' ); ?></h1>
+						<h1><?php _e( 'Sorry, nothing to display.', 'spritz' ); ?></h1>
 					</div>
 
 				</article>

@@ -25,8 +25,8 @@
 
 					<!-- Post Details -->
 					<ul class="post_details">
-						<li class="date"><?php perfectcoding_posted_on(); ?></li>
-						<li class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'perfectcoding' ), __( '1 Comment', 'perfectcoding' ), __( '% Comments', 'perfectcoding' )); ?></li>
+						<li class="date"><?php spritz_posted_on(); ?></li>
+						<li class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'spritz' ), __( '1 Comment', 'spritz' ), __( '% Comments', 'spritz' )); ?></li>
 					</ul>
 					<!-- /Post Details -->
 
@@ -52,7 +52,7 @@
 
 				<div class="inner">
 
-					<h2><?php _e( 'Sorry, nothing to display.', 'perfectcoding' ); ?></h2>
+					<h2><?php _e( 'Sorry, nothing to display.', 'spritz' ); ?></h2>
 
 				</div>
 

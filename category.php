@@ -7,13 +7,13 @@
 
 		<div class="main">
 
-			<div class="section"><h2><?php _e( 'Categories for', 'perfectcoding' ); the_category(); ?></h2></div>
+			<div class="section"><h2><?php _e( 'Categories for', 'spritz' ); the_category(); ?></h2></div>
 
 			<?php get_template_part('loop'); ?>
 
 			<!-- Pagination -->
 			<nav id="pagination">
-				<?php perfectcoding_pagination(); ?>
+				<?php spritz_pagination(); ?>
 			</nav>
 			<!-- /Pagination -->
 

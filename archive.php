@@ -7,13 +7,13 @@
 
 		<div class="main">
 
-			<div class="section"><h1><?php _e( 'Archives', 'perfectcoding' ); ?> <small>
+			<div class="section"><h1><?php _e( 'Archives', 'spritz' ); ?> <small>
 				<?php if ( is_day() ) : ?>
-					<?php printf( __( 'Daily Archives: %s', 'perfectcoding' ), '<span>' . get_the_date() . '</span>' ); ?>
+					<?php printf( __( 'Daily Archives: %s', 'spritz' ), '<span>' . get_the_date() . '</span>' ); ?>
 				<?php elseif ( is_month() ) : ?>
-					<?php printf( __( 'Monthly Archives: %s', 'perfectcoding' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'perfectcoding' ) ) . '</span>' ); ?>
+					<?php printf( __( 'Monthly Archives: %s', 'spritz' ), '<span>' . get_the_date( _x( 'F Y', 'monthly archives date format', 'spritz' ) ) . '</span>' ); ?>
 				<?php elseif ( is_year() ) : ?>
-					<?php printf( __( 'Yearly Archives: %s', 'perfectcoding' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'perfectcoding' ) ) . '</span>' ); ?>
+					<?php printf( __( 'Yearly Archives: %s', 'spritz' ), '<span>' . get_the_date( _x( 'Y', 'yearly archives date format', 'spritz' ) ) . '</span>' ); ?>
 				<?php endif; ?>
 			</small></h1></div>
 
@@ -21,7 +21,7 @@
 
 			<!-- Pagination -->
 			<div id="pagination">
-				<?php perfectcoding_pagination(); ?>
+				<?php spritz_pagination(); ?>
 			</div>
 			<!-- /Pagination -->
 

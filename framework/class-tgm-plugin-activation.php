@@ -99,7 +99,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 		 *
 		 * @var string
 		 */
-		public $domain = 'perfectcoding';
+		public $domain = 'spritz';
 
 		/**
 		 * Default absolute path to folder containing pre-packaged plugin zip files.

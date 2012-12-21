@@ -1,13 +1,13 @@
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 	<!-- Article -->
-	<?php $special_class = in_category( of_get_option( 'special_post_category', '' ) ) ? "perfectcoding_special" : '' ?>
+	<?php $special_class = in_category( of_get_option( 'special_post_category', '' ) ) ? "spritz_special" : '' ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class( $special_class ); ?> >
 
 		<div class="inner">
 
-			<div class="prefix"><?php perfectcoding_posted_on(); ?> - <?php the_tags(''); ?></div>
+			<div class="prefix"><?php spritz_posted_on(); ?> - <?php the_tags(''); ?></div>
 
 			<!-- Post Title -->
 			<h2>
@@ -17,7 +17,7 @@
 
 			<!-- Post Details -->
 			<ul class="post_details">
-				<li class="posted_by"><span class="postit"><?php perfectcoding_posted_by(); ?></span></li>
+				<li class="posted_by"><span class="postit"><?php spritz_posted_by(); ?></span></li>
 			</ul>
 			<!-- /Post Details -->
 
@@ -36,7 +36,7 @@
 			<?php endif; ?>
 			<!-- /Post Thumbnail -->			
 		
-			<?php perfectcoding_excerpt( 'perfectcoding_index' ); // Build your custom callback length in functions.php ?>
+			<?php spritz_excerpt( 'spritz_index' ); // Build your custom callback length in functions.php ?>
 
 			<?php #edit_post_link('Edit','<span class="label">', '</span>');  # uncomment at will?>
 
@@ -52,9 +52,9 @@
 	<!-- Article -->
 	<article>
 		<div class="inner">
-			<h2><?php _e( 'Sorry, nothing to display.', 'perfectcoding' ); ?></h2>
-			<p><?php _e( 'You are looking for an empty page. We are sorry for the inconvenience.', 'perfectcoding' ); ?></p>
-			<p><a href="/"><?php _e( 'Return to home', 'perfectcoding' ); ?></a></p>
+			<h2><?php _e( 'Sorry, nothing to display.', 'spritz' ); ?></h2>
+			<p><?php _e( 'You are looking for an empty page. We are sorry for the inconvenience.', 'spritz' ); ?></p>
+			<p><a href="/"><?php _e( 'Return to home', 'spritz' ); ?></a></p>
 		</div>
 	</article>
 	<!-- /Article -->

@@ -1,7 +1,7 @@
 <section id="comments">
 	
 	<?php if (post_password_required()) : ?>
-	<p><?php _e( 'Post is password protected. Enter the password to view any comments.', 'perfectcoding' ); ?></p>
+	<p><?php _e( 'Post is password protected. Enter the password to view any comments.', 'spritz' ); ?></p>
 </section> <!-- END: comments if password protected -->
 	<?php return; endif; ?>
 
@@ -11,7 +11,7 @@
 	<?php # <h3 class="comments-title"><?php comments_number(); ></h3> ?>
 
 	<ol class="commentlist">
-		<?php wp_list_comments( 'type=comment&callback=perfectcodingcomments' ); // Custom callback in functions.php ?>
+		<?php wp_list_comments( 'type=comment&callback=spritzcomments' ); // Custom callback in functions.php ?>
 	</ol>
 
 	<?php if ( $pagination = paginate_comments_links( array( 'echo' => false ) ) ) { ?>
@@ -20,7 +20,7 @@
 
 <?php elseif ( ! comments_open() && ! is_page() && post_type_supports( get_post_type(), 'comments' ) ) : ?>
 
-	<p><?php _e( 'Comments are closed here.', 'perfectcoding' ); ?></p>
+	<p><?php _e( 'Comments are closed here.', 'spritz' ); ?></p>
 
 <?php endif; ?>
 

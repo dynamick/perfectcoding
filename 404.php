@@ -12,13 +12,13 @@
 
 				<!-- Post Title -->
 				<div class="section">
-					<h1><?php _e( 'Page not found', 'perfectcoding' ); ?></h1>
+					<h1><?php _e( 'Page not found', 'spritz' ); ?></h1>
 				</div>
 				<!-- /Post Title -->
 
 				<div class="inner">
 
-					<h2><a href="<?php echo home_url(); ?>"><?php _e( 'Return home?', 'perfectcoding' ); ?></a></h2>
+					<h2><a href="<?php echo home_url(); ?>"><?php _e( 'Return home?', 'spritz' ); ?></a></h2>
 					<p style="height:400px">Something goes wrong.</p>
 
 				</div>
