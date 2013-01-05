@@ -208,6 +208,8 @@ section li, article li { padding: 0.25em 0;}
 .post_content p a {text-decoration:underline;}
 .post_content p a:hover {text-decoration:underline;}
 .post_content .media-heading {padding:0!important;}
+.post_content p.full_page {margin:0 -60px;}
+.post_content p.full_page img {margin:0; padding:0;}
 
 /* Special posts
 ------------------------------------------------------------ */
@@ -215,7 +217,7 @@ section li, article li { padding: 0.25em 0;}
 article.spritz_special {background:#444; color:white; box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; -webkit-box-shadow: 0 0 100px 1px rgba(0, 0, 0, 1) inset, 0px 3px 2px 0px; }
 article.spritz_special .prefix {color: #999; text-shadow: 0 1px #000;}
 article.spritz_special .prefix a{color: #999;}
-article.spritz_special h2, article h1 {text-shadow: 0 1px #000}
+article.spritz_special h2 {text-shadow: 0 1px #000}
 article.spritz_special h2 a, article.spritz_special h1 a {color: #fff;}
 article.spritz_special .post_details {color: #fff; }
 	
@@ -296,7 +298,7 @@ aside {text-align:center; margin-bottom:80px;}
 .sidebar {margin-top: 2em;font-size: 14px; text-align:left; line-height: 1.5em;}
 .sidebar p {line-height: 1.5em;}
 .sidebar-widget h3 {font-size: 24px; font-weight:bold; line-height: 1.2em; margin: 0 0 0.5em; border-bottom:1px dashed rgba(0,0,0,0.2); padding-bottom:0.5em;}
-.sidebar-widget h3:before {content:'✪ '; color: #E7492F; font-size:1.2em;}
+.sidebar-widget h3:before {content:'\272A  '; color: #E7492F; font-size:1.2em;}
 .sidebar-widget ul { list-style: circle outside none; color:#E7492F; margin-left:16px;}
 .sidebar-widget ul li { margin:0.25em 0; color:#333;}
 /*.sidebar-widget ul li:before {content: "\2013\00a0\00a0";color: #E7492F;}*/
