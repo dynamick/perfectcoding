@@ -191,7 +191,7 @@ article .catribbon span:after {content:'';}
 article a.post_thumbnail { display:block; position:relative; margin:0 -60px; }
 article .excerpt {margin: 1em 0 2em;}
 article .view-article {display:block; margin: 0.5em 0 1em;}
-article .view-article:after {content:'➪';}
+article .view-article:after {content:'\21E8'; padding-left:4px;}
 nav#pagination {text-align:center; margin: 1em 0; position:relative; /*z-index: 10*/}
 nav#pagination > * {margin: 0 9px;}
 
