@@ -193,8 +193,8 @@ function spritz_styles() {
 	wp_register_style( 'lora_font', 'http://fonts.googleapis.com/css?family=Lora:400,700', array(), '1.0', 'all' );
 	wp_enqueue_style( 'lora_font' ); // Enqueue it!
 
-	wp_register_style( 'open_sans', 'http://fonts.googleapis.com/css?family=Open+Sans:400,300', array(), '1.0', 'all' );
-	wp_enqueue_style( 'open_sans' ); // Enqueue it!
+	//wp_register_style( 'open_sans', 'http://fonts.googleapis.com/css?family=Open+Sans:400,300', array(), '1.0', 'all' );
+	//wp_enqueue_style( 'open_sans' ); // Enqueue it!
 }
 
 // Register Spritz's Navigation menu, other than header menu defined above

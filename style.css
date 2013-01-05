@@ -93,7 +93,8 @@ td {vertical-align:top;}
  */
 
 body {
-	font-family:  "Helvetica Neue", 'Open Sans', Helvetica, Arial, sans-serif; /* Serve Helvetica Neue, with Helvetica fallbacks to Arial */
+	/*font-family:  "Helvetica Neue", 'Open Sans', Helvetica, Arial, sans-serif; /* Serve Helvetica Neue, with Helvetica fallbacks to Arial */
+	font-family:  "Helvetica Neue", Arial, sans-serif; /* Serve Helvetica Neue, with Helvetica fallbacks to Arial */
 	font-size:1em;/*16px;*/
 	font-weight:300; /* Better supported than 'lighter' attribute */
 	line-height:1.5em; /*24px;*/
@@ -148,11 +149,11 @@ header nav {padding-bottom: 18px;  /*border:1px solid rgba(0,0,0,0.1); border-wi
 .ribbon .navbar-inner {background:none; border:0; box-shadow: none; margin-left: 213px;}
 .ribbon .navbar {margin-bottom:0;}
 .ribbon .navbar .dropdown-menu {margin-top: -3px}
+.dropdown-menu li > a {line-height:1.2em; }
 .dropdown-menu li > a:hover {background-color: #7EC200; background-image:none; color:white;}
+.navbar .nav > li > a:before {content:'\272A'; color: #E7492F; font-size:1em; margin-right: 4px;}
 .dropdown-menu .active > a, .dropdown-menu .active > a:hover {background-image: none; background-color: #96DC00; }
 .dropdown-menu .active > a:hover  {color:white;}
-.dropdown-menu li > a {font-weight:300; line-height:1.6em;}
-.navbar .nav > li > a:before {color: #E7492F; content: "✪ "; }
 
 /* POST BODY
  ------------------------------------------------------------ */
@@ -190,7 +191,7 @@ article .catribbon span:after {content:'';}
 article a.post_thumbnail { display:block; position:relative; margin:0 -60px; }
 article .excerpt {margin: 1em 0 2em;}
 article .view-article {display:block; margin: 0.5em 0 1em;}
-article .view-article:after {content:' ➪';}
+article .view-article:after {content:'➪';}
 nav#pagination {text-align:center; margin: 1em 0; position:relative; /*z-index: 10*/}
 nav#pagination > * {margin: 0 9px;}
 
@@ -298,7 +299,7 @@ aside {text-align:center; margin-bottom:80px;}
 .sidebar {margin-top: 2em;font-size: 14px; text-align:left; line-height: 1.5em;}
 .sidebar p {line-height: 1.5em;}
 .sidebar-widget h3 {font-size: 24px; font-weight:bold; line-height: 1.2em; margin: 0 0 0.5em; border-bottom:1px dashed rgba(0,0,0,0.2); padding-bottom:0.5em;}
-.sidebar-widget h3:before {content:'\272A  '; color: #E7492F; font-size:1.2em;}
+.sidebar-widget h3:before {content:'\272A'; color: #E7492F; font-size:20px; margin-right: 8px; }
 .sidebar-widget ul { list-style: circle outside none; color:#E7492F; margin-left:16px;}
 .sidebar-widget ul li { margin:0.25em 0; color:#333;}
 /*.sidebar-widget ul li:before {content: "\2013\00a0\00a0";color: #E7492F;}*/
