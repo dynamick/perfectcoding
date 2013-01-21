@@ -93,15 +93,16 @@ td {vertical-align:top;}
  */
 
 body {
-	/*font-family:  "Helvetica Neue", 'Open Sans', Helvetica, Arial, sans-serif; /* Serve Helvetica Neue, with Helvetica fallbacks to Arial */
-	font-family:  "Helvetica Neue", Arial, sans-serif; /* Serve Helvetica Neue, with Helvetica fallbacks to Arial */
+	font-family:  "Helvetica Neue", 'Open Sans', Helvetica, Arial, sans-serif; /* Serve Helvetica Neue, with Helvetica fallbacks to Arial */
 	font-size:1em;/*16px;*/
 	font-weight:300; /* Better supported than 'lighter' attribute */
 	line-height:1.5em; /*24px;*/
-	-webkit-font-smoothing:antialiased; /* Antialiased font for great smoothing */
+	/*
+	-webkit-font-smoothing:antialiased; 
 	-moz-font-smoothing:antialiased;
 	-o-font-smoothing:antialiased;
 	font-smoothing:antialiased;
+	*/
 	text-rendering:optimizeLegibility; /* Optimise legibility for some CSS3 kerning */
 	color:#333; /* Lighter on the eyes than #000 Black */
 }
@@ -149,7 +150,7 @@ header nav {padding-bottom: 18px;  /*border:1px solid rgba(0,0,0,0.1); border-wi
 .ribbon .navbar-inner {background:none; border:0; box-shadow: none; margin-left: 213px;}
 .ribbon .navbar {margin-bottom:0;}
 .ribbon .navbar .dropdown-menu {margin-top: -3px}
-.dropdown-menu li > a {line-height:1.2em; }
+.dropdown-menu li > a {line-height:1.3em; }
 .dropdown-menu li > a:hover {background-color: #7EC200; background-image:none; color:white;}
 .navbar .nav > li > a:before {content:'\272A'; color: #E7492F; font-size:1em; margin-right: 4px;}
 .dropdown-menu .active > a, .dropdown-menu .active > a:hover {background-image: none; background-color: #96DC00; }
